@@ -1,17 +1,12 @@
-@import "base/_customBootstrapOverrides";
+@import "bootstrapCustom/index";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
-@import "base/variables";
-@import "base/reset";
-@import "base/typography";
+@import "base/index";
 
-@import "components/button";
-@import "components/card";
+@import "components/index";
 
-@import "layouts/header";
-@import "layouts/footer";
+@import "layouts/index";
 
-@import "pages/home";
-@import "pages/about";
+@import "pages/index";
 
-@import "utilities/helpers";
+@import "utilities/index";
