@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "build-css": "sass sass/main.scss css/main.css",
-    "watch-css": "sass --watch styles/scss/main.scss:styles/css/main.css"
+    "watch-css": "sass --watch src/styles/scss/main.scss:src/styles/css/main.css"
   },
   "keywords": [],
   "author": "",
