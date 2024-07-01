@@ -11849,10 +11849,15 @@ html {
   direction: rtl;
 }
 
-html,
-body {
+html {
   margin: 0;
   padding: 0;
+  background: var(--white-color);
+}
+html body {
+  margin: auto;
+  padding: 0;
+  background: linear-gradient(to bottom, var(--bg-color-1), #ffffff);
 }
 
 /* Color Variables */
@@ -11866,9 +11871,11 @@ body {
   --font-family-base: "Vazirmatn", sans-serif;
   /* font-style font-we ight font-size font-family */
   --hero-font: normal bold 50px var(--font-family-base);
+  --section-title-font: normal bold 32px var(--font-family-base);
   --bold-font: normal bold 16px var(--font-family-base);
   --main-font: normal normal 16px var(--font-family-base);
   --big-font: normal normal 19px var(--font-family-base);
+  --big-bold-font: normal bold 19px var(--font-family-base);
   /* Spacing Variables */
   /* Base spacing unit */
   --space-unit: 2rem;
@@ -11881,9 +11888,10 @@ body {
   --space-xl: calc(2 * var(--space-unit));
   --space-xxl: calc(5 * var(--space-unit));
   --max-p-ch: 52ch;
+  --max-section-width: 1300px;
   /* Compound spacing variables */
   --container-padding: var(--space-sm);
-  --section-spacing: var(--space-xl) 0;
+  --section-spacing: var(--space-xl) var(--space-sm);
   --grid-gap: var(--space-md);
 }
 
@@ -11905,7 +11913,7 @@ body {
   border: 2px solid var(--secondary-color-2);
   border-radius: 10px;
   color: var(--secondary-color-2);
-  background-color: var(--white-color);
+  background-color: transparent;
 }
 
 .fa-store {
@@ -11924,6 +11932,29 @@ body {
   color: var(--secondary-color-2);
   font-size: 18px;
   padding: 0 1rem;
+}
+
+.benefit-card {
+  display: flex;
+  flex-flow: row;
+  padding: var(--space-md);
+  border: none;
+  border-radius: 10px;
+  background-color: var(--white-color);
+  justify-content: center;
+  align-items: center;
+}
+.benefit-card .benefit-card__text {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.benefit-card .benefit-card__text h2, .benefit-card .benefit-card__text .h2 {
+  font: var(--big-bold-font);
+  color: var(--secondary-color-2);
+}
+.benefit-card .benefit-card__text p {
+  font: var(--main-font);
+  color: var(--secondary-color-2);
 }
 
 .navbar {
@@ -11983,15 +12014,28 @@ body {
   color: var(--secondary-color-2);
 }
 
+main .benefits-section .benefits-section__benefits-cards {
+  display: grid;
+  grid-template-columns: minmax(250px, 300px);
+  gap: 1rem;
+  justify-content: center;
+  justify-items: center;
+}
+
+/* For screens 992px and larger (desktops) */
+@media (min-width: 660px) {
+  main .benefits-section .benefits-section__benefits-cards {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    justify-items: stretch;
+  }
+}
 main .hero-section {
-  padding: var(--container-padding);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column nowrap;
   position: relative;
   height: 100vh;
-  background: linear-gradient(to bottom, var(--bg-color-1), #ffffff);
 }
 main .hero-section .floating-box {
   position: absolute;
@@ -12017,17 +12061,15 @@ main .hero-section .hero-section--floating-box-3 {
 main .hero-section .hero-section__text {
   z-index: 9998;
   padding: var(--space-xl) 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
 }
 main .hero-section .hero-section__text .hero-section__title {
   font: var(--hero-font);
   color: var(--secondary-color-2);
   text-align: center;
-}
-main .hero-section .hero-section__text .hero-section__paragraph {
-  font: var(--main-font);
-  color: var(--secondary-color-2);
-  text-align: center;
-  max-width: var(--max-p-ch);
 }
 main .hero-section .hero-section__action-buttons {
   z-index: 9998;
@@ -12047,13 +12089,31 @@ main .hero-section .hero-section__illustration-img img {
   object-fit: cover;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 660px) {
   main .hero-section {
     height: 100%;
   }
   main .hero-section .hero-section__title {
     margin-top: calc(2 * var(--space-xxl));
   }
+}
+.section-title {
+  font: var(--section-title-font);
+  text-align: center;
+}
+
+.section-paragraph {
+  font: var(--main-font);
+  color: var(--secondary-color-2);
+  text-align: center;
+  max-width: var(--max-p-ch);
+}
+
+.section {
+  margin: auto;
+  padding: var(--section-spacing);
+  width: 100%;
+  max-width: var(--max-section-width);
 }
 
 /*# sourceMappingURL=main.css.map */

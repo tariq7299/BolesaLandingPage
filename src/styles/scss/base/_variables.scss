@@ -15,9 +15,11 @@
   // --h3-font:
 
   --hero-font: normal bold 50px var(--font-family-base);
+  --section-title-font: normal bold 32px var(--font-family-base);
   --bold-font: normal bold 16px var(--font-family-base);
   --main-font: normal normal 16px var(--font-family-base);
   --big-font: normal normal 19px var(--font-family-base);
+  --big-bold-font: normal bold 19px var(--font-family-base);
 
   /* Spacing Variables */
   /* Base spacing unit */
@@ -34,9 +36,10 @@
 
   // some character spacing variables
   --max-p-ch: 52ch;
+  --max-section-width: 1300px;
 
   /* Compound spacing variables */
   --container-padding: var(--space-sm);
-  --section-spacing: var(--space-xl) 0;
+  --section-spacing: var(--space-xl) var(--space-sm);
   --grid-gap: var(--space-md);
 }

@@ -1,5 +1,4 @@
 main .hero-section {
-  padding: var(--container-padding);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,25 +29,17 @@ main .hero-section {
     z-index: 9997;
   }
 
-  // background: url("./../../../assets/hero-bg-pattern.png");
-  // background-repeat: repeat;
-  background: linear-gradient(to bottom, var(--bg-color-1), #ffffff);
-
   .hero-section__text {
     z-index: 9998;
     padding: var(--space-xl) 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
     .hero-section__title {
-      // margin-top: var(--space-xxl);
       font: var(--hero-font);
       color: var(--secondary-color-2);
       text-align: center;
-    }
-
-    .hero-section__paragraph {
-      font: var(--main-font);
-      color: var(--secondary-color-2);
-      text-align: center;
-      max-width: var(--max-p-ch);
     }
   }
 
@@ -73,7 +64,7 @@ main .hero-section {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 660px) {
   main .hero-section {
     height: 100%;
   }

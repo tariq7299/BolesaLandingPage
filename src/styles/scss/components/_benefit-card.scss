@@ -1,0 +1,27 @@
+.benefit-card {
+  display: flex;
+  flex-flow: row;
+  padding: var(--space-md);
+  border: none;
+  border-radius: 10px;
+  background-color: var(--white-color);
+  //   max-width: 650px;
+
+  justify-content: center;
+  align-items: center;
+
+  .benefit-card__text {
+    display: flex;
+    flex-flow: column nowrap;
+
+    h2 {
+      font: var(--big-bold-font);
+      color: var(--secondary-color-2);
+    }
+
+    p {
+      font: var(--main-font);
+      color: var(--secondary-color-2);
+    }
+  }
+}

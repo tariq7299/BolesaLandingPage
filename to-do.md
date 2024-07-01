@@ -3,7 +3,7 @@
 **NOT so importatnt**
 
 - Make the font size of clamp to make it dynamic depeing on the screen size
--
+- use typography to set font of the section title and paragraph using h1, h2, h3, p, etc
 
 # NAV BAR
 
@@ -21,3 +21,8 @@
 **NOt importnant**
 
 - How to set the pattern as a background
+
+# Benefits section
+
+- make the p to be as font in desing
+- Make the p to be a max character

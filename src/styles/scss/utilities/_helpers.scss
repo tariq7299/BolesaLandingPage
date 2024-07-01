@@ -1,0 +1,18 @@
+.section-title {
+  font: var(--section-title-font);
+  text-align: center;
+}
+
+.section-paragraph {
+  font: var(--main-font);
+  color: var(--secondary-color-2);
+  text-align: center;
+  max-width: var(--max-p-ch);
+}
+
+.section {
+  margin: auto;
+  padding: var(--section-spacing);
+  width: 100%;
+  max-width: var(--max-section-width);
+}
