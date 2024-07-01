@@ -5,28 +5,29 @@ main .hero-section {
   align-items: center;
   flex-flow: column nowrap;
   position: relative;
+  height: 100vh;
 
   .floating-box {
     position: absolute;
   }
 
   .hero-section--floating-box-1 {
-    top: 30%;
-    left: 60%;
+    top: 20vh;
+    left: 60vw;
     width: 120px;
     z-index: 9998;
   }
   .hero-section--floating-box-2 {
-    top: 40%;
-    left: 20%;
+    top: 40vh;
+    left: 20vw;
     width: 120px;
     z-index: 9998;
   }
   .hero-section--floating-box-3 {
-    top: 110%;
-    right: 10%;
+    top: 50vh;
+    right: 0.25vw;
     width: 250px;
-    z-index: 9998;
+    z-index: 9997;
   }
 
   // background: url("./../../../assets/hero-bg-pattern.png");
@@ -34,20 +35,15 @@ main .hero-section {
   background: linear-gradient(to bottom, var(--bg-color-1), #ffffff);
 
   .hero-section__text {
-    z-index: 9999;
+    z-index: 9998;
     padding: var(--space-xl) 0;
     .hero-section__title {
-      margin-top: var(--space-xxl);
+      // margin-top: var(--space-xxl);
       font: var(--hero-font);
       color: var(--secondary-color-2);
       text-align: center;
     }
 
-    @media (min-width: 992px) {
-      .hero-section__title {
-        margin-top: calc(2 * var(--space-xxl));
-      }
-    }
     .hero-section__paragraph {
       font: var(--main-font);
       color: var(--secondary-color-2);
@@ -57,12 +53,32 @@ main .hero-section {
   }
 
   .hero-section__action-buttons {
-    z-index: 9999;
+    z-index: 9998;
     display: flex;
     flex-flow: row nowrap;
     gap: 1rem;
     * {
       flex: 1 1 0;
     }
+  }
+
+  .hero-section__illustration-img {
+    z-index: 9998;
+    img {
+      width: 100%;
+      // min-width: 430px;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  main .hero-section {
+    height: 100%;
+  }
+
+  main .hero-section .hero-section__title {
+    margin-top: calc(2 * var(--space-xxl));
   }
 }

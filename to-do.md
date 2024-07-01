@@ -18,6 +18,6 @@
 
 # Hero section
 
-- THe padding to p
-  - Make the padding top in desktop screens be bigger thatn mobile
-  -
+**NOt importnant**
+
+- How to set the pattern as a background
