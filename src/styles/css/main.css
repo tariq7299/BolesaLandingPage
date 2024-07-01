@@ -11858,7 +11858,7 @@ html {
   /* Font Variables */
   --font-family-base: "Vazirmatn", sans-serif;
   /* font-style font-we ight font-size font-family */
-  --hero-font: normal bold
+  --hero-font: normal bold 50px var(--font-family-base);
   --bold-font: normal bold 16px var(--font-family-base);
   --main-font: normal normal 16px var(--font-family-base);
   /* Spacing Variables */
@@ -11871,7 +11871,8 @@ html {
   --space-md: calc(1 * var(--space-unit));
   --space-lg: calc(1.5 * var(--space-unit));
   --space-xl: calc(2 * var(--space-unit));
-  --space-xxl: calc(3 * var(--space-unit));
+  --space-xxl: calc(10 * var(--space-unit));
+  --max-p-ch: 60ch;
   /* Compound spacing variables */
   --container-padding: var(--space-md);
   --section-spacing: var(--space-xl) 0;
@@ -11882,6 +11883,7 @@ html {
   padding: 1rem 1.5rem !important;
   font: var(--bold-font);
   text-align: center;
+  min-width: 180px;
 }
 
 .button--priamry-color-filled {
@@ -11913,12 +11915,12 @@ html {
 .fa-space-awesome {
   color: var(--secondary-color-2);
   font-size: 18px;
-  padding: 0 0.5rem;
+  padding: 0 1rem;
 }
 
 .navbar {
   width: 90vw;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: auto;
 }
 .navbar .navbar-brand img {
@@ -11959,9 +11961,32 @@ html {
   /* Add transition properties to control the animation */
 }
 
-main h1, main .h1 {
-  color: var(--primary-color);
-  font-size: 3.1em;
+main .hero-section {
+  padding: var(--container-padding);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+main .hero-section .hero-section__title {
+  margin-top: var(--space-xxl);
+  font: var(--hero-font);
+  color: var(--secondary-color-2);
+  text-align: center;
+}
+main .hero-section .hero-section__paragraph {
+  font: var(--main-font);
+  color: var(--secondary-color-2);
+  text-align: center;
+  max-width: var(--max-p-ch);
+}
+main .hero-section .hero-section__action-buttons {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1rem;
+}
+main .hero-section .hero-section__action-buttons * {
+  flex: 1 1 0;
 }
 
 /*# sourceMappingURL=main.css.map */

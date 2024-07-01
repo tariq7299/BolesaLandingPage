@@ -1,6 +1,30 @@
-main {
-  h1 {
-    color: var(--primary-color);
-    font-size: 3.1em;
+main .hero-section {
+  padding: var(--container-padding);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+
+  .hero-section__title {
+    margin-top: var(--space-xxl);
+    font: var(--hero-font);
+    color: var(--secondary-color-2);
+    text-align: center;
+  }
+
+  .hero-section__paragraph {
+    font: var(--main-font);
+    color: var(--secondary-color-2);
+    text-align: center;
+    max-width: var(--max-p-ch);
+  }
+
+  .hero-section__action-buttons {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1rem;
+    * {
+      flex: 1 1 0;
+    }
   }
 }

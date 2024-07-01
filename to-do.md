@@ -1,7 +1,9 @@
 # GLOBAL
 
-- Make the whole page become ritght to left
-- Add a nav bar from bootstrap
+**NOT so importatnt**
+
+- Make the font size of clamp to make it dynamic depeing on the screen size
+-
 
 # NAV BAR
 
@@ -14,10 +16,6 @@
 
 # Hero section
 
-- Hero title
-  - Make the font as desing
-  - Make it in the middle inline
-  - make the hero section under the nav bar and not behind
-  - make the paragrah like desing font
-  - make it text-right
-  - add
+- THe padding to p
+  - Make the padding top in desktop screens be bigger thatn mobile
+  -

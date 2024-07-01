@@ -5,20 +5,19 @@
   --secondary-color-2: #3d2f21;
   --white-color: #ffff;
 
-/* Font Variables */
+  /* Font Variables */
   --font-family-base: "Vazirmatn", sans-serif;
 
   /* font-style font-we ight font-size font-family */
   // --h1-font:
   // --h2-font:
   // --h3-font:
-  
-  --hero-font: normal bold 
+
+  --hero-font: normal bold 50px var(--font-family-base);
   --bold-font: normal bold 16px var(--font-family-base);
   --main-font: normal normal 16px var(--font-family-base);
 
-
-/* Spacing Variables */
+  /* Spacing Variables */
   /* Base spacing unit */
   --space-unit: 1rem;
 
@@ -29,8 +28,10 @@
   --space-md: calc(1 * var(--space-unit));
   --space-lg: calc(1.5 * var(--space-unit));
   --space-xl: calc(2 * var(--space-unit));
-  --space-xxl: calc(3 * var(--space-unit));
+  --space-xxl: calc(10 * var(--space-unit));
 
+  // some character spacing variables
+  --max-p-ch: 60ch;
 
   /* Compound spacing variables */
   --container-padding: var(--space-md);
