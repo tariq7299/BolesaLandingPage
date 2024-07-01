@@ -11861,6 +11861,7 @@ html {
   --hero-font: normal bold 50px var(--font-family-base);
   --bold-font: normal bold 16px var(--font-family-base);
   --main-font: normal normal 16px var(--font-family-base);
+  --big-font: normal normal 19px var(--font-family-base);
   /* Spacing Variables */
   /* Base spacing unit */
   --space-unit: 2rem;
@@ -11931,15 +11932,31 @@ html {
   display: flex;
   gap: 5rem;
 }
+.navbar .offcanvas-header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.navbar .offcanvas-header .btn-close {
+  margin: 0;
+}
 
 /* For screens smaller than 768px (mobile devices) */
-/* For screens between 768px and 991px (tablets) */
+@media (max-width: 992px) {
+  .nav-tab {
+    font: var(--big-font);
+  }
+}
 /* For screens 992px and larger (desktops) */
 @media (min-width: 992px) {
   .navbar-nav {
     justify-content: end;
     align-items: baseline;
     width: 100%;
+  }
+  .nav-tab {
+    font: var(--main-font);
   }
 }
 .navbar-toggler {
@@ -11949,16 +11966,6 @@ html {
 .action-tab {
   font: var(--bold-font);
   color: var(--secondary-color-2);
-}
-
-.nav-tab {
-  font: var(--main-font);
-}
-
-/* Target the offcanvas collapse elements */
-.offcanvas.collapsing,
-.offcanvas.show {
-  /* Add transition properties to control the animation */
 }
 
 main .hero-section {

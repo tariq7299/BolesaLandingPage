@@ -12,14 +12,23 @@
     display: flex;
     gap: 5rem;
   }
+
+  .offcanvas-header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    .btn-close {
+      margin: 0;
+    }
+  }
 }
 
 /* For screens smaller than 768px (mobile devices) */
-@media (max-width: 767px) {
-}
-
-/* For screens between 768px and 991px (tablets) */
-@media (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 992px) {
+  .nav-tab {
+    font: var(--big-font);
+  }
 }
 
 /* For screens 992px and larger (desktops) */
@@ -28,6 +37,9 @@
     justify-content: end;
     align-items: baseline;
     width: 100%;
+  }
+  .nav-tab {
+    font: var(--main-font);
   }
 }
 
@@ -38,18 +50,4 @@
 .action-tab {
   font: var(--bold-font);
   color: var(--secondary-color-2);
-}
-
-.nav-tab {
-  font: var(--main-font);
-}
-
-.expanded-navbar-body {
-}
-
-/* Target the offcanvas collapse elements */
-.offcanvas.collapsing,
-.offcanvas.show {
-  /* Add transition properties to control the animation */
-  //   transition: all 2.3s ease-in-out;
 }
