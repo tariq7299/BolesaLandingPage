@@ -1,0 +1,21 @@
+.button {
+  padding: 1rem 1.5rem !important;
+  font: var(--bold-font);
+  text-align: center;
+  //   min-width: 175px;
+  //   min-height: 45px;
+}
+
+.button--priamry-color-filled {
+  border: none;
+  border-radius: 10px;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+}
+
+.button--secondary-color-2-opac {
+  border: 2px solid var(--secondary-color-2);
+  border-radius: 10px;
+  color: var(--secondary-color-2);
+  background-color: var(--white-color);
+}

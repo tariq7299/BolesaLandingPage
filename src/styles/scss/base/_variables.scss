@@ -1,23 +1,39 @@
 /* Color Variables */
 :root {
-  --primary-color: #007bff;
+  --primary-color: #d89255;
   --secondary-color: #6c757d;
-  --background-color: #f8f9fa;
-  --text-color: #333;
-  --border-color: #ddd;
-}
+  --secondary-color-2: #3d2f21;
+  --white-color: #ffff;
 
 /* Font Variables */
-:root {
-  --font-family-base: "Arial, sans-serif";
-  --font-size-base: 16px;
-  --font-size-large: 1.5em;
-  --font-size-small: 0.875em;
-}
+  --font-family-base: "Vazirmatn", sans-serif;
+
+  /* font-style font-we ight font-size font-family */
+  // --h1-font:
+  // --h2-font:
+  // --h3-font:
+  
+  --hero-font: normal bold 
+  --bold-font: normal bold 16px var(--font-family-base);
+  --main-font: normal normal 16px var(--font-family-base);
+
 
 /* Spacing Variables */
-:root {
-  --spacing-small: 8px;
-  --spacing-medium: 16px;
-  --spacing-large: 24px;
+  /* Base spacing unit */
+  --space-unit: 1rem;
+
+  /* Spacing scale */
+  --space-xxs: calc(0.25 * var(--space-unit));
+  --space-xs: calc(0.5 * var(--space-unit));
+  --space-sm: calc(0.75 * var(--space-unit));
+  --space-md: calc(1 * var(--space-unit));
+  --space-lg: calc(1.5 * var(--space-unit));
+  --space-xl: calc(2 * var(--space-unit));
+  --space-xxl: calc(3 * var(--space-unit));
+
+
+  /* Compound spacing variables */
+  --container-padding: var(--space-md);
+  --section-spacing: var(--space-xl) 0;
+  --grid-gap: var(--space-md);
 }

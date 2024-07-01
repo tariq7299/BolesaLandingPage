@@ -4,6 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
     <!-- This my own compiled sass code also bootstrap compiled sass code as i have @imported bootstrap sass files into main.scss then copiled it to main.css -->
     <!-- I am not linking bootstrap copmpiled sass files from bootstrap/dist/css/node_modules and instead I have @imported the sass files into main.scss (then compiled them to main.css) so i can customize bootstrap default values first  -->
     <link rel="stylesheet" href="./styles/css/main.css" />
@@ -19,102 +30,86 @@
     <title>Bolesa</title>
   </head>
   <body>
-    <header></header>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-white mb-3 fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#home">
+            <img alt="Bolesa logo" src="./assets/nav-brand-logo.svg"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end expanded-navbar-body"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">LOGO</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav">
+                <li class="nav-item nav-tab">
+                  <a class="nav-link" href="#action1">الرئيسية</a>
+                </li>
+                <li class="nav-item nav-tab">
+                  <a class="nav-link" href="#action2">القطاعات</a>
+                </li>
+                <li class="nav-item nav-tab">
+                  <a class="nav-link" href="#action2">الحلول</a>
+                </li>
+                <li class="nav-item nav-tab">
+                  <a class="nav-link" href="#action2">الأسعار</a>
+                </li>
+                <li class="nav-item action-tab">
+                  <a class="nav-link" href="#action2"
+                    ><i class="fa-solid fa-door-closed"></i> تسجيل الدخول</a
+                  >
+                </li>
+                <li class="nav-item action-tab">
+                  <button
+                    type="button"
+                    class="button button--priamry-color-filled nav-link"
+                    href="#action2"
+                  >
+                    <i class="fa-solid fa-store"></i> أنشئ متجرك الآن
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
 
     <main>
-      <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseOne"
-              aria-expanded="true"
-              aria-controls="collapseOne"
-            >
-              Accordion Item #1
-            </button>
-          </h2>
-          <div
-            id="collapseOne"
-            class="accordion-collapse collapse show"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body">
-              <strong>This is the first item's accordion body.</strong> It is
-              shown by default, until the collapse plugin adds the appropriate
-              classes that we use to style each element. These classes control
-              the overall appearance, as well as the showing and hiding via CSS
-              transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseTwo"
-              aria-expanded="false"
-              aria-controls="collapseTwo"
-            >
-              Accordion Item #2
-            </button>
-          </h2>
-          <div
-            id="collapseTwo"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is
-              hidden by default, until the collapse plugin adds the appropriate
-              classes that we use to style each element. These classes control
-              the overall appearance, as well as the showing and hiding via CSS
-              transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseThree"
-              aria-expanded="false"
-              aria-controls="collapseThree"
-            >
-              Accordion Item #3
-            </button>
-          </h2>
-          <div
-            id="collapseThree"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is
-              hidden by default, until the collapse plugin adds the appropriate
-              classes that we use to style each element. These classes control
-              the overall appearance, as well as the showing and hiding via CSS
-              transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
-      </div>
-      <h1 class="display-1">HEllo MOM !</h1>
+      <section class="hero-section">
+        <h1 class="hero-section__title">بوليصة .. تجارة ذكيَّة وسهلة</h1>
+        <p class="hero-section__paragraph">
+          أنشئ متجرك الإلكتروني في دقائق، واربط منتجاتك بمجموعة متكاملة من
+          الحلول الرقميَّة الذكيَّة للمدفوعات، والشحن، وإدارة المخزون، والتسويق،
+          بكل سهولة؛ لأن نجاحك لا يحتاج إلى تعقيد.
+        </p>
+        <button type="button" class="button button--priamry-color-filled">
+          <i class="fa-solid fa-store"></i> أنشئ متجرك الآن
+        </button>
+        <button class="button button--secondary-color-2-opac" type="button">
+          <i class="fa-brands fa-space-awesome"></i> تجربة المنصة
+        </button>
+      </section>
     </main>
   </body>
 </html>
