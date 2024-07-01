@@ -7,6 +7,8 @@
 
 # NAV BAR
 
+- Add logo to of cnavas
+
 **NOt importnant**
 
 - Add hover effect to nav links

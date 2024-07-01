@@ -5,18 +5,26 @@ main .hero-section {
   align-items: center;
   flex-flow: column nowrap;
 
-  .hero-section__title {
-    margin-top: var(--space-xxl);
-    font: var(--hero-font);
-    color: var(--secondary-color-2);
-    text-align: center;
-  }
+  .hero-section__text {
+    padding: var(--space-xl) 0;
+    .hero-section__title {
+      margin-top: var(--space-xxl);
+      font: var(--hero-font);
+      color: var(--secondary-color-2);
+      text-align: center;
+    }
 
-  .hero-section__paragraph {
-    font: var(--main-font);
-    color: var(--secondary-color-2);
-    text-align: center;
-    max-width: var(--max-p-ch);
+    @media (min-width: 992px) {
+      .hero-section__title {
+        margin-top: calc(2 * var(--space-xxl));
+      }
+    }
+    .hero-section__paragraph {
+      font: var(--main-font);
+      color: var(--secondary-color-2);
+      text-align: center;
+      max-width: var(--max-p-ch);
+    }
   }
 
   .hero-section__action-buttons {

@@ -19,7 +19,7 @@
 
   /* Spacing Variables */
   /* Base spacing unit */
-  --space-unit: 1rem;
+  --space-unit: 2rem;
 
   /* Spacing scale */
   --space-xxs: calc(0.25 * var(--space-unit));
@@ -28,13 +28,13 @@
   --space-md: calc(1 * var(--space-unit));
   --space-lg: calc(1.5 * var(--space-unit));
   --space-xl: calc(2 * var(--space-unit));
-  --space-xxl: calc(10 * var(--space-unit));
+  --space-xxl: calc(5 * var(--space-unit));
 
   // some character spacing variables
-  --max-p-ch: 60ch;
+  --max-p-ch: 52ch;
 
   /* Compound spacing variables */
-  --container-padding: var(--space-md);
+  --container-padding: var(--space-sm);
   --section-spacing: var(--space-xl) 0;
   --grid-gap: var(--space-md);
 }

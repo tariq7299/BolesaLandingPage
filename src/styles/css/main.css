@@ -11863,7 +11863,7 @@ html {
   --main-font: normal normal 16px var(--font-family-base);
   /* Spacing Variables */
   /* Base spacing unit */
-  --space-unit: 1rem;
+  --space-unit: 2rem;
   /* Spacing scale */
   --space-xxs: calc(0.25 * var(--space-unit));
   --space-xs: calc(0.5 * var(--space-unit));
@@ -11871,10 +11871,10 @@ html {
   --space-md: calc(1 * var(--space-unit));
   --space-lg: calc(1.5 * var(--space-unit));
   --space-xl: calc(2 * var(--space-unit));
-  --space-xxl: calc(10 * var(--space-unit));
-  --max-p-ch: 60ch;
+  --space-xxl: calc(5 * var(--space-unit));
+  --max-p-ch: 52ch;
   /* Compound spacing variables */
-  --container-padding: var(--space-md);
+  --container-padding: var(--space-sm);
   --section-spacing: var(--space-xl) 0;
   --grid-gap: var(--space-md);
 }
@@ -11968,13 +11968,21 @@ main .hero-section {
   align-items: center;
   flex-flow: column nowrap;
 }
-main .hero-section .hero-section__title {
+main .hero-section .hero-section__text {
+  padding: var(--space-xl) 0;
+}
+main .hero-section .hero-section__text .hero-section__title {
   margin-top: var(--space-xxl);
   font: var(--hero-font);
   color: var(--secondary-color-2);
   text-align: center;
 }
-main .hero-section .hero-section__paragraph {
+@media (min-width: 992px) {
+  main .hero-section .hero-section__text .hero-section__title {
+    margin-top: calc(2 * var(--space-xxl));
+  }
+}
+main .hero-section .hero-section__text .hero-section__paragraph {
   font: var(--main-font);
   color: var(--secondary-color-2);
   text-align: center;
