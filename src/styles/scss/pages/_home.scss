@@ -4,6 +4,7 @@ main .hero-section {
   justify-content: center;
   align-items: center;
   flex-flow: column nowrap;
+  background: linear-gradient(to bottom, var(--bg-color-1), #ffffff);
 
   .hero-section__text {
     padding: var(--space-xl) 0;
