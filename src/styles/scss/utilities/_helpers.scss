@@ -1,18 +1,38 @@
 .section-title {
   font: var(--section-title-font);
+}
+
+.section-title--right {
+  text-align: right;
+}
+
+.section-title--center {
   text-align: center;
 }
 
-.section-paragraph {
+.section-description {
   font: var(--main-font);
   color: var(--secondary-color-2);
-  text-align: center;
   max-width: var(--max-p-ch);
 }
 
-.section__container {
+.section-description__center {
+  text-align: center;
+}
+
+.section-description__right {
+  text-align: right;
+}
+
+.section-container {
   margin: auto;
-  padding: var(--section-spacing);
   width: 100%;
   max-width: var(--max-section-width);
+}
+
+.section-container--card {
+  padding: var(--container-padding);
+  background-color: var(--bg-color-2);
+  border: none;
+  border-radius: 20px;
 }

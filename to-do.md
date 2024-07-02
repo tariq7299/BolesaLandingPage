@@ -11,6 +11,10 @@
 
 - Make the font size of clamp to make it dynamic depeing on the screen size
 - use typography to set font of the section title and paragraph using h1, h2, h3, p, etc
+- CHnage the location of the copmiled sass to css folder
+  and link it to html page
+- Change the gap: 1rem; to var(--grid-gap)
+- Change every spacing and px to a spacing variable
 
 # NAV BAR
 
@@ -28,8 +32,8 @@
 **NOt importnant**
 
 - How to set the pattern as a background
+- Set
 
 # Benefits section
 
-- make the p to be as font in desing
-- Make the p to be a max character
+- Crea

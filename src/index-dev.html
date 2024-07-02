@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- This my JS of bootstrap that is necessary for bootstrap to work -->
+    <script src="./js/bootstrap.js"></script>
+    <!-- Iam not the bootstrap/js/... using the file in node_modules folder because in production env you don't want to use any files or code inside you node_modules so instead i have copied the file into my own JS folder-->
+    <!-- <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script> -->
+
+    <!-- This my own compiled sass code also bootstrap compiled sass code as i have @imported bootstrap sass files into main.scss then copiled it to main.css -->
+    <!-- I am not linking bootstrap copmpiled sass files from bootstrap/dist/css/node_modules and instead I have @imported the sass files into main.scss (then compiled them to main.css) so i can customize bootstrap default values first  -->
+    <link rel="stylesheet" href="./styles/scss/main.css" />
+    <!-- This my own JS -->
+    <script src="./js/main.js"></script>
+
+    <title>Bolesa</title>
+  </head>
+  <body>
+    <main>
+      <section class="stats-section">
+        <div class="section-container stats-section__section-container">
+          <div class="stats-section__header">
+            <h2 class="section-title section-title--right">
+              تفّرد بتجربة تسوّق تناسب
+            </h2>
+            <div class="tag tag--priamry-color">
+              <h3 class="tag__text--white-font tag__text--text-shadow">
+                نشاطك التجاري
+              </h3>
+              <div class="tag__dot tag__dot--top-right"></div>
+              <div class="tag__dot tag__dot--bottom-right"></div>
+              <div class="tag__dot tag__dot--top-left"></div>
+              <div class="tag__dot tag__dot--bottom-left"></div>
+            </div>
+          </div>
+          <p class="section-description section-description__right">
+            وفّر لعملائك تجربة تسوق مميزة تناسب نشاطك التجاري، سواء كان مطعمًا
+            أو مقهى أو متجرًا إلكترونيًا. وذلك من خلال مزايا عديدة
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

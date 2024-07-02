@@ -1,7 +1,7 @@
 main .hero-section {
   background: radial-gradient(circle, var(--bg-color-1) 30%, #ffffff 70%);
-
-  .section__container {
+  padding: var(--section-spacing);
+  .section-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,7 +39,7 @@ main .hero-section {
       justify-content: center;
       align-items: center;
       flex-flow: column nowrap;
-      .hero-section__title {
+      .hero-section-title {
         font: var(--hero-font);
         color: var(--secondary-color-2);
         text-align: center;
@@ -60,7 +60,6 @@ main .hero-section {
       z-index: 9998;
       img {
         width: 100%;
-        // min-width: 430px;
         height: auto;
         object-fit: cover;
       }
@@ -73,7 +72,7 @@ main .hero-section {
     height: 100%;
   }
 
-  main .hero-section .hero-section__title {
+  main .hero-section .hero-section-title {
     margin-top: calc(2 * var(--space-xxl));
   }
 }

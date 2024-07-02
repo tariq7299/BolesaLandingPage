@@ -22,7 +22,7 @@
 
     <!-- This my own compiled sass code also bootstrap compiled sass code as i have @imported bootstrap sass files into main.scss then copiled it to main.css -->
     <!-- I am not linking bootstrap copmpiled sass files from bootstrap/dist/css/node_modules and instead I have @imported the sass files into main.scss (then compiled them to main.css) so i can customize bootstrap default values first  -->
-    <link rel="stylesheet" href="./styles/css/main.css" />
+    <link rel="stylesheet" href="./styles/scss/main.css" />
     <!-- This my own JS -->
     <script src="./js/main.js"></script>
 
@@ -98,7 +98,7 @@
 
     <main>
       <section class="hero-section">
-        <div class="section__container">
+        <div class="section-container">
           <img
             src="./assets/box-1.png"
             alt="box"
@@ -115,8 +115,8 @@
             class="hero-section--floating-box-3 floating-box"
           />
           <article class="hero-section__text">
-            <h1 class="hero-section__title">بوليصة .. تجارة ذكيَّة وسهلة</h1>
-            <p class="section-paragraph">
+            <h1 class="hero-section-title">بوليصة .. تجارة ذكيَّة وسهلة</h1>
+            <p class="section-description section-description__center">
               أنشئ متجرك الإلكتروني في دقائق، واربط منتجاتك بمجموعة متكاملة من
               الحلول الرقميَّة الذكيَّة للمدفوعات، والشحن، وإدارة المخزون،
               والتسويق، بكل سهولة؛ لأن نجاحك لا يحتاج إلى تعقيد.
@@ -137,14 +137,16 @@
       </section>
 
       <section class="benefits-section">
-        <div class="section__container">
-          <div class="benefits-section__text">
-            <h1 class="section-title">بوليصة تفهم كافة احتياجاتك</h1>
-            <p class="section-paragraph benefits-section-paragraph">
+        <div class="section-container section-container--card">
+          <div class="benefits-section__header">
+            <h1 class="section-title section-title--center">
+              بوليصة تفهم كافة احتياجاتك
+            </h1>
+            <p class="section-description section-description__center">
               مهما كان مجال تجارتك يمكنك الاعتماد على سلة ودعمها لمختلف القطاعات
             </p>
           </div>
-          <div class="benefits-section__benefits-cards">
+          <div class="benefits-section__cards">
             <div class="benefit-card">
               <div class="benefit-card__icon">
                 <img src="./assets/cup-svg.svg" alt="cup image" />
@@ -203,6 +205,28 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <section class="stats-section">
+        <div class="section-container stats-section__section-container">
+          <div class="stats-section__header">
+            <h2 class="section-title section-title--right">
+              تفّرد بتجربة تسوّق تناسب
+            </h2>
+            <div class="tag tag--priamry-color">
+              <h3 class="tag__text--white-font tag__text--text-shadow">
+                نشاطك التجاري
+              </h3>
+              <div class="tag__dot tag__dot--top-right"></div>
+              <div class="tag__dot tag__dot--bottom-right"></div>
+              <div class="tag__dot tag__dot--top-left"></div>
+              <div class="tag__dot tag__dot--bottom-left"></div>
+            </div>
+          </div>
+          <p class="section-description section-description__right">
+            وفّر لعملائك تجربة تسوق مميزة تناسب نشاطك التجاري، سواء كان مطعمًا
+            أو مقهى أو متجرًا إلكترونيًا. وذلك من خلال مزايا عديدة
+          </p>
         </div>
       </section>
     </main>
