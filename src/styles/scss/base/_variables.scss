@@ -42,7 +42,8 @@
   --max-section-width: 1300px;
 
   /* Compound spacing variables */
-  --container-padding: var(--space-lg) var(--space-lg);
+  --container-x-padding: var(--space-lg);
+  --container-y-padding: var(--space-lg);
   --section-spacing: var(--space-xl) var(--space-sm);
   --grid-gap: var(--space-xs);
   --flex-gap: var(--space-xs);

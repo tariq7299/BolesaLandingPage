@@ -4,10 +4,9 @@
   padding: var(--space-md);
   border: none;
   border-radius: 15px;
-  background-color: var(--white-color);
   gap: var(--space-md);
   width: 100%;
-  max-width: 450px;
+  max-width: 500px;
 
   justify-content: center;
   align-items: center;
@@ -30,5 +29,18 @@
 
   .benefit-card__icon {
     flex: 0 1 0;
+  }
+}
+
+.benefit-card--white-bg {
+  background-color: var(--white-color);
+}
+.benefit-card--transparent-bg {
+  background-color: transparent;
+}
+
+.benefit-card--bg-color-2-hover {
+  &:hover {
+    background-color: var(--bg-color-2);
   }
 }

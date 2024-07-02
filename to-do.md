@@ -7,6 +7,8 @@
 
 # GLOBAL
 
+- Add the links to nav tabs
+
 **NOT so importatnt**
 
 - Make the font size of clamp to make it dynamic depeing on the screen size
@@ -15,7 +17,7 @@
   and link it to html page
 - Change the gap: 1rem; to var(--grid-gap) remove **--grid-gap and flex-gap completley**
 - Change every spacing and px to a spacing variable
--
+- What to do with two images ?? like in every image there are two versions ?
 
 # NAV BAR
 
@@ -44,3 +46,11 @@
 **NOt so important**
 
 - Refactor the Percentage symbol and its position jusing flex instead of absolute/relative
+
+# Integration section
+
+**Not so importatin**
+
+- Make the grey dots in every befit-card
+- Also make the illustration line
+-

@@ -1,0 +1,66 @@
+.bolesa-integration-section {
+  padding: var(--section-spacing);
+
+  .bolesa-integration-section__container {
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: var(--space-lg);
+
+    .bolesa-integration-section__header {
+      padding-bottom: var(--space-lg);
+    }
+    .bolesa-integration-section__benefits {
+      padding: var(--space-xs);
+      border-radius: 15px;
+      max-width: 500px;
+      background-color: var(--white-color);
+      display: grid;
+      grid-template-columns: minmax(250px, 500px);
+      justify-content: stretch;
+    }
+  }
+
+  .bolesa-integration-section__text {
+    // padding: var(--space-md) var(--space-md);
+    // flex: 1 1 0;
+    flex: 50%;
+
+    // flex: 1 1 100px;
+  }
+
+  .bolesa-integration-section__integration-phone-img {
+    // flex: 1 1 100px;
+    flex: 50%;
+
+    // flex: 1 1 100px;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+/* For screens 992px and larger (desktops) */
+@media (min-width: 660px) {
+  .bolesa-integration-section {
+    .bolesa-integration-section__container {
+      .bolesa-integration-section__text {
+        padding: var(--container-y-padding) var(--container-x-padding);
+      }
+      flex-wrap: nowrap;
+      gap: var(--space-md);
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .bolesa-integration-section {
+    .bolesa-integration-section__container {
+      flex-wrap: wrap;
+      gap: 0;
+    }
+  }
+}

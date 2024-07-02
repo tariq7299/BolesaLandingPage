@@ -7,7 +7,7 @@ main .hero-section {
     align-items: center;
     flex-flow: column nowrap;
     position: relative;
-    height: 100vh;
+    min-height: 100dvh;
 
     .floating-box {
       position: absolute;
@@ -68,10 +68,6 @@ main .hero-section {
 }
 
 @media (min-width: 660px) {
-  main .hero-section {
-    height: 100%;
-  }
-
   main .hero-section .hero-section-title {
     margin-top: calc(2 * var(--space-xxl));
   }

@@ -6,7 +6,7 @@ main .benefits-section {
       display: flex;
       flex-flow: column nowrap;
       align-items: center;
-      padding: var(--space-lg) 0;
+      padding-bottom: var(--space-lg);
     }
 
     .benefits-section__cards {
