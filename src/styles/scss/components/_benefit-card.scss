@@ -1,9 +1,9 @@
 .benefit-card {
   display: flex;
-  flex-flow: row;
+  flex-flow: row nowrap;
   padding: var(--space-md);
   border: none;
-  border-radius: 10px;
+  border-radius: 15px;
   background-color: var(--white-color);
   gap: var(--space-md);
   //   max-width: 650px;

@@ -11994,6 +11994,7 @@ body {
   --main-font: normal normal 16px var(--font-family-base);
   --big-font: normal normal 19px var(--font-family-base);
   --big-bold-font: normal bold 19px var(--font-family-base);
+  --big-bold-font-x2: normal bold 24px var(--font-family-base);
   /* Spacing Variables */
   /* Base spacing unit */
   --space-unit: 2rem;
@@ -12055,10 +12056,10 @@ body {
 
 .benefit-card {
   display: flex;
-  flex-flow: row;
+  flex-flow: row nowrap;
   padding: var(--space-md);
   border: none;
-  border-radius: 10px;
+  border-radius: 15px;
   background-color: var(--white-color);
   gap: var(--space-md);
   justify-content: center;
@@ -12076,6 +12077,48 @@ body {
 .benefit-card .benefit-card__text p {
   font: var(--main-font);
   color: var(--secondary-color-2);
+}
+
+.stats-card {
+  padding: var(--space-xs) var(--space-lg) var(--space-xs) var(--space-md);
+  display: flex;
+  flex-flow: row nowrap;
+  border: none;
+  border-radius: 15px;
+  background-color: var(--white-color);
+  gap: var(--space-md);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  justify-content: start;
+  align-items: center;
+  min-height: 130px;
+}
+.stats-card .stats-card__description {
+  font: var(--main-font);
+  max-width: 26ch;
+  flex-grow: 1;
+}
+.stats-card .stats-card__value {
+  font: var(--hero-font);
+  position: relative;
+}
+.stats-card .stats-card__value .stats-card__value__percentage-symbol {
+  font: var(--big-bold-font-x2);
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  transform: translate(100%, -20%);
+}
+
+.stats-card--secondary-color-2 {
+  background-color: var(--secondary-color-2);
+}
+
+.stats-card__description--white-color {
+  color: var(--white-color);
+}
+
+.stats-card__value--primary-color {
+  color: var(--primary-color);
 }
 
 .tag {
@@ -12297,7 +12340,25 @@ main .hero-section .section-container .hero-section__illustration-img img {
   gap: var(--flex-gap);
   padding: var(--space-md) 0;
 }
+.stats-section .stats-section__cards {
+  padding: var(--space-md);
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 330px;
+  overflow-x: scroll;
+  gap: var(--grid-gap);
+}
+.stats-section .stats-section__cards ::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
 
+@media (min-width: 660px) {
+  .stats-section .stats-section__cards {
+    grid-auto-columns: minmax(390px, 410px);
+  }
+}
 .section-title {
   font: var(--section-title-font);
 }

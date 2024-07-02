@@ -11,4 +11,26 @@
       padding: var(--space-md) 0;
     }
   }
+  .stats-section__cards {
+    padding: var(--space-md);
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+    ::-webkit-scrollbar {
+      display: none; /* Safari and Chrome */
+    }
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 330px;
+    overflow-x: scroll;
+    gap: var(--grid-gap);
+    // justify-content: center;
+  }
+}
+
+@media (min-width: 660px) {
+  .stats-section {
+    .stats-section__cards {
+      grid-auto-columns: minmax(390px, 410px);
+    }
+  }
 }
