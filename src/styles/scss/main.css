@@ -12062,13 +12062,15 @@ body {
   border-radius: 15px;
   background-color: var(--white-color);
   gap: var(--space-md);
+  width: 100%;
+  max-width: 450px;
   justify-content: center;
   align-items: center;
 }
 .benefit-card .benefit-card__text {
   display: flex;
   flex-flow: column nowrap;
-  flex-grow: 1;
+  flex: 1 0 0;
 }
 .benefit-card .benefit-card__text h2, .benefit-card .benefit-card__text .h2 {
   font: var(--big-bold-font);
@@ -12077,6 +12079,9 @@ body {
 .benefit-card .benefit-card__text p {
   font: var(--main-font);
   color: var(--secondary-color-2);
+}
+.benefit-card .benefit-card__icon {
+  flex: 0 1 0;
 }
 
 .stats-card {
@@ -12250,7 +12255,7 @@ main .benefits-section .section-container .benefits-section__cards {
 @media (min-width: 660px) {
   main .benefits-section .section-container .benefits-section__cards {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    justify-items: stretch;
+    justify-items: center;
   }
 }
 main .hero-section {

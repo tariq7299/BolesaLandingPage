@@ -38,3 +38,9 @@
 # Benefits section
 
 - Crea
+
+# Stats section
+
+**NOt so important**
+
+- Refactor the Percentage symbol and its position jusing flex instead of absolute/relative
