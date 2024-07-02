@@ -18,6 +18,14 @@
   }
 }
 
+.swiper-slide--nice-shadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.swiper-slide--position-relative {
+  position: relative;
+}
+
 .swiper-button-prev--secondary-color-2 {
   color: var(--secondary-color-2);
 }
