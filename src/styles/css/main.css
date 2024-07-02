@@ -11849,15 +11849,10 @@ html {
   direction: rtl;
 }
 
-html {
+html,
+body {
   margin: 0;
   padding: 0;
-  background: var(--white-color);
-}
-html body {
-  margin: auto;
-  padding: 0;
-  background: linear-gradient(to bottom, var(--bg-color-1), #ffffff);
 }
 
 /* Color Variables */
@@ -11941,12 +11936,14 @@ html body {
   border: none;
   border-radius: 10px;
   background-color: var(--white-color);
+  gap: var(--space-md);
   justify-content: center;
   align-items: center;
 }
 .benefit-card .benefit-card__text {
   display: flex;
   flex-flow: column nowrap;
+  flex-grow: 1;
 }
 .benefit-card .benefit-card__text h2, .benefit-card .benefit-card__text .h2 {
   font: var(--big-bold-font);
@@ -12014,6 +12011,12 @@ html body {
   color: var(--secondary-color-2);
 }
 
+main .benefits-section .benefits-section__text {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: var(--space-xl) 0;
+}
 main .benefits-section .benefits-section__benefits-cards {
   display: grid;
   grid-template-columns: minmax(250px, 300px);
@@ -12030,6 +12033,9 @@ main .benefits-section .benefits-section__benefits-cards {
   }
 }
 main .hero-section {
+  background: radial-gradient(circle, var(--bg-color-1) 30%, #ffffff 70%);
+}
+main .hero-section .section__container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12037,28 +12043,28 @@ main .hero-section {
   position: relative;
   height: 100vh;
 }
-main .hero-section .floating-box {
+main .hero-section .section__container .floating-box {
   position: absolute;
 }
-main .hero-section .hero-section--floating-box-1 {
+main .hero-section .section__container .hero-section--floating-box-1 {
   top: 20vh;
   left: 60vw;
   width: 120px;
   z-index: 9998;
 }
-main .hero-section .hero-section--floating-box-2 {
+main .hero-section .section__container .hero-section--floating-box-2 {
   top: 40vh;
   left: 20vw;
   width: 120px;
   z-index: 9998;
 }
-main .hero-section .hero-section--floating-box-3 {
+main .hero-section .section__container .hero-section--floating-box-3 {
   top: 50vh;
   right: 0.25vw;
   width: 250px;
   z-index: 9997;
 }
-main .hero-section .hero-section__text {
+main .hero-section .section__container .hero-section__text {
   z-index: 9998;
   padding: var(--space-xl) 0;
   display: flex;
@@ -12066,24 +12072,24 @@ main .hero-section .hero-section__text {
   align-items: center;
   flex-flow: column nowrap;
 }
-main .hero-section .hero-section__text .hero-section__title {
+main .hero-section .section__container .hero-section__text .hero-section__title {
   font: var(--hero-font);
   color: var(--secondary-color-2);
   text-align: center;
 }
-main .hero-section .hero-section__action-buttons {
+main .hero-section .section__container .hero-section__action-buttons {
   z-index: 9998;
   display: flex;
   flex-flow: row nowrap;
   gap: 1rem;
 }
-main .hero-section .hero-section__action-buttons * {
+main .hero-section .section__container .hero-section__action-buttons * {
   flex: 1 1 0;
 }
-main .hero-section .hero-section__illustration-img {
+main .hero-section .section__container .hero-section__illustration-img {
   z-index: 9998;
 }
-main .hero-section .hero-section__illustration-img img {
+main .hero-section .section__container .hero-section__illustration-img img {
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -12109,7 +12115,7 @@ main .hero-section .hero-section__illustration-img img {
   max-width: var(--max-p-ch);
 }
 
-.section {
+.section__container {
   margin: auto;
   padding: var(--section-spacing);
   width: 100%;

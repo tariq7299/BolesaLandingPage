@@ -1,3 +1,10 @@
+# TOMMOTR)OOOR
+
+- make a co ntainr inside the section and give a max-width
+- MAKe the background redial gradient and give it to the section and not the body
+- Remove the max-width form the section
+- fremov the backgroudn color from the bdoy
+
 # GLOBAL
 
 **NOT so importatnt**

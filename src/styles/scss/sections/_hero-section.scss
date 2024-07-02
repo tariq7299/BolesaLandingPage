@@ -1,65 +1,69 @@
 main .hero-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column nowrap;
-  position: relative;
-  height: 100vh;
+  background: radial-gradient(circle, var(--bg-color-1) 30%, #ffffff 70%);
 
-  .floating-box {
-    position: absolute;
-  }
-
-  .hero-section--floating-box-1 {
-    top: 20vh;
-    left: 60vw;
-    width: 120px;
-    z-index: 9998;
-  }
-  .hero-section--floating-box-2 {
-    top: 40vh;
-    left: 20vw;
-    width: 120px;
-    z-index: 9998;
-  }
-  .hero-section--floating-box-3 {
-    top: 50vh;
-    right: 0.25vw;
-    width: 250px;
-    z-index: 9997;
-  }
-
-  .hero-section__text {
-    z-index: 9998;
-    padding: var(--space-xl) 0;
+  .section__container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column nowrap;
-    .hero-section__title {
-      font: var(--hero-font);
-      color: var(--secondary-color-2);
-      text-align: center;
-    }
-  }
+    position: relative;
+    height: 100vh;
 
-  .hero-section__action-buttons {
-    z-index: 9998;
-    display: flex;
-    flex-flow: row nowrap;
-    gap: 1rem;
-    * {
-      flex: 1 1 0;
+    .floating-box {
+      position: absolute;
     }
-  }
 
-  .hero-section__illustration-img {
-    z-index: 9998;
-    img {
-      width: 100%;
-      // min-width: 430px;
-      height: auto;
-      object-fit: cover;
+    .hero-section--floating-box-1 {
+      top: 20vh;
+      left: 60vw;
+      width: 120px;
+      z-index: 9998;
+    }
+    .hero-section--floating-box-2 {
+      top: 40vh;
+      left: 20vw;
+      width: 120px;
+      z-index: 9998;
+    }
+    .hero-section--floating-box-3 {
+      top: 50vh;
+      right: 0.25vw;
+      width: 250px;
+      z-index: 9997;
+    }
+
+    .hero-section__text {
+      z-index: 9998;
+      padding: var(--space-xl) 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column nowrap;
+      .hero-section__title {
+        font: var(--hero-font);
+        color: var(--secondary-color-2);
+        text-align: center;
+      }
+    }
+
+    .hero-section__action-buttons {
+      z-index: 9998;
+      display: flex;
+      flex-flow: row nowrap;
+      gap: 1rem;
+      * {
+        flex: 1 1 0;
+      }
+    }
+
+    .hero-section__illustration-img {
+      z-index: 9998;
+      img {
+        width: 100%;
+        // min-width: 430px;
+        height: auto;
+        object-fit: cover;
+      }
     }
   }
 }
