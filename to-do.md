@@ -1,13 +1,17 @@
 # TOMMOTR)OOOR
 
-- make a co ntainr inside the section and give a max-width
-- MAKe the background redial gradient and give it to the section and not the body
-- Remove the max-width form the section
-- fremov the backgroudn color from the bdoy
+- Style the next and pervious butons
+- change the names of swiper elements and the swiper component
+- Put the slider into a section card
+- Add the header and style all of them
+- Add a action button (compoenet)
+-
 
 # GLOBAL
 
+- Give correct font color to all text titels and descripttion
 - Add the links to nav tabs
+- Craete some interactions/and Reactive things/Animation
 
 **NOT so importatnt**
 
@@ -21,7 +25,7 @@
 
 # NAV BAR
 
-- Add logo to of cnavas
+- Change the nav bar like PO want it to be
 
 **NOt importnant**
 
@@ -46,6 +50,7 @@
 **NOt so important**
 
 - Refactor the Percentage symbol and its position jusing flex instead of absolute/relative
+- Set a max ch the section description to md
 
 # Integration section
 
@@ -54,3 +59,8 @@
 - Make the grey dots in every befit-card
 - Also make the illustration line
 -
+
+# Demos slider section
+
+- Style the next and pervious butons
+- change the names of swiper

@@ -15,6 +15,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <!-- This my JS of bootstrap that is necessary for bootstrap to work -->
     <script src="./js/bootstrap.js"></script>
     <!-- Iam not the bootstrap/js/... using the file in node_modules folder because in production env you don't want to use any files or code inside you node_modules so instead i have copied the file into my own JS folder-->
@@ -30,42 +37,47 @@
   </head>
   <body>
     <main>
-      <section class="tabby-payment-section">
-        <div class="section-container tabby-payment-section__section-container">
-          <div class="tabby-payment-section__text">
-            <div class="tabby-payment-section__header">
-              <h2 class="section-title font-secondary-color-2">
-                مدفوعات آمنة، لتجارة مستدامة، وثقة متينة
-              </h2>
-              <p
-                class="section-description tabby-payment-section__description font-secondary-color-2"
-              >
-                استفد من نظام بوليصة المتكامل للمدفوعات الإلكترونية لإدارة
-                مدفوعات متجرك وعملائك
-              </p>
-            </div>
-            <div class="tabby-payment-section__benefits">
-              <p class="font-secondary-color-4">
-                <i class="fa-solid fa-check-to-slot"></i>
-                تفعيل سريع لنظام المدفوعات خلال يوم واحد
-              </p>
-              <p class="font-secondary-color-4">
-                <i class="fa-solid fa-check-to-slot"></i>تحصيل المدفوعات بعد 24
-                ساعة
-              </p>
-              <p class="font-secondary-color-4">
-                <i class="fa-solid fa-check-to-slot"></i>
-                حماية عالية وأمان لكافة عملياتك
-              </p>
-            </div>
+      <section class="demos-slider-section">
+        <div
+          class="section-container section-container--card demos-slider-section__container"
+        >
+          <div class="demos-slider-section__text">
+            <h2 class="section-title text--secondary-color-2 text-center">
+              خيارات متنوعة لعرض منتجاتك
+            </h2>
+            <p class="section-description text--secondary-color-2 text--center">
+              اختر الثيم الذي يناسب احتياجاتك من خلال خياراتنا المتنوعة
+            </p>
           </div>
-          <div class="tabby-payment-section__tabby-img">
-            <img class="tabby-tag" src="./assets/tabby-tag.png" alt="" />
-            <img
-              class="tabby-img"
-              src="./assets/tabby-payment.png"
-              alt="Tabby Payment Image"
-            />
+
+          <!-- Slider main container -->
+          <div class="swiper demos-slider-section__swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="./assets/store-prototype-img-1.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/store-prototype-img-1.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/store-prototype-img-1.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/store-prototype-img-1.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/store-prototype-img-1.png" alt="" />
+              </div>
+
+              <div
+                class="swiper-button-prev swiper-button-prev--secondary-color-2"
+              ></div>
+              <div
+                class="swiper-button-next swiper-button-next--secondary-color-2"
+              ></div>
+            </div>
           </div>
         </div>
       </section>

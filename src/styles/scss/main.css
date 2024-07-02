@@ -12200,6 +12200,31 @@ body {
   text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
 }
 
+.swiper {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+.swiper .swiper-wrapper .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+}
+.swiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper-button-prev--secondary-color-2 {
+  color: var(--secondary-color-2);
+}
+
+.swiper-button-next--secondary-color-2 {
+  color: var(--secondary-color-2);
+}
+
 .navbar {
   width: 90vw;
   max-width: 1300px;
@@ -12480,20 +12505,30 @@ main .hero-section .section-container .hero-section__illustration-img img {
      object-fit: cover;
 }
 
+.demos-slider-section {
+  overflow: hidden;
+  padding: var(--section-spacing);
+}
+.demos-slider-section .demos-slider-section__container {
+  min-height: 600px;
+  padding-top: var(--space-lg);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+.demos-slider-section .demos-slider-section__container .demos-slider-section__text {
+  padding: var(--space-lg);
+}
 .section-title {
   font: var(--section-title-font);
 }
 
-.font-secondary-color-2 {
+.text--secondary-color-2 {
   color: var(--secondary-color-2);
 }
 
-.section-title--right {
-  text-align: right;
-}
-
-.section-title--center {
-  text-align: center;
+.text--secondary-color-4 {
+  color: var(--secondary-color-4);
 }
 
 .section-description {
@@ -12502,11 +12537,11 @@ main .hero-section .section-container .hero-section__illustration-img img {
   max-width: var(--max-p-ch);
 }
 
-.section-description__center {
+.text--center {
   text-align: center;
 }
 
-.section-description__right {
+.text--right {
   text-align: right;
 }
 
@@ -12530,8 +12565,4 @@ main .hero-section .section-container .hero-section__illustration-img img {
 .section-container--y-padding {
   padding-top: var(--container-y-padding);
   padding-bottom: var(--container-y-padding);
-}
-
-.font-secondary-color-4 {
-  color: var(--secondary-color-4);
 }/*# sourceMappingURL=main.css.map */
