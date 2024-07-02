@@ -4,9 +4,11 @@
   --secondary-color: #6c757d;
   --secondary-color-2: #3d2f21;
   --secondary-color-3: #df8b42;
+  --secondary-color-4: #6c6660;
   --white-color: #ffff;
   --bg-color-1: #ebdfcc;
   --bg-color-2: #f9f9f9;
+  --bg-color-3: #edf5f0;
 
   /* Font Variables */
   --font-family-base: "Vazirmatn", sans-serif;
@@ -19,7 +21,9 @@
   --hero-font: normal bold 50px var(--font-family-base);
   --section-title-font: normal bold 32px var(--font-family-base);
   --bold-font: normal bold 16px var(--font-family-base);
+
   --main-font: normal normal 16px var(--font-family-base);
+  --small-light-font: normal 200 12px var(--font-family-base);
   --big-font: normal normal 19px var(--font-family-base);
   --big-bold-font: normal bold 19px var(--font-family-base);
   --big-bold-font-x2: normal bold 24px var(--font-family-base);
@@ -38,7 +42,10 @@
   --space-xxl: calc(5 * var(--space-unit));
 
   // some character spacing variables
-  --max-p-ch: 52ch;
+  --max-p-ch-sm: 26ch;
+  --max-p-ch-md: 45ch;
+  --max-p-ch-xl: 52ch;
+
   --max-section-width: 1300px;
 
   /* Compound spacing variables */

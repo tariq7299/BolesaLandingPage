@@ -11982,9 +11982,11 @@ body {
   --secondary-color: #6c757d;
   --secondary-color-2: #3d2f21;
   --secondary-color-3: #df8b42;
+  --secondary-color-4: #6c6660;
   --white-color: #ffff;
   --bg-color-1: #ebdfcc;
   --bg-color-2: #f9f9f9;
+  --bg-color-3: #edf5f0;
   /* Font Variables */
   --font-family-base: "Vazirmatn", sans-serif;
   /* font-style font-we ight font-size font-family */
@@ -11992,6 +11994,7 @@ body {
   --section-title-font: normal bold 32px var(--font-family-base);
   --bold-font: normal bold 16px var(--font-family-base);
   --main-font: normal normal 16px var(--font-family-base);
+  --small-light-font: normal 200 12px var(--font-family-base);
   --big-font: normal normal 19px var(--font-family-base);
   --big-bold-font: normal bold 19px var(--font-family-base);
   --big-bold-font-x2: normal bold 24px var(--font-family-base);
@@ -12006,7 +12009,9 @@ body {
   --space-lg: calc(2 * var(--space-unit));
   --space-xl: calc(3 * var(--space-unit));
   --space-xxl: calc(5 * var(--space-unit));
-  --max-p-ch: 52ch;
+  --max-p-ch-sm: 26ch;
+  --max-p-ch-md: 45ch;
+  --max-p-ch-xl: 52ch;
   --max-section-width: 1300px;
   /* Compound spacing variables */
   --container-x-padding: var(--space-lg);
@@ -12052,6 +12057,12 @@ body {
 .fa-space-awesome {
   color: var(--secondary-color-2);
   font-size: 18px;
+  padding: 0 1rem;
+}
+
+.fa-check-to-slot {
+  color: var(--secondary-color-2);
+  font-size: 20px;
   padding: 0 1rem;
 }
 
@@ -12111,7 +12122,7 @@ body {
 }
 .stats-card .stats-card__description {
   font: var(--main-font);
-  max-width: 26ch;
+  max-width: var(--max-p-ch-sm);
   flex-grow: 1;
 }
 .stats-card .stats-card__value {
@@ -12424,8 +12435,57 @@ main .hero-section .section-container .hero-section__illustration-img img {
     gap: 0;
   }
 }
+.tabby-payment-section {
+  padding: var(--section-spacing);
+}
+.tabby-payment-section .tabby-payment-section__section-container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: var(--space-lg);
+  align-items: center;
+  justify-content: center;
+}
+.tabby-payment-section .tabby-payment-section__section-container .tabby-payment-section__text {
+  flex: 1 1 300px;
+}
+.tabby-payment-section .tabby-payment-section__section-container .tabby-payment-section__text .tabby-payment-section__header {
+  padding-bottom: var(--space-lg);
+}
+.tabby-payment-section .tabby-payment-section__section-container .tabby-payment-section__text .tabby-payment-section__header .tabby-payment-section__description {
+  max-width: var(--max-p-ch-md);
+}
+.tabby-payment-section .tabby-payment-section__section-container .tabby-payment-section__text .tabby-payment-section__benefits p {
+  font: var(--small-light-font);
+}
+.tabby-payment-section .tabby-payment-section__section-container .tabby-payment-section__tabby-img {
+  padding: var(--space-xxl) var(--space-md) 0 var(--space-md);
+  position: relative;
+  max-width: 500px;
+  background-color: var(--bg-color-3);
+  flex: 1 1 300px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.tabby-payment-section .tabby-payment-section__section-container .tabby-payment-section__tabby-img .tabby-tag {
+  width: 25%;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+}
+.tabby-payment-section .tabby-payment-section__section-container .tabby-payment-section__tabby-img .tabby-img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .section-title {
   font: var(--section-title-font);
+}
+
+.font-secondary-color-2 {
+  color: var(--secondary-color-2);
 }
 
 .section-title--right {
@@ -12470,4 +12530,8 @@ main .hero-section .section-container .hero-section__illustration-img img {
 .section-container--y-padding {
   padding-top: var(--container-y-padding);
   padding-bottom: var(--container-y-padding);
+}
+
+.font-secondary-color-4 {
+  color: var(--secondary-color-4);
 }/*# sourceMappingURL=main.css.map */

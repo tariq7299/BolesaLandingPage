@@ -1,0 +1,50 @@
+.tabby-payment-section {
+  padding: var(--section-spacing);
+  .tabby-payment-section__section-container {
+    display: flex;
+    flex-flow: row wrap;
+    gap: var(--space-lg);
+    align-items: center;
+    justify-content: center;
+
+    .tabby-payment-section__text {
+      flex: 1 1 300px;
+      .tabby-payment-section__header {
+        .tabby-payment-section__description {
+          max-width: var(--max-p-ch-md);
+        }
+        padding-bottom: var(--space-lg);
+      }
+      .tabby-payment-section__benefits {
+        p {
+          font: var(--small-light-font);
+        }
+      }
+    }
+
+    .tabby-payment-section__tabby-img {
+      padding: var(--space-xxl) var(--space-md) 0 var(--space-md);
+      position: relative;
+      max-width: 500px;
+      background-color: var(--bg-color-3);
+      flex: 1 1 300px;
+      border-radius: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: end;
+
+      .tabby-tag {
+        width: 25%;
+        // height: 50px;
+        position: absolute;
+        top: 2%;
+        right: 2%;
+      }
+
+      .tabby-img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

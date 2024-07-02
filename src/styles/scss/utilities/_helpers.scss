@@ -2,6 +2,10 @@
   font: var(--section-title-font);
 }
 
+.font-secondary-color-2 {
+  color: var(--secondary-color-2);
+}
+
 .section-title--right {
   text-align: right;
 }
@@ -44,4 +48,8 @@
 .section-container--y-padding {
   padding-top: var(--container-y-padding);
   padding-bottom: var(--container-y-padding);
+}
+
+.font-secondary-color-4 {
+  color: var(--secondary-color-4);
 }
