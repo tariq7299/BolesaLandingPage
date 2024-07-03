@@ -12348,6 +12348,8 @@ body {
 
 .subscription-plan-card--small {
   max-height: 650px;
+  min-height: 450px;
+  min-width: 330px;
   max-width: 485px;
 }
 
