@@ -12385,15 +12385,19 @@ textarea.form-control-lg {
 }
 
 .subscription-plan-card--small {
-  height: clamp(450px, 50vh, 500px);
+  height: clamp(420px, 50vh, 500px);
   width: clamp(330px, 30vw, 350px);
   aspect-ratio: 3/4;
 }
 
 .subscription-plan-card--big {
-  height: clamp(490px, 65vh, 520px);
+  height: clamp(450px, 65vh, 500px);
   width: clamp(310px, 25vw, 330px);
   aspect-ratio: 3/4;
+}
+
+.subscription-plan-card--tall {
+  height: clamp(480px, 75vh, 520px);
 }
 
 .nav-pills {
@@ -12402,6 +12406,7 @@ textarea.form-control-lg {
   width: max-content;
   border-radius: 6px;
   padding: 0.35rem;
+  margin: auto;
 }
 .nav-pills .nav-item {
   font: var(--small-font);
@@ -12733,12 +12738,27 @@ main .hero-section .section-container .hero-section__illustration-img img {
   z-index: 9999;
 }
 
+.subscription-plans-section {
+  padding: var(--section-spacing);
+}
+.subscription-plans-section .subscription-plans-section__section-body {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: var(--space-sm);
+}
+.subscription-plans-section .subscription-plans-seciton__header {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding-bottom: var(--space-lg);
+}
 .subscription-plans-section .subscription-plans-card__plan-cards-container {
   display: grid;
   grid-auto-flow: row;
   gap: var(--space-md);
   justify-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: 992px) {

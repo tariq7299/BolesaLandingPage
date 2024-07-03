@@ -1,10 +1,24 @@
 .subscription-plans-section {
+  padding: var(--section-spacing);
+  .subscription-plans-section__section-body {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: var(--space-sm);
+  }
+
+  .subscription-plans-seciton__header {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding-bottom: var(--space-lg);
+  }
   .subscription-plans-card__plan-cards-container {
     display: grid;
     grid-auto-flow: row;
     gap: var(--space-md);
     justify-items: center;
     justify-content: center;
+    align-items: center;
   }
 }
 

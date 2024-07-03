@@ -163,13 +163,17 @@
 }
 
 .subscription-plan-card--small {
-  height: clamp(450px, 50vh, 500px);
+  height: clamp(420px, 50vh, 500px);
   width: clamp(330px, 30vw, 350px);
   aspect-ratio: 3 / 4;
 }
 
 .subscription-plan-card--big {
-  height: clamp(490px, 65vh, 520px);
+  height: clamp(450px, 65vh, 500px);
   width: clamp(310px, 25vw, 330px);
   aspect-ratio: 3 / 4;
+}
+
+.subscription-plan-card--tall {
+  height: clamp(480px, 75vh, 520px);
 }
