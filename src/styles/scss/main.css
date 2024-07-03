@@ -12028,7 +12028,6 @@ body {
 .button {
   text-align: center;
   border-radius: 10px;
-  width: 100%;
   white-space: nowrap;
 }
 
@@ -12047,7 +12046,6 @@ body {
 }
 
 .button--medium {
-  min-width: 165px;
   max-width: 185px;
   padding: 1rem 1.5rem !important;
 }
@@ -12056,10 +12054,18 @@ body {
   font: var(--bold-font);
 }
 
+.button--has-icon {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--space-xs);
+  max-height: 45px;
+}
+
 .fa-store {
   color: var(--white-color);
   font-size: 18px;
-  padding-left: 0.25;
 }
 
 .fa-door-closed {
@@ -12071,13 +12077,17 @@ body {
 .fa-space-awesome {
   color: var(--secondary-color-2);
   font-size: 18px;
-  padding: 0 1rem;
 }
 
 .fa-check-to-slot {
   color: var(--secondary-color-2);
   font-size: 20px;
   padding: 0 1rem;
+}
+
+.fa-check {
+  font-size: 15px;
+  padding-inline: var(--space-xs);
 }
 
 .benefit-card {
@@ -12304,10 +12314,6 @@ body {
   flex-flow: column nowrap;
   align-items: start;
 }
-.subscription-plan-card .subscription-plan-card__description .subscription-plan-card__benefits .subscription-plan-card__benefit span {
-  padding-left: var(--space-xs);
-}
-
 .subscription-plan-card--white-color .subscription-plan__header {
   background: linear-gradient(to bottom, var(--bg-color-2), var(--bg-color-4));
 }
@@ -12327,6 +12333,7 @@ body {
   color: var(--secondary-color-2);
 }
 .subscription-plan-card--white-color .subscription-plan-card__description .subscription-plan-card__button button {
+  width: 100%;
   background-color: transparent;
   color: var(--secondary-color-2);
   border: 1.5px solid var(--secondary-color-2);

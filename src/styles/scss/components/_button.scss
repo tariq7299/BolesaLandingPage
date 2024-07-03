@@ -1,7 +1,6 @@
 .button {
   text-align: center;
   border-radius: 10px;
-  width: 100%;
   white-space: nowrap;
 }
 
@@ -20,11 +19,22 @@
 }
 
 .button--medium {
-  min-width: 165px;
   max-width: 185px;
   padding: 1rem 1.5rem !important;
 }
 
 .button--bold-font {
   font: var(--bold-font);
+}
+
+.button--center-icon {
+}
+
+.button--has-icon {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--space-xs);
+  max-height: 45px;
 }

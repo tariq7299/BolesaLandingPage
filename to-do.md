@@ -10,6 +10,7 @@
 - Add hover effects on buttons
 - Clean and tidy up the helpers.scss and create files for every group of utilities
 - CHange the name of color variables names
+- Add variable font sizes and give them to `font:` variables
 
 **NOT so importatnt**
 
@@ -99,3 +100,8 @@
   - Create the check mark color
   - Add the nenefit font color
   - Create the min-height for this card that will be bigger than.....
+
+# OSme
+
+- Fix button centering
+- Add global styling to check icon (padding-inline-font-size-)

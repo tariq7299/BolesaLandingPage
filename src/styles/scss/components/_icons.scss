@@ -1,7 +1,6 @@
 .fa-store {
   color: var(--white-color);
   font-size: 18px;
-  padding-left: 0.25;
 }
 
 .fa-door-closed {
@@ -13,11 +12,16 @@
 .fa-space-awesome {
   color: var(--secondary-color-2);
   font-size: 18px;
-  padding: 0 1rem;
+  // padding: 0 1rem;
 }
 
 .fa-check-to-slot {
   color: var(--secondary-color-2);
   font-size: 20px;
   padding: 0 1rem;
+}
+
+.fa-check {
+  font-size: 15px;
+  padding-inline: var(--space-xs);
 }

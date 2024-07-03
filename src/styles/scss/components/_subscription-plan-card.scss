@@ -58,9 +58,6 @@
       flex-flow: column nowrap;
       align-items: start;
       .subscription-plan-card__benefit {
-        span {
-          padding-left: var(--space-xs);
-        }
       }
     }
   }
@@ -97,6 +94,7 @@
     }
     .subscription-plan-card__button {
       button {
+        width: 100%;
         background-color: transparent;
         color: var(--secondary-color-2);
         border: 1.5px solid var(--secondary-color-2);
