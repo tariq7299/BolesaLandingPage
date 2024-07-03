@@ -12383,13 +12383,13 @@ body {
 
 .subscription-plan-card--small {
   height: clamp(450px, 50vh, 500px);
-  width: clamp(330px, 30vw, 390px);
+  width: clamp(330px, 30vw, 350px);
   aspect-ratio: 3/4;
 }
 
 .subscription-plan-card--big {
   height: clamp(490px, 65vh, 520px);
-  width: clamp(310px, 25vw, 360px);
+  width: clamp(310px, 25vw, 330px);
   aspect-ratio: 3/4;
 }
 
@@ -12612,7 +12612,6 @@ main .hero-section .section-container .hero-section__illustration-img img {
      object-fit: cover;
 }
 
-/* For screens 992px and larger (desktops) */
 @media (min-width: 660px) {
   .bolesa-integration-section .bolesa-integration-section__container {
     flex-wrap: nowrap;
@@ -12622,6 +12621,7 @@ main .hero-section .section-container .hero-section__illustration-img img {
     padding: var(--container-y-padding) var(--container-x-padding);
   }
 }
+/* For screens 992px and larger (desktops) */
 @media (min-width: 992px) {
   .bolesa-integration-section .bolesa-integration-section__container {
     flex-wrap: wrap;
@@ -12710,6 +12710,21 @@ main .hero-section .section-container .hero-section__illustration-img img {
   z-index: 9999;
 }
 
+.subscription-plans-section .subscription-plans-section__container {
+  display: grid;
+  grid-auto-flow: row;
+  gap: var(--space-md);
+  justify-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 992px) {
+  .subscription-plans-section .subscription-plans-section__container {
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: var(--space-xs);
+  }
+}
 .section-title--font {
   font: var(--section-title-font);
 }

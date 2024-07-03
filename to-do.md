@@ -11,6 +11,9 @@
 - Clean and tidy up the helpers.scss and create files for every group of utilities
 - CHange the name of color variables names
 - Add variable font sizes and give them to `font:` variables
+- Use clamp() to control the dynamic font size
+- Name your media qyeuries to make your code more readable and scalalbe
+-
 
 **NOT so importatnt**
 
