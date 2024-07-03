@@ -1,11 +1,8 @@
 .button {
-  // padding: 1rem 1.5rem !important;
-  // font: var(--bold-font);
   text-align: center;
-  min-width: 180px;
   border-radius: 10px;
   width: 100%;
-  // max-width: 185px;
+  white-space: nowrap;
 }
 
 .button--priamry-color-filled {
@@ -20,4 +17,14 @@
   border-radius: 10px;
   color: var(--secondary-color-2);
   background-color: transparent;
+}
+
+.button--medium {
+  min-width: 165px;
+  max-width: 185px;
+  padding: 1rem 1.5rem !important;
+}
+
+.button--bold-font {
+  font: var(--bold-font);
 }

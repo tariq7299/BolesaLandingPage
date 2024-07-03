@@ -12027,9 +12027,9 @@ body {
 
 .button {
   text-align: center;
-  min-width: 180px;
   border-radius: 10px;
   width: 100%;
+  white-space: nowrap;
 }
 
 .button--priamry-color-filled {
@@ -12046,10 +12046,20 @@ body {
   background-color: transparent;
 }
 
+.button--medium {
+  min-width: 165px;
+  max-width: 185px;
+  padding: 1rem 1.5rem !important;
+}
+
+.button--bold-font {
+  font: var(--bold-font);
+}
+
 .fa-store {
   color: var(--white-color);
   font-size: 18px;
-  padding: 0 0.5rem;
+  padding-left: 0.25;
 }
 
 .fa-door-closed {
@@ -12327,6 +12337,11 @@ body {
 }
 .subscription-plan-card--white-color .subscription-plan-card__description .subscription-plan-card__benefits .subscription-plan-card__benefit span {
   color: var(--primary-color);
+}
+
+.subscription-plan-card--small {
+  max-height: 650px;
+  max-width: 485px;
 }
 
 .navbar {
