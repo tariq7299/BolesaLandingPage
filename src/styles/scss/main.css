@@ -11987,6 +11987,7 @@ body {
   --bg-color-1: #ebdfcc;
   --bg-color-2: #f9f9f9;
   --bg-color-3: #edf5f0;
+  --bg-color-4: #fcfcfc;
   /* Font Variables */
   --font-family-base: "Vazirmatn", sans-serif;
   /* font-style font-we ight font-size font-family */
@@ -12239,12 +12240,12 @@ body {
 .subscription-plan-card {
   display: flex;
   flex-flow: column nowrap;
-  padding: var(--space-md);
   border-radius: 18px;
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
   width: -moz-max-content;
   width: max-content;
   gap: var(--space-md);
+  padding: var(--space-xxs);
 }
 .subscription-plan-card .subscription-plan__header {
   display: flex;
@@ -12259,27 +12260,28 @@ body {
   font: var(--small-light-font);
 }
 .subscription-plan-card .subscription-plan-card__description {
+  padding: var(--space-md);
   display: flex;
   flex-flow: column nowrap;
   gap: var(--space-sm);
 }
-.subscription-plan-card .subscription-plan-card__description .subscription-plan-card__pirce {
+.subscription-plan-card .subscription-plan-card__description .subscription-plan-card__price {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   gap: var(--space-xs);
 }
-.subscription-plan-card .subscription-plan-card__description .subscription-plan-card__pirce .subscription-plan-card__amount {
+.subscription-plan-card .subscription-plan-card__description .subscription-plan-card__price .subscription-plan-card__amount {
   font: var(--hero-font);
 }
-.subscription-plan-card .subscription-plan-card__description .subscription-plan-card__pirce .subscription-plan-card__amount-details {
+.subscription-plan-card .subscription-plan-card__description .subscription-plan-card__price .subscription-plan-card__amount-details {
   display: flex;
   flex-flow: column;
 }
-.subscription-plan-card .subscription-plan-card__description .subscription-plan-card__pirce .subscription-plan-card__amount-details .subscription-plan-card__period {
+.subscription-plan-card .subscription-plan-card__description .subscription-plan-card__price .subscription-plan-card__amount-details .subscription-plan-card__period {
   font: var(--x-small-light-font);
 }
-.subscription-plan-card .subscription-plan-card__description .subscription-plan-card__pirce .subscription-plan-card__amount-details .subscription-plan-card__currency {
+.subscription-plan-card .subscription-plan-card__description .subscription-plan-card__price .subscription-plan-card__amount-details .subscription-plan-card__currency {
   font: var(--small-font);
 }
 .subscription-plan-card .subscription-plan-card__description .subscription-plan-card__button button {
@@ -12294,6 +12296,37 @@ body {
 }
 .subscription-plan-card .subscription-plan-card__description .subscription-plan-card__benefits .subscription-plan-card__benefit span {
   padding-left: var(--space-xs);
+}
+
+.subscription-plan-card--white-color .subscription-plan__header {
+  background: linear-gradient(to bottom, var(--bg-color-2), var(--bg-color-4));
+}
+.subscription-plan-card--white-color .subscription-plan__header .subscription-plan__title {
+  color: var(--secondary-color-2);
+}
+.subscription-plan-card--white-color .subscription-plan__header .subscription-plan__sub-title {
+  color: var(--secondary-color-4);
+}
+.subscription-plan-card--white-color .subscription-plan-card__description .subscription-plan-card__price .subscription-plan-card__amount {
+  color: var(--secondary-color-2);
+}
+.subscription-plan-card--white-color .subscription-plan-card__description .subscription-plan-card__price .subscription-plan-card__amount-details .subscription-plan-card__period {
+  color: var(--secondary-color-4);
+}
+.subscription-plan-card--white-color .subscription-plan-card__description .subscription-plan-card__price .subscription-plan-card__amount-details .subscription-plan-card__currency {
+  color: var(--secondary-color-2);
+}
+.subscription-plan-card--white-color .subscription-plan-card__description .subscription-plan-card__button button {
+  background-color: transparent;
+  color: var(--secondary-color-2);
+  border: 1.5px solid var(--secondary-color-2);
+  border-radius: 6px;
+}
+.subscription-plan-card--white-color .subscription-plan-card__description .subscription-plan-card__benefits .subscription-plan-card__benefit {
+  color: var(--secondary-color-2);
+}
+.subscription-plan-card--white-color .subscription-plan-card__description .subscription-plan-card__benefits .subscription-plan-card__benefit span {
+  color: var(--primary-color);
 }
 
 .navbar {

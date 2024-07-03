@@ -1,17 +1,11 @@
-// font color
-// Background
-// button colors
-// height
-// Check icon
-
 .subscription-plan-card {
   display: flex;
   flex-flow: column nowrap;
-  padding: var(--space-md);
   border-radius: 18px;
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
   width: max-content;
   gap: var(--space-md);
+  padding: var(--space-xxs);
 
   .subscription-plan__header {
     display: flex;
@@ -27,11 +21,12 @@
     }
   }
   .subscription-plan-card__description {
+    padding: var(--space-md);
     display: flex;
     flex-flow: column nowrap;
     gap: var(--space-sm);
 
-    .subscription-plan-card__pirce {
+    .subscription-plan-card__price {
       display: flex;
       flex-flow: row nowrap;
       align-items: center;
@@ -65,6 +60,54 @@
       .subscription-plan-card__benefit {
         span {
           padding-left: var(--space-xs);
+        }
+      }
+    }
+  }
+}
+
+.subscription-plan-card--white-color {
+  .subscription-plan__header {
+    background: linear-gradient(
+      to bottom,
+      var(--bg-color-2),
+      var(--bg-color-4)
+    );
+
+    .subscription-plan__title {
+      color: var(--secondary-color-2);
+    }
+    .subscription-plan__sub-title {
+      color: var(--secondary-color-4);
+    }
+  }
+  .subscription-plan-card__description {
+    .subscription-plan-card__price {
+      .subscription-plan-card__amount {
+        color: var(--secondary-color-2);
+      }
+      .subscription-plan-card__amount-details {
+        .subscription-plan-card__period {
+          color: var(--secondary-color-4);
+        }
+        .subscription-plan-card__currency {
+          color: var(--secondary-color-2);
+        }
+      }
+    }
+    .subscription-plan-card__button {
+      button {
+        background-color: transparent;
+        color: var(--secondary-color-2);
+        border: 1.5px solid var(--secondary-color-2);
+        border-radius: 6px;
+      }
+    }
+    .subscription-plan-card__benefits {
+      .subscription-plan-card__benefit {
+        color: var(--secondary-color-2);
+        span {
+          color: var(--primary-color);
         }
       }
     }

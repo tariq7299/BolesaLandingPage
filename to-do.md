@@ -1,6 +1,8 @@
 # TOMMOTR)OOOR
 
-# GLOBAL
+# TO DO
+
+## GLOBAL
 
 - Give correct font color to all text titels and descripttion
 - Add the links to nav tabs
@@ -19,7 +21,7 @@
 - Change every spacing and px to a spacing variable
 - What to do with two images ?? like in every image there are two versions ?
 
-# NAV BAR
+## NAV BAR
 
 - Change the nav bar like PO want it to be
 
@@ -30,25 +32,25 @@
 - Create the right border of the logout tab found in the nav bar
 -
 
-# Hero section
+## Hero section
 
 **NOt importnant**
 
 - How to set the pattern as a background
 - Set
 
-# Benefits section
+## Benefits section
 
 - Crea
 
-# Stats section
+## Stats section
 
 **NOt so important**
 
 - Refactor the Percentage symbol and its position jusing flex instead of absolute/relative
 - Set a max ch the section description to md
 
-# Integration section
+## Integration section
 
 **Not so importatin**
 
@@ -56,13 +58,44 @@
 - Also make the illustration line
 -
 
-# Demos slider section
+## Demos slider section
 
 **Not so importaton**
 
 - Add a hover effect on actio button
 
-# Subscription plans section
+## Subscription plans section
 
 - Create a utiltiy class for section-sub-title
--
+- Crate and hover and animation for this section
+
+# Dynamic-todo
+
+- Create the white-color subsctiption plan card
+
+  - Createa the gradient color of plan header
+  - Add the font color to header title
+  - Add the font color to header sub title
+  - Add the font color to price amount
+  - Add the font color to period
+  - Add the font color to currency
+  - Add the button font color
+  - Add the button background color transaparnt
+  - Add the button border
+  - Create the check mark color
+  - Add the nenefit font color
+  - Create the min-height for this card that will be smaller that secondary color subscitption plan
+
+- Create the secondary-color-2 subscritption plan card
+  - Createa the gradient color of plan header
+  - Add the font color to header title
+  - Add the font color to header sub title
+  - Add the font color to price amount
+  - Add the font color to period
+  - Add the font color to currency
+  - Add the button font color
+  - Add the button background color
+  - Add the button border
+  - Create the check mark color
+  - Add the nenefit font color
+  - Create the min-height for this card that will be bigger than.....
