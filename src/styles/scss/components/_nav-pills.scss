@@ -1,0 +1,24 @@
+.nav-pills {
+  background-color: var(--bg-color-2);
+  width: max-content;
+  border-radius: 6px;
+  padding: 0.35rem;
+
+  .nav-item {
+    font: var(--small-font);
+    button {
+      span {
+        margin-inline: 1rem;
+        background-color: var(--secondary-color-2);
+        border-radius: 5px;
+        padding: 0.25rem var(--space-md);
+        color: var(--white-color);
+        font: var(--small-light-font);
+      }
+    }
+  }
+
+  .nav-item .active {
+    font: var(--small-bold-font);
+  }
+}

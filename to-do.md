@@ -13,7 +13,7 @@
 - Add variable font sizes and give them to `font:` variables
 - Use clamp() to control the dynamic font size
 - Name your media qyeuries to make your code more readable and scalalbe
--
+- Create more spacing variables
 
 **NOT so importatnt**
 

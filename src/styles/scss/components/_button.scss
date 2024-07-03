@@ -2,36 +2,36 @@
   text-align: center;
   border-radius: 10px;
   white-space: nowrap;
-}
 
-.button--priamry-color-filled {
-  border: none;
-  border-radius: 10px;
-  color: var(--white-color);
-  background-color: var(--primary-color);
-}
+  &--priamry-color-filled {
+    border: none;
+    border-radius: 10px;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+  }
 
-.button--secondary-color-2-opac {
-  border: 2px solid var(--secondary-color-2);
-  border-radius: 10px;
-  color: var(--secondary-color-2);
-  background-color: transparent;
-}
+  &--secondary-color-2-opac {
+    border: 2px solid var(--secondary-color-2);
+    border-radius: 10px;
+    color: var(--secondary-color-2);
+    background-color: transparent;
+  }
 
-.button--medium {
-  max-width: 185px;
-  padding: 1rem 1.5rem !important;
-}
+  &--medium {
+    max-width: 185px;
+    padding: 1rem 1.5rem !important;
+  }
 
-.button--bold-font {
-  font: var(--bold-font);
-}
+  &--bold-font {
+    font: var(--bold-font);
+  }
 
-.button--has-icon {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: var(--space-xs);
-  max-height: 45px;
+  &--has-icon {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: var(--space-xs);
+    max-height: 45px;
+  }
 }

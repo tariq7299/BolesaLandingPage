@@ -39,147 +39,384 @@
     <main>
       <section class="subscription-plans-section">
         <div class="section-container subscription-plans-section__container">
-          <div
-            class="subscription-plan-card subscription-plan-card--white-color subscription-plan-card--small"
-          >
-            <div class="subscription-plan__header">
-              <h2 class="subscription-plan__title">الباقة البلاتينية</h2>
-              <p class="subscription-plan__sub-title">
-                مناسبة للأعمال الضخمة والمتاجر المتعددة
-              </p>
-            </div>
-            <div class="subscription-plan-card__description">
-              <div class="subscription-plan-card__price">
-                <div class="subscription-plan-card__amount">99</div>
-                <div class="subscription-plan-card__amount-details">
-                  <h3 class="subscription-plan-card__period">يدفع شهريًا</h3>
-                  <h3 class="subscription-plan-card__currency">ريال سعودي</h3>
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="subscription-plans-section__monthly-payment-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#subscription-plans-section__monthly-payment-pill"
+                type="button"
+                role="tab"
+                aria-controls="subscription-plans-section__monthly-payment-pill"
+                aria-selected="true"
+              >
+                ادفع شهريًا
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="subscription-plans-section__yearly-payment-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#subscription-plans-section__yearly-payment-pill"
+                type="button"
+                role="tab"
+                aria-controls="subscription-plans-section__yearly-payment-pill"
+                aria-selected="false"
+              >
+                ادفع سنويًا <span>وفر 90 ريال</span>
+              </button>
+            </li>
+          </ul>
+
+          <div class="tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="subscription-plans-section__monthly-payment-pill"
+              role="tabpanel"
+              aria-labelledby="subscription-plans-section__monthly-payment-tab"
+              tabindex="0"
+            >
+              <div
+                class="subscription-plans-card__plan-cards-container subscription-plans-card__monthly-payment"
+              >
+                <div
+                  class="subscription-plan-card subscription-plan-card--white-color subscription-plan-card--small"
+                >
+                  <div class="subscription-plan__header">
+                    <h2 class="subscription-plan__title">الباقة البلاتينية</h2>
+                    <p class="subscription-plan__sub-title">
+                      مناسبة للأعمال الضخمة والمتاجر المتعددة
+                    </p>
+                  </div>
+                  <div class="subscription-plan-card__description">
+                    <div class="subscription-plan-card__price">
+                      <div class="subscription-plan-card__amount">99</div>
+                      <div class="subscription-plan-card__amount-details">
+                        <h3 class="subscription-plan-card__period">
+                          يدفع شهريًا
+                        </h3>
+                        <h3 class="subscription-plan-card__currency">
+                          ريال سعودي
+                        </h3>
+                      </div>
+                    </div>
+                    <div class="subscription-plan-card__button">
+                      <button class="button" type="button">
+                        اختر هذه الباقة
+                      </button>
+                    </div>
+                    <div class="subscription-plan-card__benefits">
+                      <p class="subscription-plan-card__benefit">
+                        <span><i class="fa-solid fa-check"></i></span>إحدى
+                        مميزات هذه الباقة
+                      </p>
+
+                      <p class="subscription-plan-card__benefit">
+                        <span><i class="fa-solid fa-check"></i></span>ميزة أخرى
+                        من مميزات هذه الباقة
+                      </p>
+
+                      <p class="subscription-plan-card__benefit">
+                        <span><i class="fa-solid fa-check"></i></span>إحدى
+                        مميزات هذه الباقة
+                      </p>
+
+                      <p class="subscription-plan-card__benefit">
+                        <span><i class="fa-solid fa-check"></i></span>ميزة أخرى
+                        من مميزات هذه الباقة
+                      </p>
+
+                      <p class="subscription-plan-card__benefit">
+                        <span><i class="fa-solid fa-check"></i></span>إحدى
+                        مميزات هذه الباقة
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="subscription-plan-card subscription-plan-card--secondary-color-4 subscription-plan-card--big"
+                >
+                  <div class="subscription-plan__header">
+                    <h2 class="subscription-plan__title">الباقة الذهبية</h2>
+                    <p class="subscription-plan__sub-title">
+                      مناسبة للأعمال الضخمة والمتاجر المتعددة
+                    </p>
+                  </div>
+                  <div class="subscription-plan-card__description">
+                    <div class="subscription-plan-card__price">
+                      <div class="subscription-plan-card__amount">59</div>
+                      <div class="subscription-plan-card__amount-details">
+                        <h3 class="subscription-plan-card__period">
+                          يدفع شهريًا
+                        </h3>
+                        <h3 class="subscription-plan-card__currency">
+                          ريال سعودي
+                        </h3>
+                      </div>
+                    </div>
+                    <div class="subscription-plan-card__button">
+                      <button class="button" type="button">
+                        اختر هذه الباقة
+                      </button>
+                    </div>
+                    <div class="subscription-plan-card__benefits">
+                      <p class="subscription-plan-card__benefit">
+                        <span><i class="fa-solid fa-check"></i></span>إحدى
+                        مميزات هذه الباقة
+                      </p>
+
+                      <p class="subscription-plan-card__benefit">
+                        <span><i class="fa-solid fa-check"></i></span>ميزة أخرى
+                        من مميزات هذه الباقة
+                      </p>
+
+                      <p class="subscription-plan-card__benefit">
+                        <span><i class="fa-solid fa-check"></i></span>إحدى
+                        مميزات هذه الباقة
+                      </p>
+
+                      <p class="subscription-plan-card__benefit">
+                        <span><i class="fa-solid fa-check"></i></span>ميزة أخرى
+                        من مميزات هذه الباقة
+                      </p>
+
+                      <p class="subscription-plan-card__benefit">
+                        <span><i class="fa-solid fa-check"></i></span>إحدى
+                        مميزات هذه الباقة
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="subscription-plan-card subscription-plan-card--white-color subscription-plan-card--small"
+                >
+                  <div class="subscription-plan__header">
+                    <h2 class="subscription-plan__title">الباقة الفضية</h2>
+                    <p class="subscription-plan__sub-title">
+                      مناسبة للأعمال الضخمة والمتاجر المتعددة
+                    </p>
+                  </div>
+                  <div class="subscription-plan-card__description">
+                    <div class="subscription-plan-card__price">
+                      <div class="subscription-plan-card__amount">30</div>
+                      <div class="subscription-plan-card__amount-details">
+                        <h3 class="subscription-plan-card__period">
+                          يدفع شهريًا
+                        </h3>
+                        <h3 class="subscription-plan-card__currency">
+                          ريال سعودي
+                        </h3>
+                      </div>
+                    </div>
+                    <div class="subscription-plan-card__button">
+                      <button class="button" type="button">
+                        اختر هذه الباقة
+                      </button>
+                    </div>
+                    <div class="subscription-plan-card__benefits">
+                      <p class="subscription-plan-card__benefit">
+                        <span><i class="fa-solid fa-check"></i></span>إحدى
+                        مميزات هذه الباقة
+                      </p>
+
+                      <p class="subscription-plan-card__benefit">
+                        <span><i class="fa-solid fa-check"></i></span>ميزة أخرى
+                        من مميزات هذه الباقة
+                      </p>
+
+                      <p class="subscription-plan-card__benefit">
+                        <span><i class="fa-solid fa-check"></i></span>إحدى
+                        مميزات هذه الباقة
+                      </p>
+
+                      <p class="subscription-plan-card__benefit">
+                        <span><i class="fa-solid fa-check"></i></span>ميزة أخرى
+                        من مميزات هذه الباقة
+                      </p>
+
+                      <p class="subscription-plan-card__benefit">
+                        <span><i class="fa-solid fa-check"></i></span>إحدى
+                        مميزات هذه الباقة
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="subscription-plan-card__button">
-                <button class="button" type="button">اختر هذه الباقة</button>
-              </div>
-              <div class="subscription-plan-card__benefits">
-                <p class="subscription-plan-card__benefit">
-                  <span><i class="fa-solid fa-check"></i></span>إحدى مميزات هذه
-                  الباقة
-                </p>
-
-                <p class="subscription-plan-card__benefit">
-                  <span><i class="fa-solid fa-check"></i></span>ميزة أخرى من
-                  مميزات هذه الباقة
-                </p>
-
-                <p class="subscription-plan-card__benefit">
-                  <span><i class="fa-solid fa-check"></i></span>إحدى مميزات هذه
-                  الباقة
-                </p>
-
-                <p class="subscription-plan-card__benefit">
-                  <span><i class="fa-solid fa-check"></i></span>ميزة أخرى من
-                  مميزات هذه الباقة
-                </p>
-
-                <p class="subscription-plan-card__benefit">
-                  <span><i class="fa-solid fa-check"></i></span>إحدى مميزات هذه
-                  الباقة
-                </p>
-              </div>
             </div>
-          </div>
-          <div
-            class="subscription-plan-card subscription-plan-card--secondary-color-4 subscription-plan-card--big"
-          >
-            <div class="subscription-plan__header">
-              <h2 class="subscription-plan__title">الباقة الذهبية</h2>
-              <p class="subscription-plan__sub-title">
-                مناسبة للأعمال الضخمة والمتاجر المتعددة
-              </p>
-            </div>
-            <div class="subscription-plan-card__description">
-              <div class="subscription-plan-card__price">
-                <div class="subscription-plan-card__amount">59</div>
-                <div class="subscription-plan-card__amount-details">
-                  <h3 class="subscription-plan-card__period">يدفع شهريًا</h3>
-                  <h3 class="subscription-plan-card__currency">ريال سعودي</h3>
+            <div
+              class="tab-pane fade"
+              id="subscription-plans-section__yearly-payment-pill"
+              role="tabpanel"
+              aria-labelledby="subscription-plans-section__yearly-payment-tab"
+              tabindex="0"
+            >
+              <div
+                class="subscription-plans-card__plan-cards-container subscription-plans-card__yearly-payment"
+              >
+                <div
+                  class="subscription-plan-card subscription-plan-card--white-color subscription-plan-card--small"
+                >
+                  <div class="subscription-plan__header">
+                    <h2 class="subscription-plan__title">الباقة البلاتينية</h2>
+                    <p class="subscription-plan__sub-title">
+                      مناسبة للأعمال الضخمة والمتاجر المتعددة
+                    </p>
+                  </div>
+                  <div class="subscription-plan-card__description">
+                    <div class="subscription-plan-card__price">
+                      <div class="subscription-plan-card__amount">450</div>
+                      <div class="subscription-plan-card__amount-details">
+                        <h3 class="subscription-plan-card__period">
+                          يدفع سنويًا
+                        </h3>
+                        <h3 class="subscription-plan-card__currency">
+                          ريال سعودي
+                        </h3>
+                      </div>
+                    </div>
+                    <div class="subscription-plan-card__button">
+                      <button class="button" type="button">
+                        اختر هذه الباقة
+                      </button>
+                    </div>
+                    <div class="subscription-plan-card__benefits">
+                      <p class="subscription-plan-card__benefit">
+                        <span><i class="fa-solid fa-check"></i></span>إحدى
+                        مميزات هذه الباقة
+                      </p>
+
+                      <p class="subscription-plan-card__benefit">
+                        <span><i class="fa-solid fa-check"></i></span>ميزة أخرى
+                        من مميزات هذه الباقة
+                      </p>
+
+                      <p class="subscription-plan-card__benefit">
+                        <span><i class="fa-solid fa-check"></i></span>إحدى
+                        مميزات هذه الباقة
+                      </p>
+
+                      <p class="subscription-plan-card__benefit">
+                        <span><i class="fa-solid fa-check"></i></span>ميزة أخرى
+                        من مميزات هذه الباقة
+                      </p>
+
+                      <p class="subscription-plan-card__benefit">
+                        <span><i class="fa-solid fa-check"></i></span>إحدى
+                        مميزات هذه الباقة
+                      </p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="subscription-plan-card__button">
-                <button class="button" type="button">اختر هذه الباقة</button>
-              </div>
-              <div class="subscription-plan-card__benefits">
-                <p class="subscription-plan-card__benefit">
-                  <span><i class="fa-solid fa-check"></i></span>إحدى مميزات هذه
-                  الباقة
-                </p>
+                <div
+                  class="subscription-plan-card subscription-plan-card--secondary-color-4 subscription-plan-card--big"
+                >
+                  <div class="subscription-plan__header">
+                    <h2 class="subscription-plan__title">الباقة الذهبية</h2>
+                    <p class="subscription-plan__sub-title">
+                      مناسبة للأعمال الضخمة والمتاجر المتعددة
+                    </p>
+                  </div>
+                  <div class="subscription-plan-card__description">
+                    <div class="subscription-plan-card__price">
+                      <div class="subscription-plan-card__amount">330</div>
+                      <div class="subscription-plan-card__amount-details">
+                        <h3 class="subscription-plan-card__period">
+                          يدفع سنويًا
+                        </h3>
+                        <h3 class="subscription-plan-card__currency">
+                          ريال سعودي
+                        </h3>
+                      </div>
+                    </div>
+                    <div class="subscription-plan-card__button">
+                      <button class="button" type="button">
+                        اختر هذه الباقة
+                      </button>
+                    </div>
+                    <div class="subscription-plan-card__benefits">
+                      <p class="subscription-plan-card__benefit">
+                        <span><i class="fa-solid fa-check"></i></span>إحدى
+                        مميزات هذه الباقة
+                      </p>
 
-                <p class="subscription-plan-card__benefit">
-                  <span><i class="fa-solid fa-check"></i></span>ميزة أخرى من
-                  مميزات هذه الباقة
-                </p>
+                      <p class="subscription-plan-card__benefit">
+                        <span><i class="fa-solid fa-check"></i></span>ميزة أخرى
+                        من مميزات هذه الباقة
+                      </p>
 
-                <p class="subscription-plan-card__benefit">
-                  <span><i class="fa-solid fa-check"></i></span>إحدى مميزات هذه
-                  الباقة
-                </p>
+                      <p class="subscription-plan-card__benefit">
+                        <span><i class="fa-solid fa-check"></i></span>إحدى
+                        مميزات هذه الباقة
+                      </p>
 
-                <p class="subscription-plan-card__benefit">
-                  <span><i class="fa-solid fa-check"></i></span>ميزة أخرى من
-                  مميزات هذه الباقة
-                </p>
+                      <p class="subscription-plan-card__benefit">
+                        <span><i class="fa-solid fa-check"></i></span>ميزة أخرى
+                        من مميزات هذه الباقة
+                      </p>
 
-                <p class="subscription-plan-card__benefit">
-                  <span><i class="fa-solid fa-check"></i></span>إحدى مميزات هذه
-                  الباقة
-                </p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="subscription-plan-card subscription-plan-card--white-color subscription-plan-card--small"
-          >
-            <div class="subscription-plan__header">
-              <h2 class="subscription-plan__title">الباقة الفضية</h2>
-              <p class="subscription-plan__sub-title">
-                مناسبة للأعمال الضخمة والمتاجر المتعددة
-              </p>
-            </div>
-            <div class="subscription-plan-card__description">
-              <div class="subscription-plan-card__price">
-                <div class="subscription-plan-card__amount">30</div>
-                <div class="subscription-plan-card__amount-details">
-                  <h3 class="subscription-plan-card__period">يدفع شهريًا</h3>
-                  <h3 class="subscription-plan-card__currency">ريال سعودي</h3>
+                      <p class="subscription-plan-card__benefit">
+                        <span><i class="fa-solid fa-check"></i></span>إحدى
+                        مميزات هذه الباقة
+                      </p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="subscription-plan-card__button">
-                <button class="button" type="button">اختر هذه الباقة</button>
-              </div>
-              <div class="subscription-plan-card__benefits">
-                <p class="subscription-plan-card__benefit">
-                  <span><i class="fa-solid fa-check"></i></span>إحدى مميزات هذه
-                  الباقة
-                </p>
+                <div
+                  class="subscription-plan-card subscription-plan-card--white-color subscription-plan-card--small"
+                >
+                  <div class="subscription-plan__header">
+                    <h2 class="subscription-plan__title">الباقة الفضية</h2>
+                    <p class="subscription-plan__sub-title">
+                      مناسبة للأعمال الضخمة والمتاجر المتعددة
+                    </p>
+                  </div>
+                  <div class="subscription-plan-card__description">
+                    <div class="subscription-plan-card__price">
+                      <div class="subscription-plan-card__amount">210</div>
+                      <div class="subscription-plan-card__amount-details">
+                        <h3 class="subscription-plan-card__period">
+                          يدفع سنويًا
+                        </h3>
+                        <h3 class="subscription-plan-card__currency">
+                          ريال سعودي
+                        </h3>
+                      </div>
+                    </div>
+                    <div class="subscription-plan-card__button">
+                      <button class="button" type="button">
+                        اختر هذه الباقة
+                      </button>
+                    </div>
+                    <div class="subscription-plan-card__benefits">
+                      <p class="subscription-plan-card__benefit">
+                        <span><i class="fa-solid fa-check"></i></span>إحدى
+                        مميزات هذه الباقة
+                      </p>
 
-                <p class="subscription-plan-card__benefit">
-                  <span><i class="fa-solid fa-check"></i></span>ميزة أخرى من
-                  مميزات هذه الباقة
-                </p>
+                      <p class="subscription-plan-card__benefit">
+                        <span><i class="fa-solid fa-check"></i></span>ميزة أخرى
+                        من مميزات هذه الباقة
+                      </p>
 
-                <p class="subscription-plan-card__benefit">
-                  <span><i class="fa-solid fa-check"></i></span>إحدى مميزات هذه
-                  الباقة
-                </p>
+                      <p class="subscription-plan-card__benefit">
+                        <span><i class="fa-solid fa-check"></i></span>إحدى
+                        مميزات هذه الباقة
+                      </p>
 
-                <p class="subscription-plan-card__benefit">
-                  <span><i class="fa-solid fa-check"></i></span>ميزة أخرى من
-                  مميزات هذه الباقة
-                </p>
+                      <p class="subscription-plan-card__benefit">
+                        <span><i class="fa-solid fa-check"></i></span>ميزة أخرى
+                        من مميزات هذه الباقة
+                      </p>
 
-                <p class="subscription-plan-card__benefit">
-                  <span><i class="fa-solid fa-check"></i></span>إحدى مميزات هذه
-                  الباقة
-                </p>
+                      <p class="subscription-plan-card__benefit">
+                        <span><i class="fa-solid fa-check"></i></span>إحدى
+                        مميزات هذه الباقة
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
