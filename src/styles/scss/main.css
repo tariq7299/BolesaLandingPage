@@ -12305,7 +12305,7 @@ body {
   font: var(--small-font);
 }
 .subscription-plan-card .subscription-plan-card__description .subscription-plan-card__button button {
-  font: var(--small-bold-font);
+  font: var(--small-font);
   padding: var(--space-xxs) var(--space-md);
 }
 .subscription-plan-card .subscription-plan-card__description .subscription-plan-card__benefits {
@@ -12346,11 +12346,51 @@ body {
   color: var(--primary-color);
 }
 
+.subscription-plan-card--secondary-color-4 {
+  background: var(--secondary-color-2);
+}
+.subscription-plan-card--secondary-color-4 .subscription-plan__header {
+  background: linear-gradient(to bottom, var(--secondary-color-4), var(--secondary-color-2));
+}
+.subscription-plan-card--secondary-color-4 .subscription-plan__header .subscription-plan__title {
+  color: var(--white-color);
+}
+.subscription-plan-card--secondary-color-4 .subscription-plan__header .subscription-plan__sub-title {
+  color: var(--white-color);
+}
+.subscription-plan-card--secondary-color-4 .subscription-plan-card__description .subscription-plan-card__price .subscription-plan-card__amount {
+  color: var(--white-color);
+}
+.subscription-plan-card--secondary-color-4 .subscription-plan-card__description .subscription-plan-card__price .subscription-plan-card__amount-details .subscription-plan-card__period {
+  color: var(--secondary-color-4);
+}
+.subscription-plan-card--secondary-color-4 .subscription-plan-card__description .subscription-plan-card__price .subscription-plan-card__amount-details .subscription-plan-card__currency {
+  color: var(--white-color);
+}
+.subscription-plan-card--secondary-color-4 .subscription-plan-card__description .subscription-plan-card__button button {
+  width: 100%;
+  background-color: var(--secondary-color-4);
+  color: var(--white-color);
+  border: none;
+  border-radius: 6px;
+}
+.subscription-plan-card--secondary-color-4 .subscription-plan-card__description .subscription-plan-card__benefits .subscription-plan-card__benefit {
+  color: var(--white-color);
+}
+.subscription-plan-card--secondary-color-4 .subscription-plan-card__description .subscription-plan-card__benefits .subscription-plan-card__benefit span {
+  color: var(--secondary-color-4);
+}
+
 .subscription-plan-card--small {
-  max-height: 650px;
-  min-height: 450px;
-  min-width: 330px;
-  max-width: 485px;
+  height: clamp(450px, 50vh, 500px);
+  width: clamp(330px, 30vw, 390px);
+  aspect-ratio: 3/4;
+}
+
+.subscription-plan-card--big {
+  height: clamp(490px, 65vh, 520px);
+  width: clamp(310px, 25vw, 360px);
+  aspect-ratio: 3/4;
 }
 
 .navbar {
