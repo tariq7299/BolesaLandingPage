@@ -1,17 +1,12 @@
 # TOMMOTR)OOOR
 
-- Style the next and pervious butons
-- change the names of swiper elements and the swiper component
-- Put the slider into a section card
-- Add the header and style all of them
-- Add a action button (compoenet)
--
-
 # GLOBAL
 
 - Give correct font color to all text titels and descripttion
 - Add the links to nav tabs
 - Craete some interactions/and Reactive things/Animation
+- Add hover effects on buttons
+- Clean and tidy up the helpers.scss and create files for every group of utilities
 
 **NOT so importatnt**
 
@@ -62,5 +57,11 @@
 
 # Demos slider section
 
-- Style the next and pervious butons
-- change the names of swiper
+**Not so importaton**
+
+- Add a hover effect on actio button
+
+# Subscription plans section
+
+- Create a utiltiy class for section-sub-title
+-

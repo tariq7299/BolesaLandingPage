@@ -12551,7 +12551,7 @@ main .hero-section .section-container .hero-section__illustration-img img {
   z-index: 9999;
 }
 
-.section-title {
+.section-title--font {
   font: var(--section-title-font);
 }
 
@@ -12566,7 +12566,18 @@ main .hero-section .section-container .hero-section__illustration-img img {
 .section-description {
   font: var(--main-font);
   color: var(--secondary-color-2);
-  max-width: var(--max-p-ch);
+}
+
+.text--long-lenght-lines {
+  max-width: var(--max-p-ch-xl);
+}
+
+.text--medium-lenght-lines {
+  max-width: var(--max-p-ch-md);
+}
+
+.text--short-lenght-lines {
+  max-width: var(--max-p-ch-sm);
 }
 
 .text--center {

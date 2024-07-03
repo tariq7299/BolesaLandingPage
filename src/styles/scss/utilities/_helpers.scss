@@ -1,4 +1,4 @@
-.section-title {
+.section-title--font {
   font: var(--section-title-font);
 }
 
@@ -13,7 +13,18 @@
 .section-description {
   font: var(--main-font);
   color: var(--secondary-color-2);
-  max-width: var(--max-p-ch);
+}
+
+.text--long-lenght-lines {
+  max-width: var(--max-p-ch-xl);
+}
+
+.text--medium-lenght-lines {
+  max-width: var(--max-p-ch-md);
+}
+
+.text--short-lenght-lines {
+  max-width: var(--max-p-ch-sm);
 }
 
 .text--center {
