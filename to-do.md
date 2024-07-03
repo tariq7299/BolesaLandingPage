@@ -7,6 +7,7 @@
 - Craete some interactions/and Reactive things/Animation
 - Add hover effects on buttons
 - Clean and tidy up the helpers.scss and create files for every group of utilities
+- CHange the name of color variables names
 
 **NOT so importatnt**
 

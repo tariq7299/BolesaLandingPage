@@ -1,9 +1,11 @@
 .button {
-  padding: 1rem 1.5rem !important;
-  font: var(--bold-font);
+  // padding: 1rem 1.5rem !important;
+  // font: var(--bold-font);
   text-align: center;
   min-width: 180px;
-  max-width: 185px;
+  border-radius: 10px;
+  width: 100%;
+  // max-width: 185px;
 }
 
 .button--priamry-color-filled {

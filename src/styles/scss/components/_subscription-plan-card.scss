@@ -1,0 +1,72 @@
+// font color
+// Background
+// button colors
+// height
+// Check icon
+
+.subscription-plan-card {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: var(--space-md);
+  border-radius: 18px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  width: max-content;
+  gap: var(--space-md);
+
+  .subscription-plan__header {
+    display: flex;
+    flex-flow: column nowrap;
+    border-radius: 18px;
+    padding: var(--space-md);
+
+    .subscription-plan__title {
+      font: var(--big-bold-font);
+    }
+    .subscription-plan__sub-title {
+      font: var(--small-light-font);
+    }
+  }
+  .subscription-plan-card__description {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: var(--space-sm);
+
+    .subscription-plan-card__pirce {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      gap: var(--space-xs);
+
+      .subscription-plan-card__amount {
+        font: var(--hero-font);
+      }
+      .subscription-plan-card__amount-details {
+        display: flex;
+        flex-flow: column;
+        .subscription-plan-card__period {
+          font: var(--x-small-light-font);
+        }
+        .subscription-plan-card__currency {
+          font: var(--small-font);
+        }
+      }
+    }
+    .subscription-plan-card__button {
+      button {
+        font: var(--small-bold-font);
+        padding: var(--space-xxs) var(--space-md);
+      }
+    }
+    .subscription-plan-card__benefits {
+      font: var(--small-light-font);
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: start;
+      .subscription-plan-card__benefit {
+        span {
+          padding-left: var(--space-xs);
+        }
+      }
+    }
+  }
+}

@@ -11994,7 +11994,10 @@ body {
   --section-title-font: normal bold 32px var(--font-family-base);
   --bold-font: normal bold 16px var(--font-family-base);
   --main-font: normal normal 16px var(--font-family-base);
+  --small-bold-font: normal bold 12px var(--font-family-base);
+  --x-small-light-font: normal 200 10px var(--font-family-base);
   --small-light-font: normal 200 12px var(--font-family-base);
+  --small-font: normal normal 12px var(--font-family-base);
   --big-font: normal normal 19px var(--font-family-base);
   --big-bold-font: normal bold 19px var(--font-family-base);
   --big-bold-font-x2: normal bold 24px var(--font-family-base);
@@ -12022,11 +12025,10 @@ body {
 }
 
 .button {
-  padding: 1rem 1.5rem !important;
-  font: var(--bold-font);
   text-align: center;
   min-width: 180px;
-  max-width: 185px;
+  border-radius: 10px;
+  width: 100%;
 }
 
 .button--priamry-color-filled {
@@ -12232,6 +12234,66 @@ body {
 
 .swiper-button-next--secondary-color-2 {
   color: var(--secondary-color-2);
+}
+
+.subscription-plan-card {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: var(--space-md);
+  border-radius: 18px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  width: -moz-max-content;
+  width: max-content;
+  gap: var(--space-md);
+}
+.subscription-plan-card .subscription-plan__header {
+  display: flex;
+  flex-flow: column nowrap;
+  border-radius: 18px;
+  padding: var(--space-md);
+}
+.subscription-plan-card .subscription-plan__header .subscription-plan__title {
+  font: var(--big-bold-font);
+}
+.subscription-plan-card .subscription-plan__header .subscription-plan__sub-title {
+  font: var(--small-light-font);
+}
+.subscription-plan-card .subscription-plan-card__description {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: var(--space-sm);
+}
+.subscription-plan-card .subscription-plan-card__description .subscription-plan-card__pirce {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: var(--space-xs);
+}
+.subscription-plan-card .subscription-plan-card__description .subscription-plan-card__pirce .subscription-plan-card__amount {
+  font: var(--hero-font);
+}
+.subscription-plan-card .subscription-plan-card__description .subscription-plan-card__pirce .subscription-plan-card__amount-details {
+  display: flex;
+  flex-flow: column;
+}
+.subscription-plan-card .subscription-plan-card__description .subscription-plan-card__pirce .subscription-plan-card__amount-details .subscription-plan-card__period {
+  font: var(--x-small-light-font);
+}
+.subscription-plan-card .subscription-plan-card__description .subscription-plan-card__pirce .subscription-plan-card__amount-details .subscription-plan-card__currency {
+  font: var(--small-font);
+}
+.subscription-plan-card .subscription-plan-card__description .subscription-plan-card__button button {
+  font: var(--small-bold-font);
+  padding: var(--space-xxs) var(--space-md);
+}
+.subscription-plan-card .subscription-plan-card__description .subscription-plan-card__benefits {
+  font: var(--small-light-font);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: start;
+}
+.subscription-plan-card .subscription-plan-card__description .subscription-plan-card__benefits .subscription-plan-card__benefit span {
+  padding-left: var(--space-xs);
 }
 
 .navbar {
@@ -12608,4 +12670,12 @@ main .hero-section .section-container .hero-section__illustration-img img {
 .section-container--y-padding {
   padding-top: var(--container-y-padding);
   padding-bottom: var(--container-y-padding);
+}
+
+.section-sub-title--font {
+  font: var(--big-bold-font);
+}
+
+.text--small-light-font {
+  font: var(--small-light-font);
 }/*# sourceMappingURL=main.css.map */
