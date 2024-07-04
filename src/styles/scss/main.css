@@ -12237,8 +12237,7 @@ textarea.form-control-lg {
 
 .swiper {
   width: 100%;
-  max-width: 800px;
-  margin: auto;
+  margin: 0;
 }
 .swiper .swiper-wrapper .swiper-slide {
   display: flex;
@@ -12754,15 +12753,24 @@ main .hero-section .section-container .hero-section__illustration-img img {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
-  position: relative;
+}
+.demos-slider-section .demos-slider-section__container .demos-slider-seciton__swiper-container {
+  width: 85%;
+  margin-inline: auto;
+  display: inline-flex;
+  justify-content: center;
+  align-items: end;
+  flex-flow: row;
 }
 .demos-slider-section .demos-slider-section__container .demos-slider-section__text {
   padding: var(--space-lg);
 }
 .demos-slider-section .demos-slider-section__container .demos-slider-section__swiper {
   z-index: 9998;
+  position: relative;
 }
-.demos-slider-section .demos-slider-section__container .demos-slider-section__action-button {
+
+.demos-slider-section__action-button {
   position: absolute;
   left: 50%;
   bottom: 5%;
