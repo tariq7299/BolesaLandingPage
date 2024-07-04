@@ -12854,17 +12854,20 @@ main .hero-section .section-container .hero-section__illustration-img .hero-sect
   padding-bottom: var(--space-lg);
 }
 .carriers-section .carriers-section__carriers-brands {
+  background-color: var(--bg-color-2);
+  border: none;
+  border-radius: 10px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+  gap: 4rem;
   justify-content: center;
   justify-items: center;
   align-items: baseline;
   align-content: baseline;
-  padding: 2rem;
+  padding: var(--space-lg);
 }
 .carriers-section .carriers-section__carriers-brands img {
-  max-width: 60px;
+  max-width: 75px;
   width: 100%;
   height: auto;
   -o-object-fit: cover;
