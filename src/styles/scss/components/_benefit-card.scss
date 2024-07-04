@@ -7,9 +7,10 @@
   gap: var(--space-md);
   width: 100%;
   max-width: 500px;
+  // min-height: max-content;
 
   justify-content: center;
-  align-items: center;
+  align-items: start;
 
   .benefit-card__text {
     display: flex;

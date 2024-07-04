@@ -14,7 +14,8 @@ main .benefits-section {
       grid-template-columns: minmax(250px, 300px);
       gap: var(--grid-gap);
       justify-content: center;
-      justify-items: start;
+      justify-items: center;
+      grid-auto-rows: minmax(120px, max-content);
     }
   }
 }

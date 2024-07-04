@@ -12103,7 +12103,7 @@ textarea.form-control-lg {
   width: 100%;
   max-width: 500px;
   justify-content: center;
-  align-items: center;
+  align-items: start;
 }
 .benefit-card .benefit-card__text {
   display: flex;
@@ -12536,7 +12536,8 @@ main .benefits-section .section-container .benefits-section__cards {
   grid-template-columns: minmax(250px, 300px);
   gap: var(--grid-gap);
   justify-content: center;
-  justify-items: start;
+  justify-items: center;
+  grid-auto-rows: minmax(120px, max-content);
 }
 
 /* For screens 992px and larger (desktops) */
@@ -12816,9 +12817,39 @@ main .hero-section .section-container .hero-section__illustration-img img {
 .faqs-section .faqs-section__container {
   padding-bottom: var(--space-lg);
 }
+.faqs-section .faqs-section__container .faqs-section__header {
+  padding-bottom: var(--space-lg);
+}
 .faqs-section .faqs-section__container .faqs-section__accordions {
   display: grid;
   gap: var(--space-xs);
+}
+
+.carriers-section {
+  padding: var(--section-spacing);
+}
+.carriers-section .carriers-section__header {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding-bottom: var(--space-lg);
+}
+.carriers-section .carriers-section__carriers-brands {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  justify-items: center;
+  align-items: baseline;
+  align-content: baseline;
+  padding: 2rem;
+}
+.carriers-section .carriers-section__carriers-brands img {
+  max-width: 60px;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .section-title--font {
