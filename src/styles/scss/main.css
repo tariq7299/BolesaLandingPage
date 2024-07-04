@@ -12466,13 +12466,14 @@ textarea.form-control-lg {
 
 .navbar {
   width: 90vw;
-  max-width: 1300px;
   margin: auto;
-  background: var(--bg-color-1) !important;
-  border-bottom-right-radius: 25px;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  background: transparent !important;
+  border-radius: 10px;
   padding: 1rem;
   z-index: 9999;
+}
+.navbar.scrolled {
+  background: var(--white-color) !important;
 }
 .navbar .navbar-brand img {
   width: 63px;
@@ -12481,9 +12482,6 @@ textarea.form-control-lg {
 .navbar .navbar-nav {
   display: flex;
   gap: 5rem;
-}
-.navbar .offcanvas {
-  background: var(--bg-color-1) !important;
 }
 .navbar .offcanvas-header {
   display: flex;
