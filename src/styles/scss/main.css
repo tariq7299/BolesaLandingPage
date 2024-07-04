@@ -12676,9 +12676,13 @@ main .hero-section .section-container .hero-section__illustration-img img {
 }
 .bolesa-integration-section .bolesa-integration-section__integration-phone-img {
   flex: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .bolesa-integration-section .bolesa-integration-section__integration-phone-img img {
   width: 100%;
+  max-width: 480px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -12755,7 +12759,7 @@ main .hero-section .section-container .hero-section__illustration-img img {
   justify-content: space-between;
 }
 .demos-slider-section .demos-slider-section__container .demos-slider-seciton__swiper-container {
-  width: 85%;
+  width: 60%;
   margin-inline: auto;
   display: inline-flex;
   justify-content: center;

@@ -38,8 +38,13 @@
     flex: 50%;
     // align-self: flex-end;
     // flex: 1 1 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     img {
       width: 100%;
+      max-width: 480px;
+
       // height: 100%;
       object-fit: cover;
     }
