@@ -12545,6 +12545,7 @@ main .benefits-section .section-container .benefits-section__cards {
 }
 main .hero-section {
   background: radial-gradient(circle, var(--bg-color-1) 30%, #ffffff 70%);
+  overflow: hidden;
   padding: var(--section-spacing);
 }
 main .hero-section .section-container {
@@ -12552,32 +12553,31 @@ main .hero-section .section-container {
   justify-content: center;
   align-items: center;
   flex-flow: column nowrap;
-  position: relative;
   min-height: 100dvh;
 }
 main .hero-section .section-container .floating-box {
   position: absolute;
 }
 main .hero-section .section-container .hero-section--floating-box-1 {
-  top: 20vh;
-  left: 60vw;
+  top: -80px;
+  left: 40px;
   width: 120px;
-  z-index: 9998;
+  z-index: 9990;
 }
 main .hero-section .section-container .hero-section--floating-box-2 {
-  top: 40vh;
-  left: 20vw;
+  top: -65px;
+  left: -550px;
   width: 120px;
-  z-index: 9998;
+  z-index: 9990;
 }
 main .hero-section .section-container .hero-section--floating-box-3 {
-  top: 50vh;
-  right: 0.25vw;
+  top: -10px;
+  right: -110px;
   width: 250px;
-  z-index: 9997;
+  z-index: 1;
 }
 main .hero-section .section-container .hero-section__text {
-  z-index: 9998;
+  z-index: 9991;
   padding: var(--space-xl) 0;
   display: flex;
   justify-content: center;
@@ -12585,12 +12585,19 @@ main .hero-section .section-container .hero-section__text {
   flex-flow: column nowrap;
 }
 main .hero-section .section-container .hero-section__text .hero-section-title {
+  z-index: 9991;
   font: var(--hero-font);
   color: var(--secondary-color-2);
   text-align: center;
 }
+main .hero-section .section-container .hero-section__text .hero-section-title span {
+  position: relative;
+}
+main .hero-section .section-container .hero-section__text .hero-section__sub-title {
+  z-index: 9991;
+}
 main .hero-section .section-container .hero-section__action-buttons {
-  z-index: 9998;
+  z-index: 9991;
   display: flex;
   flex-flow: row nowrap;
   gap: 1rem;
@@ -12599,9 +12606,11 @@ main .hero-section .section-container .hero-section__action-buttons * {
   flex: 1 1 0;
 }
 main .hero-section .section-container .hero-section__illustration-img {
-  z-index: 9998;
+  position: relative;
 }
-main .hero-section .section-container .hero-section__illustration-img img {
+main .hero-section .section-container .hero-section__illustration-img .hero-section__image {
+  position: relative;
+  z-index: 9990;
   width: 100%;
   height: auto;
   -o-object-fit: cover;
