@@ -75,36 +75,5 @@
 
 # Dynamic-todo
 
-- Create the white-color subsctiption plan card
-
-  - Createa the gradient color of plan header
-  - Add the font color to header title
-  - Add the font color to header sub title
-  - Add the font color to price amount
-  - Add the font color to period
-  - Add the font color to currency
-  - Add the button font color
-  - Add the button background color transaparnt
-  - Add the button border
-  - Create the check mark color
-  - Add the nenefit font color
-  - Create the min-height for this card that will be smaller that secondary color subscitption plan
-
-- Create the secondary-color-2 subscritption plan card
-  - Createa the gradient color of plan header
-  - Add the font color to header title
-  - Add the font color to header sub title
-  - Add the font color to price amount
-  - Add the font color to period
-  - Add the font color to currency
-  - Add the button font color
-  - Add the button background color
-  - Add the button border
-  - Create the check mark color
-  - Add the nenefit font color
-  - Create the min-height for this card that will be bigger than.....
-
-# OSme
-
-- Fix button centering
-- Add global styling to check icon (padding-inline-font-size-)
+- Ask him all edits
+- Ask him about animation and hover effects
