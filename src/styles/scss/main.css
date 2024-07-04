@@ -12431,27 +12431,34 @@ textarea.form-control-lg {
   font: var(--small-bold-font);
 }
 
+.accordion {
+  border-radius: 10px;
+}
+.accordion .accordion-item {
+  border-radius: 10px;
+}
 .accordion .accordion-header {
   font: var(--small-bold-font);
   color: var(--secondary-color-2);
 }
 .accordion .accordion-header .accordion-button {
+  border-radius: 10px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
 }
-.accordion .accordion-header .accordion-button .fa-circle-minus {
+.accordion .accordion-header .accordion-button::after {
   display: none;
 }
-.accordion .accordion-header .accordion-button::after {
+.accordion .accordion-header .accordion-button .fa-circle-minus {
   display: none;
 }
 .accordion .accordion-header .accordion-button:not(.collapsed) .fa-circle-plus {
   display: none;
 }
 .accordion .accordion-header .accordion-button:not(.collapsed) .fa-circle-minus {
-  display: inline;
+  display: inline-block;
 }
 .accordion .accordion-body {
   font: var(--x-small-light-font);
@@ -12803,6 +12810,17 @@ main .hero-section .section-container .hero-section__illustration-img img {
     gap: var(--space-xs);
   }
 }
+.faqs-section {
+  padding: var(--section-spacing);
+}
+.faqs-section .faqs-section__container {
+  padding-bottom: var(--space-lg);
+}
+.faqs-section .faqs-section__container .faqs-section__accordions {
+  display: grid;
+  gap: var(--space-xs);
+}
+
 .section-title--font {
   font: var(--section-title-font);
 }

@@ -1,18 +1,23 @@
 .accordion {
+  border-radius: 10px;
+  .accordion-item {
+    border-radius: 10px;
+  }
   .accordion-header {
     font: var(--small-bold-font);
     color: var(--secondary-color-2);
     .accordion-button {
+      border-radius: 10px;
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-between;
       align-items: center;
-      .fa-circle-minus {
+
+      &::after {
         display: none;
       }
 
-      //   This will remove the styling of bootstrap entirly
-      &::after {
+      .fa-circle-minus {
         display: none;
       }
 
@@ -21,13 +26,12 @@
           display: none;
         }
         .fa-circle-minus {
-          display: inline;
+          display: inline-block;
         }
       }
     }
   }
   .accordion-body {
-    // border: none;
     font: var(--x-small-light-font);
     color: var(--secondary-color-4);
   }

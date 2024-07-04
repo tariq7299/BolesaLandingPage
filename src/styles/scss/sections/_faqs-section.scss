@@ -1,0 +1,14 @@
+.faqs-section {
+  padding: var(--section-spacing);
+  .faqs-section__container {
+    padding-bottom: var(--space-lg);
+
+    .faqs-section__header {
+    }
+
+    .faqs-section__accordions {
+      display: grid;
+      gap: var(--space-xs);
+    }
+  }
+}

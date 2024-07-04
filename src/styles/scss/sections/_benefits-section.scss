@@ -25,7 +25,6 @@ main .benefits-section {
     .section-container {
       .benefits-section__cards {
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        // justify-items: start;
       }
     }
   }
