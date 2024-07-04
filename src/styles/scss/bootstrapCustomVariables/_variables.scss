@@ -9,10 +9,10 @@ $nav-link-padding-x: 3rem;
 
 // Overwriting Accordion component default bootstrap variables
 $accordion-bg: var(--bg-color-2);
-$accordion-padding-y: var(--space-xs);
-$accordion-padding-x: var(--space-xs);
-$accordion-body-padding-y: var(--space-sm);
-$accordion-body-padding-x: var(--space-sm);
+$accordion-padding-y: var(--space-md);
+$accordion-padding-x: var(--space-md);
+$accordion-body-padding-y: 1rem;
+$accordion-body-padding-x: 3rem var(--space-sm);
 $accordion-button-active-bg: none;
 $accordion-button-active-color: none;
 $accordion-button-focus-box-shadow: none;

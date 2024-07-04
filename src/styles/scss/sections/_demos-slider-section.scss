@@ -7,19 +7,13 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
-    // position: relative;
     .demos-slider-seciton__swiper-container {
-      width: 60%;
+      width: clamp(60%, 75vw, 700px);
       margin-inline: auto;
       display: inline-flex;
       justify-content: center;
       align-items: end;
       flex-flow: row;
-
-      //   border: 10px red solid;
-      //   padding-inline: 5rem;
-      //   margin-right: 2rem;
-      //   margin-left: 2rem;
     }
 
     .demos-slider-section__text {

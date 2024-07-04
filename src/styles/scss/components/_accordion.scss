@@ -4,14 +4,14 @@
     border-radius: 10px;
   }
   .accordion-header {
-    font: var(--small-bold-font);
-    color: var(--secondary-color-2);
     .accordion-button {
+      text-align: right;
       border-radius: 10px;
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-between;
       align-items: center;
+      gap: var(--space-sm);
 
       &::after {
         display: none;
@@ -30,9 +30,5 @@
         }
       }
     }
-  }
-  .accordion-body {
-    font: var(--x-small-light-font);
-    color: var(--secondary-color-4);
   }
 }

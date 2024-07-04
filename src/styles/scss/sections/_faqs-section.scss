@@ -8,8 +8,25 @@
     }
 
     .faqs-section__accordions {
+      width: 80%;
+      //   max-width: 800px;
+      margin: auto;
       display: grid;
+      justify-content: stretch;
+      justify-items: stretch;
       gap: var(--space-xs);
     }
   }
+}
+
+.accordion-header {
+  button {
+    font: var(--big-font);
+    color: var(--secondary-color-2);
+  }
+}
+
+.accordion-body {
+  font: var(--small-light-font);
+  color: var(--secondary-color-4);
 }
