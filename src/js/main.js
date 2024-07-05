@@ -29,6 +29,17 @@ document.addEventListener("DOMContentLoaded", function () {
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
   });
 
+  // This will collapse the nav bar after a user clicks on a tab on the nav bar (As this is not the default behaviour !!)
+  const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+  const offcanvas = document.getElementById("offcanvasNavbar");
+  const bsOffcanvas = new bootstrap.Offcanvas(offcanvas);
+
+  navLinks.forEach(function (navLink) {
+    navLink.addEventListener("click", function () {
+      bsOffcanvas.hide();
+    });
+  });
+
   // This will initlizing an instance form the AOS JS library
   AOS.init();
 });
