@@ -3970,7 +3970,7 @@ textarea.form-control-lg {
   --bs-navbar-padding-x: 0;
   --bs-navbar-padding-y: 0.5rem;
   --bs-navbar-color: rgba(var(--bs-emphasis-color-rgb), 0.65);
-  --bs-navbar-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.8);
+  --bs-navbar-hover-color: var(--primary-color);
   --bs-navbar-disabled-color: rgba(var(--bs-emphasis-color-rgb), 0.3);
   --bs-navbar-active-color: rgba(var(--bs-emphasis-color-rgb), 1);
   --bs-navbar-brand-padding-y: 0.8125rem;
@@ -12036,11 +12036,23 @@ textarea.form-control-lg {
   color: var(--white-color);
   background-color: var(--primary-color);
 }
+.button--priamry-color-filled:hover {
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  background-color: var(--secondary-color-2);
+  color: var(--primary-color);
+}
 .button--secondary-color-2-opac {
-  border: 2px solid var(--secondary-color-2);
+  border: 1px solid var(--secondary-color-2);
   border-radius: 10px;
   color: var(--secondary-color-2);
   background-color: transparent;
+}
+.button--secondary-color-2-opac:hover {
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  background-color: var(--secondary-color-2);
+  color: var(--primary-color);
 }
 .button--medium {
   max-width: 185px;
@@ -12059,23 +12071,19 @@ textarea.form-control-lg {
 }
 
 .fa-store {
-  color: var(--white-color);
   font-size: 18px;
 }
 
 .fa-door-closed {
-  color: var(--secondary-color-2);
   font-size: 18px;
   padding: 0 0.5rem;
 }
 
 .fa-space-awesome {
-  color: var(--secondary-color-2);
   font-size: 18px;
 }
 
 .fa-check-to-slot {
-  color: var(--secondary-color-2);
   font-size: 20px;
   padding: 0 1rem;
 }
@@ -12083,14 +12091,6 @@ textarea.form-control-lg {
 .fa-check {
   font-size: 15px;
   padding-inline: var(--space-xs);
-}
-
-.fa-circle-plus {
-  color: var(--secondary-color-2);
-}
-
-.fa-circle-minus {
-  color: var(--secondary-color-2);
 }
 
 .benefit-card {
@@ -12318,6 +12318,12 @@ textarea.form-control-lg {
   font: var(--small-font);
   padding: var(--space-xxs) var(--space-md);
 }
+.subscription-plan-card .subscription-plan-card__description .subscription-plan-card__button button:hover {
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  background-color: var(--secondary-color-2);
+  color: var(--primary-color);
+}
 .subscription-plan-card .subscription-plan-card__description .subscription-plan-card__benefits {
   font: var(--small-light-font);
   display: flex;
@@ -12466,6 +12472,7 @@ textarea.form-control-lg {
   border-radius: 10px;
   padding: 1rem;
   z-index: 9999;
+  transition: top 0.3s ease-in-out;
 }
 .navbar.scrolled {
   background: var(--white-color) !important;

@@ -50,6 +50,12 @@
       button {
         font: var(--small-font);
         padding: var(--space-xxs) var(--space-md);
+        &:hover {
+          border: 1px solid var(--primary-color);
+          border-radius: 10px;
+          background-color: var(--secondary-color-2);
+          color: var(--primary-color);
+        }
       }
     }
     .subscription-plan-card__benefits {

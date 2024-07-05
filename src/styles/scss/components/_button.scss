@@ -8,13 +8,25 @@
     border-radius: 10px;
     color: var(--white-color);
     background-color: var(--primary-color);
+    &:hover {
+      border: 1px solid var(--primary-color);
+      border-radius: 10px;
+      background-color: var(--secondary-color-2);
+      color: var(--primary-color);
+    }
   }
 
   &--secondary-color-2-opac {
-    border: 2px solid var(--secondary-color-2);
+    border: 1px solid var(--secondary-color-2);
     border-radius: 10px;
     color: var(--secondary-color-2);
     background-color: transparent;
+    &:hover {
+      border: 2px solid var(--primary-color);
+      border-radius: 10px;
+      background-color: var(--secondary-color-2);
+      color: var(--primary-color);
+    }
   }
 
   &--medium {

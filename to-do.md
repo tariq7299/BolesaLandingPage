@@ -14,8 +14,9 @@
 - Use clamp() to control the dynamic font size
 - Name your media qyeuries to make your code more readable and scalalbe
 - Create more spacing variables
-
-**NOT so importatnt**
+- Create mixing for hover button effects/some grid boiler plate
+- ALso create
+  **NOT so importatnt**
 
 - Make the font size of clamp to make it dynamic depeing on the screen size
 - use typography to set font of the section title and paragraph using h1, h2, h3, p, etc
@@ -75,5 +76,6 @@
 
 # Dynamic-todo
 
-- Ask him all edits
-- Ask him about animation and hover effects
+- Make the nav bar tabs direct to page sections
+- Change the default color of hovering over the nav tabs in nav bar to become primary color
+-
