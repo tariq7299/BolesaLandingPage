@@ -4446,7 +4446,7 @@ textarea.form-control-lg {
   --bs-navbar-hover-color: var(--primary-color);
   --bs-navbar-disabled-color: rgba(var(--bs-emphasis-color-rgb), 0.3);
   --bs-navbar-active-color: rgba(var(--bs-emphasis-color-rgb), 1);
-  --bs-navbar-brand-padding-y: 0.3125rem;
+  --bs-navbar-brand-padding-y: 0.8125rem;
   --bs-navbar-brand-margin-end: 1rem;
   --bs-navbar-brand-font-size: 1.25rem;
   --bs-navbar-brand-color: rgba(var(--bs-emphasis-color-rgb), 1);
@@ -5060,9 +5060,9 @@ textarea.form-control-lg {
   --bs-accordion-border-color: none;
   --bs-accordion-border-width: 0px;
   --bs-accordion-border-radius: 10px;
-  --bs-accordion-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
-  --bs-accordion-btn-padding-x: 1.25rem;
-  --bs-accordion-btn-padding-y: 1rem;
+  --bs-accordion-inner-border-radius: 10px;
+  --bs-accordion-btn-padding-x: var(--space-md);
+  --bs-accordion-btn-padding-y: var(--space-md);
   --bs-accordion-btn-color: var(--bs-body-color);
   --bs-accordion-btn-bg: var(--bs-accordion-bg);
   --bs-accordion-btn-icon: none;
