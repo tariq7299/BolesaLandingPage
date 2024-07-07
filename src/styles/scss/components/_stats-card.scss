@@ -31,19 +31,19 @@
 
 .stats-card--white {
   .stats-card__description {
-    color: var(--secondary-color-2);
+    color: var(--secondary-color-1);
   }
   .stats-card__value {
-    color: var(--secondary-color-2);
+    color: var(--secondary-color-1);
   }
 }
 
-.stats-card--secondary-color-2 {
-  background-color: var(--secondary-color-2);
+.stats-card--secondary-color-1 {
+  background-color: var(--secondary-color-1);
   .stats-card__description {
     color: var(--white-color);
   }
   .stats-card__value {
-    color: var(--secondary-color-3);
+    color: var(--secondary-color-2);
   }
 }

@@ -73,11 +73,13 @@
 
 # Dynamic-todo
 
-- Make the nav bar tabs direct to page sections
-- Change the default color of hovering over the nav tabs in nav bar to become primary color
+- Change primary color and othe secondary-colro and add all of them to them color
 -
 
 # Benefit card component
 
 - Create a modifier to benefit card compoenent (White benefit card - Secondtary text color benfit card)
--
+- Chnage th contaienr --y-pading and replace it with p-y and px
+- Change the text--venter whd replanc them with text-center and text-right
+- Change max width contatiner variable
+- Change the bootstrapriables folder and organize it

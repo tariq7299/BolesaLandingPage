@@ -1,7 +1,7 @@
 main .benefits-section {
   padding: var(--section-spacing);
 
-  .section-container {
+  .benefits-section__container {
     .benefits-section__header {
       display: flex;
       flex-flow: column nowrap;
@@ -23,7 +23,7 @@ main .benefits-section {
 /* For screens 992px and larger (desktops) */
 @media (min-width: 660px) {
   main .benefits-section {
-    .section-container {
+    .benefits-section__container {
       .benefits-section__cards {
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
       }

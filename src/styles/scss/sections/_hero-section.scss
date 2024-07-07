@@ -2,7 +2,7 @@ main .hero-section {
   background: radial-gradient(circle, var(--bg-color-1) 30%, #ffffff 70%);
   overflow: hidden;
   padding: var(--section-spacing);
-  .section-container {
+  .hero-section__container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,7 +48,7 @@ main .hero-section {
         }
         z-index: 9991;
         font: var(--hero-font);
-        color: var(--secondary-color-2);
+        color: var(--secondary-color-1);
         text-align: center;
       }
       .hero-section__sub-title {

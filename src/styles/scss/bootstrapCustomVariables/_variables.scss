@@ -1,10 +1,13 @@
+$primary: var(--primary-color);
+$secondary: var(secondary-color-1);
+
 // Overriding Nav bar
 $navbar-light-hover-color: var(--primary-color);
 
 // Overriding Nav pills component default bootstrap variables
-$nav-pills-link-active-color: var(--secondary-color-2);
+$nav-pills-link-active-color: var(--secondary-color-1);
 $nav-pills-link-active-bg: var(--white-color);
-$nav-link-color: var(--secondary-color-2);
+$nav-link-color: var(--secondary-color-1);
 $nav-pills-border-radius: 6px;
 $nav-link-hover-color: var(--primary-color);
 $nav-link-padding-y: 1rem;
