@@ -13579,11 +13579,11 @@ main
   max-width: var(--max-p-ch-sm);
 }
 
-.text--center {
+.text-center {
   text-align: center;
 }
 
-.text--right {
+.text-right {
   text-align: right;
 }
 

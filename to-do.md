@@ -78,8 +78,7 @@
 
 # Benefit card component
 
-- Create a modifier to benefit card compoenent (White benefit card - Secondtary text color benfit card)
-- Chnage th contaienr --y-pading and replace it with p-y and px
-- Change the text--venter whd replanc them with text-center and text-right
-- Change max width contatiner variable
-- Change the bootstrapriables folder and organize it
+- Things i can replace with bootstrap utility class
+  - text color
+  - Contianer padding
+  -

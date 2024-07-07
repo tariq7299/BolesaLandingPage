@@ -1,6 +1,7 @@
 @import "base/index";
 
-@import "bootstrapCustomVariables/index";
+@import "bootstrapOverriding/index";
+
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
 @import "components/index";

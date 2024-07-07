@@ -1,0 +1,14 @@
+// Overriding Accordion component default bootstrap variables
+$accordion-bg: $bg-color-2;
+$accordion-padding-y: var(--space-md);
+$accordion-padding-x: var(--space-md);
+$accordion-body-padding-y: 1rem;
+$accordion-body-padding-x: 3rem var(--space-sm);
+$accordion-button-active-bg: none;
+$accordion-button-active-color: none;
+$accordion-button-focus-box-shadow: none;
+$accordion-border-width: 0px;
+$accordion-border-color: none;
+$accordion-border-radius: 10px;
+$accordion-button-icon: none;
+$accordion-button-active-icon: none;
