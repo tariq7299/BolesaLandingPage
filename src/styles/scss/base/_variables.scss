@@ -58,20 +58,25 @@
   --flex-gap: var(--space-xs);
 }
 
-$primary: var(--primary-color);
-$secondary: var(secondary-color-1);
+$primary-color: #d89255;
+$secondary-color-1: #3d2f21;
+$secondary-color-2: #df8b42;
+$secondary-color-3: #6c6660;
+$white-color: #ffff;
+$bg-color-1: #ebdfcc;
+$bg-color-2: #f9f9f9;
+$bg-color-3: #edf5f0;
+$bg-color-4: #fcfcfc;
 
 // Create your own map
-$custom-theme-colors: (
-  "secondary-color-2": #df8b42,
-  "secondary-color-3": #6c6660,
-  "white-color": #ffff,
-  "secondary-color-2": #df8b42,
-  "bg-color-1": #ebdfcc,
-  "bg-color-2": #f9f9f9,
-  "bg-color-3": #edf5f0,
-  "bg-color-4": #fcfcfc,
+$theme-colors: (
+  "primary-color": $primary-color,
+  "secondary-color-1": $secondary-color-1,
+  "secondary-color-2": $secondary-color-2,
+  "secondary-color-3": $secondary-color-3,
+  "white-color": $white-color,
+  "bg-color-1": $bg-color-1,
+  "bg-color-2": $bg-color-2,
+  "bg-color-3": $bg-color-3,
+  "bg-color-4": $bg-color-4,
 );
-
-// Merge the maps
-$theme-colors: map-merge($theme-colors, $custom-colors);
