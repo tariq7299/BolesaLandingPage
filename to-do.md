@@ -15,8 +15,8 @@
 - Name your media qyeuries to make your code more readable and scalalbe
 - Create more spacing variables
 - Create mixing for hover button effects/some grid boiler plate
-- ALso create
-  **NOT so importatnt**
+- Use Articles and sections and header adn main and footer and nav to apply to correct things
+- **NOT so importatnt**
 
 - Make the font size of clamp to make it dynamic depeing on the screen size
 - use typography to set font of the section title and paragraph using h1, h2, h3, p, etc
@@ -42,7 +42,6 @@
 **NOt importnant**
 
 - How to set the pattern as a background
-- Set
 
 ## Benefits section
 
@@ -54,6 +53,8 @@
 
 - Refactor the Percentage symbol and its position jusing flex instead of absolute/relative
 - Set a max ch the section description to md
+- Make the text inside tag button to be in the middle excactly
+-
 
 ## Integration section
 
@@ -78,4 +79,9 @@
 
 - Make the nav bar tabs direct to page sections
 - Change the default color of hovering over the nav tabs in nav bar to become primary color
+-
+
+# Benefit card component
+
+- Create a modifier to benefit card compoenent (White benefit card - Secondtary text color benfit card)
 -

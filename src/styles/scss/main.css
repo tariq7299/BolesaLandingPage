@@ -12164,16 +12164,21 @@ textarea.form-control-lg {
   transform: translate(100%, -20%);
 }
 
+.stats-card--white .stats-card__description {
+  color: var(--secondary-color-2);
+}
+.stats-card--white .stats-card__value {
+  color: var(--secondary-color-2);
+}
+
 .stats-card--secondary-color-2 {
   background-color: var(--secondary-color-2);
 }
-
-.stats-card__description--white-color {
+.stats-card--secondary-color-2 .stats-card__description {
   color: var(--white-color);
 }
-
-.stats-card__value--primary-color {
-  color: var(--primary-color);
+.stats-card--secondary-color-2 .stats-card__value {
+  color: var(--secondary-color-3);
 }
 
 .tag {

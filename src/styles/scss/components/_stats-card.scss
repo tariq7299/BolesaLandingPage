@@ -29,14 +29,21 @@
   }
 }
 
+.stats-card--white {
+  .stats-card__description {
+    color: var(--secondary-color-2);
+  }
+  .stats-card__value {
+    color: var(--secondary-color-2);
+  }
+}
+
 .stats-card--secondary-color-2 {
   background-color: var(--secondary-color-2);
-}
-
-.stats-card__description--white-color {
-  color: var(--white-color);
-}
-
-.stats-card__value--primary-color {
-  color: var(--primary-color);
+  .stats-card__description {
+    color: var(--white-color);
+  }
+  .stats-card__value {
+    color: var(--secondary-color-3);
+  }
 }
