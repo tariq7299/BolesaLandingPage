@@ -1,0 +1,2 @@
+// // Merging my custom theme colors with default theme color map from bootstrap
+$theme-colors: map-merge($theme-colors, $custom-theme-colors);

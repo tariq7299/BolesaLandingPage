@@ -2,9 +2,8 @@
   font: var(--section-title-font);
 }
 
-.section-description {
+.section-description--font {
   font: var(--main-font);
-  color: var(--secondary-color-1);
 }
 
 .text--long-lenght-lines {
@@ -23,16 +22,6 @@
   background-color: var(--bg-color-2);
   border: none;
   border-radius: 20px;
-}
-
-.container--x-padding {
-  padding-right: var(--container-x-padding);
-  padding-left: var(--container-x-padding);
-}
-
-.container--y-padding {
-  padding-top: var(--container-y-padding);
-  padding-bottom: var(--container-y-padding);
 }
 
 .section-sub-title--font {

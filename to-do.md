@@ -12,6 +12,9 @@
 - Create more spacing variables
 - Create mixing for hover button effects/some grid boiler plate
 - Use Articles and sections and header adn main and footer and nav to apply to correct things
+- Chnage the spacing unit
+- Create files for every kind of variables to just be more organized
+
 - **NOT so importatnt**
 
 - Make the font size of clamp to make it dynamic depeing on the screen size
@@ -78,6 +81,9 @@
 
 # Benefit card component
 
+- Createa abstract folder and inside it add variabesl.scss and
+  - Create map merge file in bootstrap overriding
+  - Create variables
 - Things i can replace with bootstrap utility class
   - text color
   - Contianer padding

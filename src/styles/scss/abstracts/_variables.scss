@@ -12,23 +12,22 @@
   // light gray x2
   --bg-color-4: #fcfcfc;
 
-  /* Font Variables */
-
+  //   Family font variable
   --font-family-base: "Vazirmatn", sans-serif;
 
+  /* Font Variables */
   /* font-style font-weight font-size font-family */
-  --hero-font: normal bold 50px var(--font-family-base);
-  --section-title-font: normal bold 32px var(--font-family-base);
-  --bold-font: normal bold 16px var(--font-family-base);
-
-  --main-font: normal normal 16px var(--font-family-base);
-  --small-bold-font: normal bold 12px var(--font-family-base);
   --x-small-light-font: normal 200 10px var(--font-family-base);
+  --small-bold-font: normal bold 12px var(--font-family-base);
   --small-light-font: normal 200 12px var(--font-family-base);
   --small-font: normal normal 12px var(--font-family-base);
+  --main-font: normal normal 16px var(--font-family-base);
+  --bold-font: normal bold 16px var(--font-family-base);
   --big-font: normal normal 19px var(--font-family-base);
   --big-bold-font: normal bold 19px var(--font-family-base);
   --big-bold-font-x2: normal bold 24px var(--font-family-base);
+  --section-title-font: normal bold 32px var(--font-family-base);
+  --hero-font: normal bold 50px var(--font-family-base);
 
   /* Spacing Variables */
   /* Base spacing unit */
@@ -69,7 +68,7 @@ $bg-color-3: #edf5f0;
 $bg-color-4: #fcfcfc;
 
 // Create your own map
-$theme-colors: (
+$custom-theme-colors: (
   "primary-color": $primary-color,
   "secondary-color-1": $secondary-color-1,
   "secondary-color-2": $secondary-color-2,
@@ -79,4 +78,18 @@ $theme-colors: (
   "bg-color-2": $bg-color-2,
   "bg-color-3": $bg-color-3,
   "bg-color-4": $bg-color-4,
+);
+
+$spacer: 2rem;
+
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer * 0.75,
+  4: $spacer,
+  5: $spacer * 2,
+  6: $spacer * 3,
+  7: $spacer * 5,
+  8: $spacer * 7,
 );
