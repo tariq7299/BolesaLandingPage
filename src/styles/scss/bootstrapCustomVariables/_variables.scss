@@ -1,16 +1,16 @@
-// Nav bar
+// Overriding Nav bar
 $navbar-light-hover-color: var(--primary-color);
 
-// Overwriting Nav pills component default bootstrap variables
-$nav-pills-link-active-color: #3d2f21;
-$nav-pills-link-active-bg: #ffff;
-$nav-link-color: #3d2f21;
+// Overriding Nav pills component default bootstrap variables
+$nav-pills-link-active-color: var(--secondary-color-2);
+$nav-pills-link-active-bg: var(--white-color);
+$nav-link-color: var(--secondary-color-2);
 $nav-pills-border-radius: 6px;
-$nav-link-hover-color: #d89255;
+$nav-link-hover-color: var(--primary-color);
 $nav-link-padding-y: 1rem;
 $nav-link-padding-x: 3rem;
 
-// Overwriting Accordion component default bootstrap variables
+// Overriding Accordion component default bootstrap variables
 $accordion-bg: var(--bg-color-2);
 $accordion-padding-y: var(--space-md);
 $accordion-padding-x: var(--space-md);

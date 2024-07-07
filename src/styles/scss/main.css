@@ -50,7 +50,7 @@ body {
   --max-p-ch-sm: 26ch;
   --max-p-ch-md: 45ch;
   --max-p-ch-xl: 52ch;
-  --max-section-width: 1300px;
+  --max-section-width: 1350px;
   /* Compound spacing variables */
   --container-x-padding: var(--space-lg);
   --container-y-padding: var(--space-lg);
@@ -3835,8 +3835,8 @@ textarea.form-control-lg {
   --bs-nav-link-padding-x: 3rem;
   --bs-nav-link-padding-y: 1rem;
   --bs-nav-link-font-weight: ;
-  --bs-nav-link-color: #3d2f21;
-  --bs-nav-link-hover-color: #d89255;
+  --bs-nav-link-color: var(--secondary-color-2);
+  --bs-nav-link-hover-color: var(--primary-color);
   --bs-nav-link-disabled-color: var(--bs-secondary-color);
   display: flex;
   flex-wrap: wrap;
@@ -3908,8 +3908,8 @@ textarea.form-control-lg {
 
 .nav-pills {
   --bs-nav-pills-border-radius: 6px;
-  --bs-nav-pills-link-active-color: #3d2f21;
-  --bs-nav-pills-link-active-bg: white;
+  --bs-nav-pills-link-active-color: var(--secondary-color-2);
+  --bs-nav-pills-link-active-bg: var(--white-color);
 }
 .nav-pills .nav-link {
   border-radius: var(--bs-nav-pills-border-radius);
@@ -12469,9 +12469,16 @@ textarea.form-control-lg {
   display: inline-block;
 }
 
+.accordion--white .accordion-item .accordion-header button {
+  color: var(--secondary-color-2);
+}
+.accordion--white .accordion-item .accordion-body {
+  color: var(--secondary-color-4);
+}
+
 .navbar {
   width: 93vw;
-  max-width: 1400px;
+  max-width: var(--max-section-width);
   margin: auto;
   background: transparent !important;
   border-radius: 10px;
@@ -12857,12 +12864,10 @@ main .hero-section .section-container .hero-section__illustration-img .hero-sect
 
 .accordion-header button {
   font: var(--big-font);
-  color: var(--secondary-color-2);
 }
 
 .accordion-body {
   font: var(--small-light-font);
-  color: var(--secondary-color-4);
 }
 
 .carriers-section {

@@ -32,3 +32,16 @@
     }
   }
 }
+
+.accordion--white {
+  .accordion-item {
+    .accordion-header {
+      button {
+        color: var(--secondary-color-2);
+      }
+    }
+    .accordion-body {
+      color: var(--secondary-color-4);
+    }
+  }
+}

@@ -4,10 +4,6 @@
 
 ## GLOBAL
 
-- Give correct font color to all text titels and descripttion
-- Add the links to nav tabs
-- Craete some interactions/and Reactive things/Animation
-- Add hover effects on buttons
 - Clean and tidy up the helpers.scss and create files for every group of utilities
 - CHange the name of color variables names
 - Add variable font sizes and give them to `font:` variables
