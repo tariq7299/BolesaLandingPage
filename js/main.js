@@ -40,6 +40,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  // Scroll to a paricullar stat card in the stats row
+  const activeStatCard = document.getElementById("active-stat-card");
+  if (activeStatCard) {
+    // Scroll to the target card
+    activeStatCard.scrollIntoView({ behavior: "smooth" });
+  }
+
   // This will initlizing an instance form the AOS JS library
   AOS.init();
 });
