@@ -37,11 +37,11 @@
   .accordion-item {
     .accordion-header {
       button {
-        color: var(--secondary-color-1);
+        color: $secondary-color-1;
       }
     }
     .accordion-body {
-      color: var(--secondary-color-3);
+      color: $secondary-color-3;
     }
   }
 }

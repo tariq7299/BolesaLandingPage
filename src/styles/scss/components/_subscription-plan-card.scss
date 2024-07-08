@@ -51,10 +51,10 @@
         font: var(--small-font);
         padding: var(--space-xxs) var(--space-md);
         &:hover {
-          border: 1px solid var(--primary-color);
+          border: 1px solid $primary-color;
           border-radius: 10px;
-          background-color: var(--secondary-color-1);
-          color: var(--primary-color);
+          background-color: $secondary-color-1;
+          color: $primary-color;
         }
       }
     }
@@ -78,23 +78,23 @@
     );
 
     .subscription-plan__title {
-      color: var(--secondary-color-1);
+      color: $secondary-color-1;
     }
     .subscription-plan__sub-title {
-      color: var(--secondary-color-3);
+      color: $secondary-color-3;
     }
   }
   .subscription-plan-card__description {
     .subscription-plan-card__price {
       .subscription-plan-card__amount {
-        color: var(--secondary-color-1);
+        color: $secondary-color-1;
       }
       .subscription-plan-card__amount-details {
         .subscription-plan-card__period {
-          color: var(--secondary-color-3);
+          color: $secondary-color-3;
         }
         .subscription-plan-card__currency {
-          color: var(--secondary-color-1);
+          color: $secondary-color-1;
         }
       }
     }
@@ -102,16 +102,16 @@
       button {
         width: 100%;
         background-color: transparent;
-        color: var(--secondary-color-1);
-        border: 2px solid var(--secondary-color-1);
+        color: $secondary-color-1;
+        border: 2px solid $secondary-color-1;
         border-radius: 6px;
       }
     }
     .subscription-plan-card__benefits {
       .subscription-plan-card__benefit {
-        color: var(--secondary-color-1);
+        color: $secondary-color-1;
         span {
-          color: var(--primary-color);
+          color: $primary-color;
         }
       }
     }
@@ -119,49 +119,49 @@
 }
 
 .subscription-plan-card--secondary-color-3 {
-  background: var(--secondary-color-1);
+  background: $secondary-color-1;
   .subscription-plan__header {
     background: linear-gradient(
       to bottom,
-      var(--secondary-color-3),
-      var(--secondary-color-1)
+      $secondary-color-3,
+      $secondary-color-1
     );
 
     .subscription-plan__title {
-      color: var(--white-color);
+      color: $white-color;
     }
     .subscription-plan__sub-title {
-      color: var(--white-color);
+      color: $white-color;
     }
   }
   .subscription-plan-card__description {
     .subscription-plan-card__price {
       .subscription-plan-card__amount {
-        color: var(--white-color);
+        color: $white-color;
       }
       .subscription-plan-card__amount-details {
         .subscription-plan-card__period {
-          color: var(--secondary-color-3);
+          color: $secondary-color-3;
         }
         .subscription-plan-card__currency {
-          color: var(--white-color);
+          color: $white-color;
         }
       }
     }
     .subscription-plan-card__button {
       button {
         width: 100%;
-        background-color: var(--secondary-color-3);
-        color: var(--white-color);
+        background-color: $secondary-color-3;
+        color: $white-color;
         border: none;
         border-radius: 6px;
       }
     }
     .subscription-plan-card__benefits {
       .subscription-plan-card__benefit {
-        color: var(--white-color);
+        color: $white-color;
         span {
-          color: var(--secondary-color-3);
+          color: $secondary-color-3;
         }
       }
     }

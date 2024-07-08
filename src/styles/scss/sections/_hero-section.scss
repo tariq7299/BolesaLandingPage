@@ -48,7 +48,7 @@ main .hero-section {
         }
         z-index: 9991;
         font: var(--hero-font);
-        color: var(--secondary-color-1);
+        color: $secondary-color-1;
         text-align: center;
       }
       .hero-section__sub-title {

@@ -22,38 +22,7 @@ $custom-theme-colors: (
   "bg-color-4": $bg-color-4,
 );
 
-// Font Family
-$font-family-base: "Vazirmatn", sans-serif;
-
-// Font Weights
-$font-weight-light: 200;
-$font-weight-normal: 400;
-$font-weight-bold: 700;
-
-$font-size-base: 1.6rem;
-
-$font-size-xs: $font-size-base * 0.625; // 10px
-$font-size-sm: $font-size-base * 0.75; // 12px
-$font-size-lg: $font-size-base * 1.21875; // 19px
-$font-size-xl: $font-size-base * 1.5; // 24px
-$font-size-2xl: $font-size-base * 2; // 32px
-$font-size-3xl: $font-size-base * 3.125; // 50px
-
-// SCSS Font Variables
-$x-small-light-font: normal $font-weight-light $font-size-xs $font-family-base;
-$small-bold-font: normal $font-weight-bold $font-size-sm $font-family-base;
-$small-light-font: normal $font-weight-light $font-size-sm $font-family-base;
-$small-font: normal $font-weight-normal $font-size-sm $font-family-base;
-$main-font: normal $font-weight-normal $font-size-base $font-family-base;
-$bold-font: normal $font-weight-bold $font-size-base $font-family-base;
-$big-font: normal $font-weight-normal $font-size-lg $font-family-base;
-$big-bold-font: normal $font-weight-bold $font-size-lg $font-family-base;
-$big-bold-font-x2: normal $font-weight-bold $font-size-xl $font-family-base;
-$section-title-font: normal $font-weight-bold $font-size-2xl $font-family-base;
-$hero-font: normal $font-weight-bold $font-size-3xl $font-family-base;
-
-$space-unit: 2rem;
-$spacer: $space-unit;
+$spacer: 2rem;
 
 // Spacing Variables
 $space-xxs: $spacer * 0.25;
@@ -121,32 +90,42 @@ $max-p-ch-xl: 52ch;
   --bg-color-3: #{$bg-color-3};
   --bg-color-4: #{$bg-color-4};
 
-  --font-family-base: #{$font-family-base};
+  --font-family-base: "Vazirmatn", sans-serif;
 
-  --font-weight-light: #{$font-weight-light};
-  --font-weight-normal: #{$font-weight-normal};
-  --font-weight-bold: #{$font-weight-bold};
+  --font-weight-light: 200;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
 
-  --font-size-xs: #{$font-size-xs};
-  --font-size-sm: #{$font-size-sm};
-  --font-size-base: #{$font-size-base};
-  --font-size-lg: #{$font-size-lg};
-  --font-size-xl: #{$font-size-xl};
-  --font-size-2xl: #{$font-size-2xl};
-  --font-size-3xl: #{$font-size-3xl};
+  --font-size-xs: clamp(0.9rem, 0.826rem + 0.5159vw, 1.2rem);
+  --font-size-sm: clamp(1.2rem, 1.08416rem + 0.3439vw, 1.4rem);
+  --font-size-base: clamp(1.6rem, 1.33392rem + 0.7739vw, 1.8rem);
+  --font-size-lg: clamp(1.9rem, 1.81312rem + 0.258vw, 2.2rem);
+  --font-size-xl: clamp(2.4rem, 2.34208rem + 0.172vw, 2.6rem);
+  --font-size-2xl: clamp(3.2rem, 3.08416rem + 0.3439vw, 3.6rem);
+  --font-size-3xl: clamp(4.5rem, 2.3rem + 3.4551vw, 6rem);
 
-  --x-small-light-font: #{$x-small-light-font};
-  --small-bold-font: #{$small-bold-font};
-  --small-light-font: #{$small-light-font};
-  --small-font: #{$small-font};
-  --main-font: #{$main-font};
-  --bold-font: #{$bold-font};
-  --big-font: #{$big-font};
-  --big-bold-font: #{$big-bold-font};
-  --big-bold-font-x2: #{$big-bold-font-x2};
-  --section-title-font: #{$section-title-font};
-  --hero-font: #{$hero-font};
-
+  --x-small-light-font: normal var(--font-weight-light) var(--font-size-xs)
+    var(--font-family-base);
+  --small-bold-font: normal var(--font-weight-bold) var(--font-size-sm)
+    var(--font-family-base);
+  --small-light-font: normal var(--font-weight-light) var(--font-size-sm)
+    var(--font-family-base);
+  --small-font: normal var(--font-weight-normal) var(--font-size-sm)
+    var(--font-family-base);
+  --main-font: normal var(--font-weight-normal) var(--font-size-base)
+    var(--font-family-base);
+  --bold-font: normal var(--font-weight-bold) var(--font-size-base)
+    var(--font-family-base);
+  --big-font: normal var(--font-weight-normal) var(--font-size-lg)
+    var(--font-family-base);
+  --big-bold-font: normal var(--font-weight-bold) var(--font-size-lg)
+    var(--font-family-base);
+  --big-bold-font-x2: normal var(--font-weight-bold) var(--font-size-xl)
+    var(--font-family-base);
+  --section-title-font: normal var(--font-weight-bold) var(--font-size-2xl)
+    var(--font-family-base);
+  --hero-font: normal var(--font-weight-bold) var(--font-size-3xl)
+    var(--font-family-base);
   --spacer: #{$spacer};
 
   /* Spacing scale */

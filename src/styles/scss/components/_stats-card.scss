@@ -4,7 +4,7 @@
   flex-flow: row nowrap;
   border: none;
   border-radius: 15px;
-  background-color: var(--white-color);
+  background-color: $white-color;
   gap: var(--space-md);
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
   justify-content: start;
@@ -31,19 +31,19 @@
 
 .stats-card--white {
   .stats-card__description {
-    color: var(--secondary-color-1);
+    color: $secondary-color-1;
   }
   .stats-card__value {
-    color: var(--secondary-color-1);
+    color: $secondary-color-1;
   }
 }
 
 .stats-card--secondary-color-1 {
-  background-color: var(--secondary-color-1);
+  background-color: $secondary-color-1;
   .stats-card__description {
-    color: var(--white-color);
+    color: $white-color;
   }
   .stats-card__value {
-    color: var(--secondary-color-2);
+    color: $secondary-color-2;
   }
 }

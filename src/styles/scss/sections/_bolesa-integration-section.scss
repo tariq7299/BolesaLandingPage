@@ -17,7 +17,7 @@
       padding: var(--space-xs);
       border-radius: 15px;
       max-width: 500px;
-      background-color: var(--white-color);
+      background-color: $white-color;
       display: grid;
       grid-template-columns: minmax(250px, 500px);
       justify-content: stretch;

@@ -14,6 +14,9 @@
 - Create files for every kind of variables to just be more organized
 - Replace section spacing with p-3...etc
 - Create a file for each bootstrap UI compoenent overriding it
+- Use only scss variables and only use css variabels when necessary
+- Increase the padding of stat card escpicially when in desktop screens
+- increase the padding of buttons
 
 - **NOT so importatnt**
 
@@ -81,8 +84,8 @@
 
 # Benefit card component
 
-- Create scss font variable
-- spacing variables
-- character spacing variables
+- Create dynamic font sizes using clamp()
+- Remove css variables and only use scss
+  - Change every font size
 - Replace grid gap and flex gap
 - remove max-section-width variabels

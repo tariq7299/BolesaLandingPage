@@ -9,7 +9,7 @@
   transition: top 0.3s ease-in-out;
 
   &.scrolled {
-    background: var(--white-color) !important;
+    background: $white-color !important;
   }
 
   .navbar-brand img {
@@ -58,5 +58,5 @@
 
 .action-tab {
   font: var(--bold-font);
-  color: var(--secondary-color-1);
+  color: $secondary-color-1;
 }

@@ -17,12 +17,12 @@
 
     h2 {
       font: var(--big-bold-font);
-      color: var(--secondary-color-1);
+      color: $secondary-color-1;
     }
 
     p {
       font: var(--main-font);
-      color: var(--secondary-color-1);
+      color: $secondary-color-1;
     }
   }
 
@@ -32,7 +32,7 @@
 }
 
 .benefit-card--white-bg {
-  background-color: var(--white-color);
+  background-color: $white-color;
 }
 .benefit-card--transparent-bg {
   background-color: transparent;
