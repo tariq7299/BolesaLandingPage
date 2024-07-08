@@ -3,7 +3,7 @@
 
   .demos-slider-section__container {
     min-height: 600px;
-    padding-top: $space-lg;
+    padding-top: $space-x2l;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
@@ -17,7 +17,7 @@
     }
 
     .demos-slider-section__text {
-      padding: $space-lg;
+      padding: $space-x2l;
     }
 
     .demos-slider-section__swiper {

@@ -25,26 +25,27 @@ $custom-theme-colors: (
 $spacer: 2rem;
 
 // Spacing Variables
-$space-xxs: $spacer * 0.25;
+$space-x2s: $spacer * 0.25;
 $space-xs: $spacer * 0.5;
 $space-sm: $spacer * 0.75;
 $space-md: $spacer;
-$space-lg: $spacer * 2;
-$space-xl: $spacer * 3;
-$space-xxl: $spacer * 5;
-$space-xxxl: $spacer * 7;
+$space-lg: $spacer * 1.5;
+$space-xl: $spacer * 2;
+$space-x2l: $spacer * 3;
+$space-x3l: $spacer * 5;
+$space-x4l: $spacer * 7;
 
 // Spacers map using predefined variables
 $spacers: (
   0: 0,
-  1: $space-xxs,
+  1: $space-x2s,
   2: $space-xs,
   3: $space-sm,
   4: $space-md,
   5: $space-lg,
   6: $space-xl,
-  7: $space-xxl,
-  8: $space-xxxl,
+  7: $space-x2l,
+  8: $space-x4l,
 );
 
 // Accordion overrides
@@ -118,6 +119,4 @@ $max-p-ch-xl: 52ch;
   --hero-font: normal var(--font-weight-bold) var(--font-size-3xl)
     var(--font-family-base);
   --spacer: #{$spacer};
-
-  --max-section-width: 1350px;
 }

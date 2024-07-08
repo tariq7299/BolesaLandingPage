@@ -5,10 +5,10 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    padding-top: $space-lg;
+    padding-top: $space-x2l;
 
     .bolesa-integration-section__header {
-      padding-bottom: $space-lg;
+      padding-bottom: $space-x2l;
     }
 
     .bolesa-integration-section__benefits {
@@ -53,7 +53,7 @@
   .bolesa-integration-section {
     .bolesa-integration-section__container {
       .bolesa-integration-section__text {
-        padding: $space-xl $space-md;
+        padding: $space-x2l $space-md;
       }
       flex-wrap: nowrap;
       gap: $space-md;

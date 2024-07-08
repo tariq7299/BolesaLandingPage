@@ -16,7 +16,8 @@
 - Increase the padding of stat card escpicially when in desktop screens
 - increase the padding of buttons
 - Invreace the nav logo sizz using clamp
--
+
+- Fix the carriers padding section
 
 - **NOT so importatnt**
 
@@ -84,12 +85,6 @@
 
 # Benefit card component
 
-- Remove css variables and only use scss
-- Replace grid gap and flex gap
-- remove max-section-width variabels
-- Continue with to dossss
-- Remober section-spacing and replace it wiht
-  - p-5
-- REmove --grid-gap and replace it with actilual spacing
-- Remove flex gap and replace it with space-xs
--
+- Add padding ot buttons or make them bigger on dektop
+- Make word inside tag to be in meddile
+- Add some padding to stats or make it bigger on desktop

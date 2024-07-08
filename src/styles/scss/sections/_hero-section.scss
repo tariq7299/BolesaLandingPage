@@ -36,7 +36,7 @@ main .hero-section {
 
     .hero-section__text {
       z-index: 9991;
-      padding: $space-xl 0;
+      padding: $space-x2l 0;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -83,6 +83,6 @@ main .hero-section {
 
 @media (min-width: 660px) {
   main .hero-section .hero-section-title {
-    margin-top: $space-xxxl;
+    margin-top: $space-x4l;
   }
 }

@@ -2,6 +2,10 @@
   text-align: center;
   border-radius: 10px;
   white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 
   &--priamry-color-filled {
     border: none;
@@ -30,8 +34,12 @@
   }
 
   &--medium {
-    max-width: 185px;
-    padding: 1rem 1.5rem !important;
+    // max-width: 195px;
+    // min-height: 50px;
+    // max-height: 55px;
+
+    min-height: clamp($space-md, 8vw, 5.2rem) !important;
+    padding: clamp($space-xs, 2vw, $space-sm) clamp($space-sm, 4vw, $space-md) !important;
   }
 
   &--bold-font {
@@ -42,7 +50,7 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     gap: $space-xs;
     max-height: 45px;
   }

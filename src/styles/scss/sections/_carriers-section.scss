@@ -3,7 +3,7 @@
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    padding-bottom: $space-lg;
+    padding-bottom: $space-x2l;
   }
   .carriers-section__carriers-brands {
     background-color: $bg-color-2;
@@ -16,7 +16,7 @@
     justify-items: center;
     align-items: baseline;
     align-content: baseline;
-    padding: $space-lg;
+    padding: $space-x2l;
 
     img {
       max-width: 75px;
