@@ -10,7 +10,7 @@
       flex: 1 1 300px;
       .tabby-payment-section__header {
         .tabby-payment-section__description {
-          max-width: var(--max-p-ch-md);
+          max-width: $max-p-ch-md;
         }
         padding-bottom: $space-lg;
       }

@@ -34,10 +34,6 @@
   --hero-font: normal var(--font-weight-bold) var(--font-size-3xl)
     var(--font-family-base);
   --spacer: 2rem;
-  /* Spacing scale */
-  --max-p-ch-sm: 26ch;
-  --max-p-ch-md: 45ch;
-  --max-p-ch-xl: 52ch;
   --max-section-width: 1350px;
 }
 
@@ -14197,7 +14193,7 @@ textarea.form-control-lg {
 }
 .stats-card .stats-card__description {
   font: var(--main-font);
-  max-width: var(--max-p-ch-sm);
+  max-width: 26ch;
   flex-grow: 1;
 }
 .stats-card .stats-card__value {
@@ -14782,7 +14778,7 @@ main .hero-section .hero-section__container .hero-section__illustration-img .her
   padding-bottom: 4rem;
 }
 .tabby-payment-section .tabby-payment-section__section-container .tabby-payment-section__text .tabby-payment-section__header .tabby-payment-section__description {
-  max-width: var(--max-p-ch-md);
+  max-width: 45ch;
 }
 .tabby-payment-section .tabby-payment-section__section-container .tabby-payment-section__text .tabby-payment-section__benefits p {
   font: var(--small-light-font);
@@ -14940,15 +14936,15 @@ main .hero-section .hero-section__container .hero-section__illustration-img .her
 }
 
 .text--long-lenght-lines {
-  max-width: var(--max-p-ch-xl);
+  max-width: 52ch;
 }
 
 .text--medium-lenght-lines {
-  max-width: var(--max-p-ch-md);
+  max-width: 45ch;
 }
 
 .text--short-lenght-lines {
-  max-width: var(--max-p-ch-sm);
+  max-width: 26ch;
 }
 
 .container--card {

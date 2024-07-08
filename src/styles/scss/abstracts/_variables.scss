@@ -119,17 +119,5 @@ $max-p-ch-xl: 52ch;
     var(--font-family-base);
   --spacer: #{$spacer};
 
-  /* Spacing scale */
-  // --space-sm: calc(0.75 * var(--spacer));
-  // --space-md: calc(1 * var(--spacer));
-  // --space-lg: calc(2 * var(--spacer));
-  // --space-xl: calc(3 * var(--spacer));
-  // --space-xxl: calc(5 * var(--spacer));
-
-  // Character spacing variables
-  --max-p-ch-sm: #{$max-p-ch-sm};
-  --max-p-ch-md: #{$max-p-ch-md};
-  --max-p-ch-xl: #{$max-p-ch-xl};
-
   --max-section-width: 1350px;
 }
