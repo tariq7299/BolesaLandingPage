@@ -3,7 +3,8 @@
   flex-flow: column nowrap;
   border-radius: 18px;
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-  width: max-content;
+  width: 100%;
+  max-width: 385px;
   gap: $space-md;
   padding: $space-x2s;
 
@@ -169,11 +170,11 @@
 }
 
 .subscription-plan-card--big {
-  height: clamp(450px, 65vh, 500px);
-  width: clamp(310px, 25vw, 330px);
+  height: clamp(490px, 65vh, 530px);
+  width: clamp(340px, 25vw, 370px);
   aspect-ratio: 3 / 4;
 }
 
 .subscription-plan-card--tall {
-  height: clamp(500px, 75vh, 535px);
+  height: clamp(530px, 75vh, 560px);
 }

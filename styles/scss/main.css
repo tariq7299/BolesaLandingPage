@@ -14324,8 +14324,8 @@ textarea.form-control-lg {
   flex-flow: column nowrap;
   border-radius: 18px;
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-  width: -moz-max-content;
-  width: max-content;
+  width: 100%;
+  max-width: 385px;
   gap: 2rem;
   padding: 0.5rem;
 }
@@ -14457,25 +14457,33 @@ textarea.form-control-lg {
 }
 
 .subscription-plan-card--big {
-  height: clamp(450px, 65vh, 500px);
-  width: clamp(310px, 25vw, 330px);
+  height: clamp(490px, 65vh, 530px);
+  width: clamp(340px, 25vw, 370px);
   aspect-ratio: 3/4;
 }
 
 .subscription-plan-card--tall {
-  height: clamp(500px, 75vh, 535px);
+  height: clamp(530px, 75vh, 560px);
 }
 
 .nav-pills {
   background-color: #f9f9f9;
-  width: -moz-max-content;
-  width: max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   border-radius: 6px;
-  padding: 0.35rem;
+  padding: 0.5rem;
   margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
 }
 .nav-pills .nav-item {
   font: var(--small-font);
+  flex-grow: 1;
+}
+.nav-pills .nav-item button {
+  width: 100%;
 }
 .nav-pills .nav-item button span {
   margin-inline: 1rem;
@@ -14489,6 +14497,11 @@ textarea.form-control-lg {
   font: var(--small-bold-font);
 }
 
+@media (min-width: 660px) {
+  .nav-pills {
+    gap: 0;
+  }
+}
 .accordion {
   border-radius: 10px;
 }
@@ -14861,6 +14874,8 @@ main .hero-section .hero-section__container .hero-section__illustration-img .her
 .subscription-plans-section .subscription-plans-section__section-body {
   display: flex;
   flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
   gap: 1.5rem;
 }
 .subscription-plans-section .subscription-plans-seciton__header {
@@ -14872,6 +14887,7 @@ main .hero-section .hero-section__container .hero-section__illustration-img .her
 .subscription-plans-section .subscription-plans-card__plan-cards-container {
   display: grid;
   grid-auto-flow: row;
+  grid-template-columns: 1fr;
   gap: 2rem;
   justify-items: center;
   justify-content: center;
@@ -14881,8 +14897,8 @@ main .hero-section .hero-section__container .hero-section__illustration-img .her
 @media (min-width: 992px) {
   .subscription-plans-section .subscription-plans-card__plan-cards-container {
     grid-auto-flow: column;
-    grid-auto-columns: max-content;
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
   }
 }
 .faqs-section .faqs-section__container {
@@ -14892,7 +14908,7 @@ main .hero-section .hero-section__container .hero-section__illustration-img .her
   padding-bottom: 6rem;
 }
 .faqs-section .faqs-section__container .faqs-section__accordions {
-  width: 80%;
+  width: 100%;
   margin: auto;
   display: grid;
   justify-content: stretch;
