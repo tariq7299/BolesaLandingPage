@@ -14382,6 +14382,7 @@ textarea.form-control-lg {
   flex-flow: column nowrap;
   align-items: start;
 }
+
 .subscription-plan-card--white-color .subscription-plan__header {
   background: linear-gradient(to bottom, #f9f9f9, #fcfcfc);
 }
@@ -14548,10 +14549,13 @@ textarea.form-control-lg {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  margin-bottom: 2rem;
 }
 .navbar .offcanvas-header .btn-close {
   margin: 0;
+}
+.navbar .offcanvas-header .offcanvas-title img {
+  width: 65px;
+  height: 65px;
 }
 
 /* For screens smaller than 768px (mobile devices) */
@@ -14634,6 +14638,7 @@ main .hero-section .hero-section__container .hero-section--floating-box-3 {
   z-index: 1;
 }
 main .hero-section .hero-section__container .hero-section__text {
+  margin-top: 14rem;
   background-image: url(../../assets/hero-bg-pattern-x2.png);
   background-size: 100%;
   background-position: center center;
@@ -14645,7 +14650,6 @@ main .hero-section .hero-section__container .hero-section__text {
   flex-flow: column nowrap;
 }
 main .hero-section .hero-section__container .hero-section__text .hero-section-title {
-  margin-top: 14rem;
   z-index: 9991;
   font: var(--hero-font);
   color: #3d2f21;

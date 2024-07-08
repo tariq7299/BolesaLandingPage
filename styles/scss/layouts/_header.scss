@@ -22,13 +22,23 @@
     gap: 5rem;
   }
 
+  .offcanvas {
+    // height: 100dvh;
+  }
+
   .offcanvas-header {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    margin-bottom: 2rem;
+    // margin-bottom: 2rem;
     .btn-close {
       margin: 0;
+    }
+    .offcanvas-title {
+      img {
+        width: 65px;
+        height: 65px;
+      }
     }
   }
 }
