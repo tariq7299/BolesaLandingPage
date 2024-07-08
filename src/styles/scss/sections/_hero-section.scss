@@ -7,7 +7,6 @@ main .hero-section {
     justify-content: center;
     align-items: center;
     flex-flow: column nowrap;
-    // position: relative;
     min-height: 100dvh;
 
     .floating-box {
@@ -35,6 +34,9 @@ main .hero-section {
     }
 
     .hero-section__text {
+      background-image: url(../../assets/hero-bg-pattern-x2.png);
+      background-size: 100%;
+      background-position: center center;
       z-index: 9991;
       padding: $space-x2l 0;
       display: flex;

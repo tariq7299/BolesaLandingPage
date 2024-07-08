@@ -70,3 +70,17 @@
 - Ask about typography
 - Create the right border of the logout button
 - Create the gray circles and there dotted lines in integration section benefit cards
+
+- Active stat is the secondary color 2 slide
+- Make the smallest font bigger
+- Change the font icon in tabby setcion
+- Fix the slider in demos
+- Nav bar in home in intersicting with boxes in hero section
+- Logo in offcanvase is so big
+- Make the offcanvase 100dvh and also remove some white spaces
+- Make the exit nav bar button in offcanvase
+- Make bootstrap scroll spy
+- Make the nav pills at the middle and a little bit smaller
+- Make the subscription cards section / accordion / take the smame padding right and left like evry other section
+- Make the tag at the at the same line as its text in section
+- Make the buttons in subscrfiption cards just like every other buttn (font and padding)
