@@ -71,10 +71,6 @@
 - Create the right border of the logout button
 - Create the gray circles and there dotted lines in integration section benefit cards
 
-- Make the exit nav bar button in offcanvase
-- Make bootstrap scroll spy
-- Make the nav pills at the middle and a little bit smaller
-- Make the subscription cards section / accordion / take the smame padding right and left like evry other section
 - Make the tag at the at the same line as its text in section
 - Make the buttons in subscrfiption cards just like every other buttn (font and padding)
 - Remove overflow of the subscription section by putton all of them in a padding

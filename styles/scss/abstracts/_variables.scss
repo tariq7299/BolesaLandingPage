@@ -48,9 +48,13 @@ $spacers: (
   8: $space-x4l,
 );
 
+// Resting some bootstrap Typography values
+$headings-margin-bottom: 0;
+
 // Navbar overrides
 $navbar-light-hover-color: $primary-color;
 $navbar-nav-link-padding-x: 3.6rem;
+$navbar-light-active-color: $primary-color;
 
 // Accordion overrides
 $accordion-bg: $bg-color-2;
