@@ -1,10 +1,10 @@
 .benefit-card {
   display: flex;
   flex-flow: row nowrap;
-  padding: var(--space-md);
+  padding: $space-md;
   border: none;
   border-radius: 15px;
-  gap: var(--space-md);
+  gap: $space-md;
   width: 100%;
   max-width: 500px;
   justify-content: center;
@@ -40,6 +40,6 @@
 
 .benefit-card--bg-color-2-hover {
   &:hover {
-    background-color: var(--bg-color-2);
+    background-color: $bg-color-2;
   }
 }

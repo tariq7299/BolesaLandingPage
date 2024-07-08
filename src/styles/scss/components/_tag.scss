@@ -51,11 +51,11 @@
 .tag--medium {
   min-height: 50px;
   width: clamp(150px, 60%, 180px);
-  padding: var(--space-xs);
+  padding: $space-xs;
 }
 
 .tag--small {
   // min-height: 35px;
   width: clamp(70px, 50%, 85px);
-  // padding: var(--space-xs) var(--space-md);
+  // padding: $space-xs $space-md;
 }

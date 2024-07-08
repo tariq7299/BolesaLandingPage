@@ -1,18 +1,16 @@
 main .benefits-section {
-  padding: var(--section-spacing);
-
   .benefits-section__container {
     .benefits-section__header {
       display: flex;
       flex-flow: column nowrap;
       align-items: center;
-      padding-bottom: var(--space-lg);
+      padding-bottom: $space-lg;
     }
 
     .benefits-section__cards {
       display: grid;
       grid-template-columns: minmax(250px, 300px);
-      gap: var(--grid-gap);
+      gap: $space-xs;
       justify-content: center;
       justify-items: center;
       grid-auto-rows: minmax(120px, max-content);

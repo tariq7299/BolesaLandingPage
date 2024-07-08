@@ -1,11 +1,11 @@
 .stats-card {
-  padding: var(--space-xs) var(--space-lg) var(--space-xs) var(--space-md);
+  padding: $space-xs $space-lg $space-xs $space-md;
   display: flex;
   flex-flow: row nowrap;
   border: none;
   border-radius: 15px;
   background-color: $white-color;
-  gap: var(--space-md);
+  gap: $space-md;
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
   justify-content: start;
   align-items: center;

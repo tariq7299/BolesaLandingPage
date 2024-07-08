@@ -24,7 +24,7 @@
 - use typography to set font of the section title and paragraph using h1, h2, h3, p, etc
 - CHnage the location of the copmiled sass to css folder
   and link it to html page
-- Change the gap: 1rem; to var(--grid-gap) remove **--grid-gap and flex-gap completley**
+- Change the gap: 1rem; to $space-xs remove **--grid-gap and flex-gap completley**
 - Change every spacing and px to a spacing variable
 - What to do with two images ?? like in every image there are two versions ?
 
@@ -88,3 +88,8 @@
 - Replace grid gap and flex gap
 - remove max-section-width variabels
 - Continue with to dossss
+- Remober section-spacing and replace it wiht
+  - p-5
+- REmove --grid-gap and replace it with actilual spacing
+- Remove flex gap and replace it with space-xs
+-

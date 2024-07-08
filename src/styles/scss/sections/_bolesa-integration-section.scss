@@ -1,20 +1,18 @@
 .bolesa-integration-section {
-  padding: var(--section-spacing);
-
   .bolesa-integration-section__container {
     display: flex;
     flex-flow: row wrap;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    padding-top: var(--space-lg);
+    padding-top: $space-lg;
 
     .bolesa-integration-section__header {
-      padding-bottom: var(--space-lg);
+      padding-bottom: $space-lg;
     }
 
     .bolesa-integration-section__benefits {
-      padding: var(--space-xs);
+      padding: $space-xs;
       border-radius: 15px;
       max-width: 500px;
       background-color: $white-color;
@@ -25,7 +23,7 @@
   }
 
   .bolesa-integration-section__text {
-    // padding: var(--space-md) var(--space-md);
+    // padding: $space-md $space-md;
     // flex: 1 1 0;
     flex: 50%;
 
@@ -58,7 +56,7 @@
         padding: $space-xl $space-md;
       }
       flex-wrap: nowrap;
-      gap: var(--space-md);
+      gap: $space-md;
     }
     .bolesa-integration-section__integration-phone-img {
       align-self: center;

@@ -32,6 +32,7 @@ $space-md: $spacer;
 $space-lg: $spacer * 2;
 $space-xl: $spacer * 3;
 $space-xxl: $spacer * 5;
+$space-xxxl: $spacer * 7;
 
 // Spacers map using predefined variables
 $spacers: (
@@ -43,6 +44,7 @@ $spacers: (
   5: $space-lg,
   6: $space-xl,
   7: $space-xxl,
+  8: $space-xxxl,
 );
 
 // Accordion overrides
@@ -79,13 +81,6 @@ $max-p-ch-xl: 52ch;
 
 // CSS Variables
 :root {
-  // Color Variables
-
-  --bg-color-1: #{$bg-color-1};
-  --bg-color-2: #{$bg-color-2};
-  --bg-color-3: #{$bg-color-3};
-  --bg-color-4: #{$bg-color-4};
-
   --font-family-base: "Vazirmatn", sans-serif;
 
   --font-weight-light: 200;
@@ -125,13 +120,11 @@ $max-p-ch-xl: 52ch;
   --spacer: #{$spacer};
 
   /* Spacing scale */
-  --space-xxs: calc(0.25 * var(--spacer));
-  --space-xs: calc(0.5 * var(--spacer));
-  --space-sm: calc(0.75 * var(--spacer));
-  --space-md: calc(1 * var(--spacer));
-  --space-lg: calc(2 * var(--spacer));
-  --space-xl: calc(3 * var(--spacer));
-  --space-xxl: calc(5 * var(--spacer));
+  // --space-sm: calc(0.75 * var(--spacer));
+  // --space-md: calc(1 * var(--spacer));
+  // --space-lg: calc(2 * var(--spacer));
+  // --space-xl: calc(3 * var(--spacer));
+  // --space-xxl: calc(5 * var(--spacer));
 
   // Character spacing variables
   --max-p-ch-sm: #{$max-p-ch-sm};
@@ -139,9 +132,4 @@ $max-p-ch-xl: 52ch;
   --max-p-ch-xl: #{$max-p-ch-xl};
 
   --max-section-width: 1350px;
-
-  // Compound spacing variables
-  --section-spacing: var(--space-xl) var(--space-sm);
-  --grid-gap: var(--space-xs);
-  --flex-gap: var(--space-xs);
 }

@@ -1,19 +1,17 @@
 .stats-section {
-  padding: var(--section-spacing);
-
   .stats-section__section-container {
-    padding: var(--space-lg) 0;
+    padding: $space-lg 0;
     .stats-section__header {
       display: flex;
       flex-flow: row nowrap;
       justify-content: start;
       align-items: center;
-      gap: var(--flex-gap);
-      padding: var(--space-md) 0;
+      gap: $space-xs;
+      padding: $space-md 0;
     }
   }
   .stats-section__cards {
-    padding: var(--space-md);
+    padding: $space-md;
     -ms-overflow-style: none; /* Internet Explorer 10+ */
     scrollbar-width: none; /* Firefox */
     ::-webkit-scrollbar {
@@ -23,7 +21,7 @@
     grid-auto-flow: column;
     grid-auto-columns: 330px;
     overflow-x: scroll;
-    gap: var(--grid-gap);
+    gap: $space-xs;
     // justify-content: center;
   }
 }

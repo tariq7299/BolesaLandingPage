@@ -1,9 +1,9 @@
 .demos-slider-section {
   overflow: hidden;
-  padding: var(--section-spacing);
+
   .demos-slider-section__container {
     min-height: 600px;
-    padding-top: var(--space-lg);
+    padding-top: $space-lg;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
@@ -17,7 +17,7 @@
     }
 
     .demos-slider-section__text {
-      padding: var(--space-lg);
+      padding: $space-lg;
     }
 
     .demos-slider-section__swiper {

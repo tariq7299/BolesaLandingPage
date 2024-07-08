@@ -1,7 +1,7 @@
 main .hero-section {
-  background: radial-gradient(circle, var(--bg-color-1) 30%, #ffffff 70%);
+  background: radial-gradient(circle, $bg-color-1 30%, #ffffff 70%);
   overflow: hidden;
-  padding: var(--section-spacing);
+
   .hero-section__container {
     display: flex;
     justify-content: center;
@@ -36,7 +36,7 @@ main .hero-section {
 
     .hero-section__text {
       z-index: 9991;
-      padding: var(--space-xl) 0;
+      padding: $space-xl 0;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -83,6 +83,6 @@ main .hero-section {
 
 @media (min-width: 660px) {
   main .hero-section .hero-section-title {
-    margin-top: calc(2 * var(--space-xxl));
+    margin-top: $space-xxxl;
   }
 }

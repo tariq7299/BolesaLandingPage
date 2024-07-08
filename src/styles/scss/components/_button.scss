@@ -43,7 +43,7 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: baseline;
-    gap: var(--space-xs);
+    gap: $space-xs;
     max-height: 45px;
   }
 }
