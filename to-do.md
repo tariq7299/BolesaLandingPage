@@ -14,6 +14,8 @@
 - Use Articles and sections and header adn main and footer and nav to apply to correct things
 - Chnage the spacing unit
 - Create files for every kind of variables to just be more organized
+- Replace section spacing with p-3...etc
+- Create a file for each bootstrap UI compoenent overriding it
 
 - **NOT so importatnt**
 
@@ -81,10 +83,8 @@
 
 # Benefit card component
 
-- Createa abstract folder and inside it add variabesl.scss and
-  - Create map merge file in bootstrap overriding
-  - Create variables
-- Things i can replace with bootstrap utility class
-  - text color
-  - Contianer padding
-  -
+- Create scss font variable
+- spacing variables
+- character spacing variables
+- Replace grid gap and flex gap
+- remove max-section-width variabels
