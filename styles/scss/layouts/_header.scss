@@ -19,16 +19,29 @@
 
   .navbar-nav {
     display: flex;
-    gap: 5rem;
+    // justify-content: center;
+    align-items: start;
+
+    // gap: 3.5rem;
+  }
+
+  .offcanvas {
+    height: 100dvh;
   }
 
   .offcanvas-header {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    margin-bottom: 2rem;
     .btn-close {
       margin: 0;
+      font-size: 1.6rem;
+    }
+    .offcanvas-title {
+      img {
+        width: 65px;
+        height: 65px;
+      }
     }
   }
 }
@@ -36,7 +49,7 @@
 /* For screens smaller than 768px (mobile devices) */
 @media (max-width: 992px) {
   .nav-tab {
-    font: var(--big-font);
+    font: var(--main-font);
   }
 }
 
@@ -46,6 +59,7 @@
     justify-content: end;
     align-items: baseline;
     width: 100%;
+    // gap: 5rem;
   }
   .nav-tab {
     font: var(--main-font);

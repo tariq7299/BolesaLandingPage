@@ -5,7 +5,7 @@
       display: flex;
       flex-flow: row nowrap;
       justify-content: start;
-      align-items: center;
+      align-items: end;
       gap: $space-xs;
       padding: $space-md 0;
     }
@@ -27,6 +27,9 @@
 }
 
 @media (min-width: 660px) {
+  .stats-section__header {
+    align-items: baseline;
+  }
   .stats-section {
     .stats-section__cards {
       grid-auto-columns: minmax(425px, 450px);

@@ -2,6 +2,8 @@
   .subscription-plans-section__section-body {
     display: flex;
     flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
     gap: $space-sm;
   }
 
@@ -14,6 +16,7 @@
   .subscription-plans-card__plan-cards-container {
     display: grid;
     grid-auto-flow: row;
+    grid-template-columns: 1fr;
     gap: $space-md;
     justify-items: center;
     justify-content: center;
@@ -25,8 +28,8 @@
   .subscription-plans-section {
     .subscription-plans-card__plan-cards-container {
       grid-auto-flow: column;
-      grid-auto-columns: max-content;
-      gap: $space-xs;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: $space-sm;
     }
   }
 }

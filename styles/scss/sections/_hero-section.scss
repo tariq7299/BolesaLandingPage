@@ -34,6 +34,7 @@ main .hero-section {
     }
 
     .hero-section__text {
+      margin-top: $space-x4l;
       background-image: url(../../assets/hero-bg-pattern-x2.png);
       background-size: 100%;
       background-position: center center;
@@ -45,7 +46,6 @@ main .hero-section {
       flex-flow: column nowrap;
 
       .hero-section-title {
-        margin-top: $space-x4l;
         span {
           position: relative;
         }

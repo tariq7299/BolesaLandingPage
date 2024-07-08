@@ -48,6 +48,14 @@ $spacers: (
   8: $space-x4l,
 );
 
+// Resting some bootstrap Typography values
+$headings-margin-bottom: 0;
+
+// Navbar overrides
+$navbar-light-hover-color: $primary-color;
+$navbar-nav-link-padding-x: 3.6rem;
+$navbar-light-active-color: $primary-color;
+
 // Accordion overrides
 $accordion-bg: $bg-color-2;
 $accordion-padding-y: $space-md;
@@ -62,9 +70,6 @@ $accordion-border-color: none;
 $accordion-border-radius: 10px;
 $accordion-button-icon: none;
 $accordion-button-active-icon: none;
-
-// Navbar overrides
-$navbar-light-hover-color: $primary-color;
 
 // Nav pills overrides
 $nav-pills-link-active-color: $secondary-color-1;

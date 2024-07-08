@@ -1,13 +1,20 @@
 .nav-pills {
   background-color: $bg-color-2;
-  width: max-content;
+  // width: 100%;
+  max-width: max-content;
   border-radius: 6px;
-  padding: 0.35rem;
+  padding: $space-x2s;
   margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: $space-sm;
 
   .nav-item {
     font: var(--small-font);
+    flex-grow: 1;
     button {
+      width: 100%;
       span {
         margin-inline: 1rem;
         background-color: $secondary-color-1;
@@ -21,5 +28,11 @@
 
   .nav-item .active {
     font: var(--small-bold-font);
+  }
+}
+
+@media (min-width: 660px) {
+  .nav-pills {
+    gap: 0;
   }
 }
