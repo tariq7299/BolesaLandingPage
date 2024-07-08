@@ -4,10 +4,10 @@
   --font-weight-light: 200;
   --font-weight-normal: 400;
   --font-weight-bold: 700;
-  --font-size-xs: clamp(0.9rem, 0.826rem + 0.5159vw, 1.2rem);
-  --font-size-sm: clamp(1.2rem, 1.08416rem + 0.3439vw, 1.4rem);
-  --font-size-base: clamp(1.6rem, 1.33392rem + 0.7739vw, 1.8rem);
-  --font-size-lg: clamp(1.9rem, 1.81312rem + 0.258vw, 2.2rem);
+  --font-size-xs: clamp(1.35rem, 0.826rem + 0.5159vw, 1.45rem);
+  --font-size-sm: clamp(1.45rem, 1.08416rem + 0.3439vw, 1.6rem);
+  --font-size-base: clamp(1.65rem, 1.33392rem + 0.7739vw, 1.9rem);
+  --font-size-lg: clamp(2rem, 1.81312rem + 0.258vw, 2.2rem);
   --font-size-xl: clamp(2.4rem, 2.34208rem + 0.172vw, 2.6rem);
   --font-size-2xl: clamp(3.2rem, 3.08416rem + 0.3439vw, 3.6rem);
   --font-size-3xl: clamp(4.5rem, 2.3rem + 3.4551vw, 6rem);
@@ -18,6 +18,8 @@
   --small-light-font: normal var(--font-weight-light) var(--font-size-sm)
     var(--font-family-base);
   --small-font: normal var(--font-weight-normal) var(--font-size-sm)
+    var(--font-family-base);
+  --main-light-font: normal var(--font-weight-light) var(--font-size-base)
     var(--font-family-base);
   --main-font: normal var(--font-weight-normal) var(--font-size-base)
     var(--font-family-base);
@@ -14135,8 +14137,8 @@ textarea.form-control-lg {
   padding: 0 1rem;
 }
 
-.fa-check {
-  font-size: 15px;
+.fa-square-check {
+  font-size: var(--font-size-xl);
   padding-inline: 1rem;
 }
 
@@ -14643,6 +14645,7 @@ main .hero-section .hero-section__container .hero-section__text {
   flex-flow: column nowrap;
 }
 main .hero-section .hero-section__container .hero-section__text .hero-section-title {
+  margin-top: 14rem;
   z-index: 9991;
   font: var(--hero-font);
   color: #3d2f21;
@@ -14675,11 +14678,6 @@ main .hero-section .hero-section__container .hero-section__illustration-img .her
      object-fit: cover;
 }
 
-@media (min-width: 660px) {
-  main .hero-section .hero-section-title {
-    margin-top: 14rem;
-  }
-}
 .stats-section .stats-section__section-container {
   padding: 6rem 0;
 }
@@ -14786,6 +14784,8 @@ main .hero-section .hero-section__container .hero-section__illustration-img .her
 }
 .tabby-payment-section .tabby-payment-section__section-container .tabby-payment-section__text .tabby-payment-section__benefits p {
   font: var(--small-light-font);
+  display: flex;
+  align-items: center;
 }
 .tabby-payment-section .tabby-payment-section__section-container .tabby-payment-section__tabby-img {
   padding: 6rem 2rem 0 2rem;
@@ -14901,7 +14901,7 @@ main .hero-section .hero-section__container .hero-section__illustration-img .her
 }
 
 .accordion-body {
-  font: var(--small-light-font);
+  font: var(--main-light-font);
 }
 
 .carriers-section .carriers-section__header {

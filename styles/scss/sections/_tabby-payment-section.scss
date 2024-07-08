@@ -17,6 +17,8 @@
       .tabby-payment-section__benefits {
         p {
           font: var(--small-light-font);
+          display: flex;
+          align-items: center;
         }
       }
     }

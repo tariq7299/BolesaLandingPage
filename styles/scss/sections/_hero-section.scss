@@ -45,6 +45,7 @@ main .hero-section {
       flex-flow: column nowrap;
 
       .hero-section-title {
+        margin-top: $space-x4l;
         span {
           position: relative;
         }
@@ -80,11 +81,5 @@ main .hero-section {
         object-fit: cover;
       }
     }
-  }
-}
-
-@media (min-width: 660px) {
-  main .hero-section .hero-section-title {
-    margin-top: $space-x4l;
   }
 }
