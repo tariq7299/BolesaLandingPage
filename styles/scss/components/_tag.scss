@@ -2,16 +2,17 @@
   white-space: nowrap;
   position: relative;
   border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+  .tag__text {
+    margin: auto;
+  }
 
   .tag__dot {
     height: 8px;
     width: 8px;
     border-radius: 50%;
     position: absolute;
-    background-color: var(--white-color);
+    background-color: $white-color;
     z-index: 9999;
   }
 
@@ -34,32 +35,27 @@
 }
 
 .tag--gradient-priamry-color {
-  background: linear-gradient(
-    to right,
-    var(--primary-color),
-    var(--secondary-color-2)
-  );
+  background: linear-gradient(to right, $primary-color, $secondary-color-2);
 }
 
 .tag--secondary-color-1 {
-  background-color: var(--secondary-color-1);
+  background-color: $secondary-color-1;
 }
 
 .tag__text--white-font {
-  color: var(--white-color);
+  color: $white-color;
 }
 .tag__text--text-shadow {
   text-shadow: 0px 3px 6px #00000029;
 }
 
 .tag--medium {
-  min-height: 50px;
-  width: clamp(150px, 60%, 180px);
-  padding: var(--space-xs);
+  min-height: clamp($space-x2s, 8vw, $space-xs) !important;
+  padding: clamp($space-x2s, 8vw, $space-xs) clamp($space-md, 4vw, $space-xl);
 }
 
 .tag--small {
   // min-height: 35px;
   width: clamp(70px, 50%, 85px);
-  // padding: var(--space-xs) var(--space-md);
+  // padding: $space-xs $space-md;
 }

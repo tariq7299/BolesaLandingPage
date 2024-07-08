@@ -1,62 +1,4 @@
-:root {
-  /* Color Variables */
-  --primary-color: #d89255;
-  --secondary-color-1: #3d2f21;
-  --secondary-color-2: #df8b42;
-  --secondary-color-3: #6c6660;
-  --white-color: #ffff;
-  --bg-color-1: #ebdfcc;
-  // light gray x1
-  --bg-color-2: #f9f9f9;
-  --bg-color-3: #edf5f0;
-  // light gray x2
-  --bg-color-4: #fcfcfc;
-
-  //   Family font variable
-  --font-family-base: "Vazirmatn", sans-serif;
-
-  /* Font Variables */
-  /* font-style font-weight font-size font-family */
-  --x-small-light-font: normal 200 10px var(--font-family-base);
-  --small-bold-font: normal bold 12px var(--font-family-base);
-  --small-light-font: normal 200 12px var(--font-family-base);
-  --small-font: normal normal 12px var(--font-family-base);
-  --main-font: normal normal 16px var(--font-family-base);
-  --bold-font: normal bold 16px var(--font-family-base);
-  --big-font: normal normal 19px var(--font-family-base);
-  --big-bold-font: normal bold 19px var(--font-family-base);
-  --big-bold-font-x2: normal bold 24px var(--font-family-base);
-  --section-title-font: normal bold 32px var(--font-family-base);
-  --hero-font: normal bold 50px var(--font-family-base);
-
-  /* Spacing Variables */
-  /* Base spacing unit */
-  --space-unit: 2rem;
-
-  /* Spacing scale */
-  --space-xxs: calc(0.25 * var(--space-unit));
-  --space-xs: calc(0.5 * var(--space-unit));
-  --space-sm: calc(0.75 * var(--space-unit));
-  --space-md: calc(1 * var(--space-unit));
-  --space-lg: calc(2 * var(--space-unit));
-  --space-xl: calc(3 * var(--space-unit));
-  --space-xxl: calc(5 * var(--space-unit));
-
-  // some character spacing variables
-  --max-p-ch-sm: 26ch;
-  --max-p-ch-md: 45ch;
-  --max-p-ch-xl: 52ch;
-
-  --max-section-width: 1350px;
-
-  /* Compound spacing variables */
-  --container-x-padding: var(--space-lg);
-  --container-y-padding: var(--space-lg);
-  --section-spacing: var(--space-xl) var(--space-sm);
-  --grid-gap: var(--space-xs);
-  --flex-gap: var(--space-xs);
-}
-
+// SCSS Variables
 $primary-color: #d89255;
 $secondary-color-1: #3d2f21;
 $secondary-color-2: #df8b42;
@@ -67,7 +9,7 @@ $bg-color-2: #f9f9f9;
 $bg-color-3: #edf5f0;
 $bg-color-4: #fcfcfc;
 
-// Create your own map
+// Custom theme colors
 $custom-theme-colors: (
   "primary-color": $primary-color,
   "secondary-color-1": $secondary-color-1,
@@ -82,14 +24,99 @@ $custom-theme-colors: (
 
 $spacer: 2rem;
 
+// Spacing Variables
+$space-x2s: $spacer * 0.25;
+$space-xs: $spacer * 0.5;
+$space-sm: $spacer * 0.75;
+$space-md: $spacer;
+$space-lg: $spacer * 1.5;
+$space-xl: $spacer * 2;
+$space-x2l: $spacer * 3;
+$space-x3l: $spacer * 5;
+$space-x4l: $spacer * 7;
+
+// Spacers map using predefined variables
 $spacers: (
   0: 0,
-  1: $spacer * 0.25,
-  2: $spacer * 0.5,
-  3: $spacer * 0.75,
-  4: $spacer,
-  5: $spacer * 2,
-  6: $spacer * 3,
-  7: $spacer * 5,
-  8: $spacer * 7,
+  1: $space-x2s,
+  2: $space-xs,
+  3: $space-sm,
+  4: $space-md,
+  5: $space-lg,
+  6: $space-xl,
+  7: $space-x2l,
+  8: $space-x4l,
 );
+
+// Accordion overrides
+$accordion-bg: $bg-color-2;
+$accordion-padding-y: $space-md;
+$accordion-padding-x: $space-md;
+$accordion-body-padding-y: 1rem;
+$accordion-body-padding-x: 3rem $space-xs;
+$accordion-button-active-bg: none;
+$accordion-button-active-color: none;
+$accordion-button-focus-box-shadow: none;
+$accordion-border-width: 0px;
+$accordion-border-color: none;
+$accordion-border-radius: 10px;
+$accordion-button-icon: none;
+$accordion-button-active-icon: none;
+
+// Navbar overrides
+$navbar-light-hover-color: $primary-color;
+
+// Nav pills overrides
+$nav-pills-link-active-color: $secondary-color-1;
+$nav-pills-link-active-bg: $white-color;
+$nav-link-color: $secondary-color-1;
+$nav-pills-border-radius: 6px;
+$nav-link-hover-color: $primary-color;
+$nav-link-padding-y: 1rem;
+$nav-link-padding-x: 3rem;
+
+// Character spacing variables
+$max-p-ch-sm: 26ch;
+$max-p-ch-md: 45ch;
+$max-p-ch-xl: 52ch;
+
+// CSS Variables
+:root {
+  --font-family-base: "Vazirmatn", sans-serif;
+
+  --font-weight-light: 200;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+
+  --font-size-xs: clamp(0.9rem, 0.826rem + 0.5159vw, 1.2rem);
+  --font-size-sm: clamp(1.2rem, 1.08416rem + 0.3439vw, 1.4rem);
+  --font-size-base: clamp(1.6rem, 1.33392rem + 0.7739vw, 1.8rem);
+  --font-size-lg: clamp(1.9rem, 1.81312rem + 0.258vw, 2.2rem);
+  --font-size-xl: clamp(2.4rem, 2.34208rem + 0.172vw, 2.6rem);
+  --font-size-2xl: clamp(3.2rem, 3.08416rem + 0.3439vw, 3.6rem);
+  --font-size-3xl: clamp(4.5rem, 2.3rem + 3.4551vw, 6rem);
+
+  --x-small-light-font: normal var(--font-weight-light) var(--font-size-xs)
+    var(--font-family-base);
+  --small-bold-font: normal var(--font-weight-bold) var(--font-size-sm)
+    var(--font-family-base);
+  --small-light-font: normal var(--font-weight-light) var(--font-size-sm)
+    var(--font-family-base);
+  --small-font: normal var(--font-weight-normal) var(--font-size-sm)
+    var(--font-family-base);
+  --main-font: normal var(--font-weight-normal) var(--font-size-base)
+    var(--font-family-base);
+  --bold-font: normal var(--font-weight-bold) var(--font-size-base)
+    var(--font-family-base);
+  --big-font: normal var(--font-weight-normal) var(--font-size-lg)
+    var(--font-family-base);
+  --big-bold-font: normal var(--font-weight-bold) var(--font-size-lg)
+    var(--font-family-base);
+  --big-bold-font-x2: normal var(--font-weight-bold) var(--font-size-xl)
+    var(--font-family-base);
+  --section-title-font: normal var(--font-weight-bold) var(--font-size-2xl)
+    var(--font-family-base);
+  --hero-font: normal var(--font-weight-bold) var(--font-size-3xl)
+    var(--font-family-base);
+  --spacer: #{$spacer};
+}

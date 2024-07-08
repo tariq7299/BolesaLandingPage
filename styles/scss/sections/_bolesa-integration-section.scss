@@ -1,23 +1,21 @@
 .bolesa-integration-section {
-  padding: var(--section-spacing);
-
   .bolesa-integration-section__container {
     display: flex;
     flex-flow: row wrap;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    padding-top: var(--space-lg);
+    padding-top: $space-x2l;
 
     .bolesa-integration-section__header {
-      padding-bottom: var(--space-lg);
+      padding-bottom: $space-x2l;
     }
 
     .bolesa-integration-section__benefits {
-      padding: var(--space-xs);
+      padding: $space-xs;
       border-radius: 15px;
       max-width: 500px;
-      background-color: var(--white-color);
+      background-color: $white-color;
       display: grid;
       grid-template-columns: minmax(250px, 500px);
       justify-content: stretch;
@@ -25,7 +23,7 @@
   }
 
   .bolesa-integration-section__text {
-    // padding: var(--space-md) var(--space-md);
+    // padding: $space-md $space-md;
     // flex: 1 1 0;
     flex: 50%;
 
@@ -55,10 +53,13 @@
   .bolesa-integration-section {
     .bolesa-integration-section__container {
       .bolesa-integration-section__text {
-        padding: var(--container-y-padding) var(--container-x-padding);
+        padding: $space-x2l $space-md;
       }
       flex-wrap: nowrap;
-      gap: var(--space-md);
+      gap: $space-md;
+    }
+    .bolesa-integration-section__integration-phone-img {
+      align-self: center;
     }
   }
 }
@@ -69,6 +70,9 @@
     .bolesa-integration-section__container {
       flex-wrap: wrap;
       gap: 0;
+      .bolesa-integration-section__integration-phone-img {
+        align-self: end;
+      }
     }
   }
 }

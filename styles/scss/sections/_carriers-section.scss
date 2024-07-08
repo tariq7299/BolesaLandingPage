@@ -1,13 +1,12 @@
 .carriers-section {
-  padding: var(--section-spacing);
   .carriers-section__header {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    padding-bottom: var(--space-lg);
+    padding-bottom: $space-x2l;
   }
   .carriers-section__carriers-brands {
-    background-color: var(--bg-color-2);
+    background-color: $bg-color-2;
     border: none;
     border-radius: 10px;
     display: grid;
@@ -17,7 +16,7 @@
     justify-items: center;
     align-items: baseline;
     align-content: baseline;
-    padding: var(--space-lg);
+    padding: $space-xl;
 
     img {
       max-width: 75px;

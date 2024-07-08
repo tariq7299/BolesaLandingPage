@@ -1,5 +1,5 @@
 .nav-pills {
-  background-color: var(--bg-color-2);
+  background-color: $bg-color-2;
   width: max-content;
   border-radius: 6px;
   padding: 0.35rem;
@@ -10,10 +10,10 @@
     button {
       span {
         margin-inline: 1rem;
-        background-color: var(--secondary-color-1);
+        background-color: $secondary-color-1;
         border-radius: 5px;
-        padding: 0.25rem var(--space-md);
-        color: var(--white-color);
+        padding: 0.25rem $space-md;
+        color: $white-color;
         font: var(--small-light-font);
       }
     }

@@ -1,20 +1,20 @@
 .navbar {
   width: 93vw;
-  // max-width: var(--max-section-width);
   margin: auto;
   background: transparent !important;
   border-radius: 10px;
   padding: 1rem;
   z-index: 9999;
   transition: top 0.3s ease-in-out;
+  white-space: nowrap;
 
   &.scrolled {
-    background: var(--white-color) !important;
+    background: $white-color !important;
   }
 
   .navbar-brand img {
-    width: 63px;
-    height: 63px;
+    width: clamp(65px, 8vw, 90px);
+    height: clamp(65px, 8vw, 90px);
   }
 
   .navbar-nav {
@@ -58,5 +58,5 @@
 
 .action-tab {
   font: var(--bold-font);
-  color: var(--secondary-color-1);
+  color: $secondary-color-1;
 }

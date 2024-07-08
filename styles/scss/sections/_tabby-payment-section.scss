@@ -1,9 +1,8 @@
 .tabby-payment-section {
-  padding: var(--section-spacing);
   .tabby-payment-section__section-container {
     display: flex;
     flex-flow: row wrap;
-    gap: var(--space-lg);
+    gap: $space-x2l;
     align-items: center;
     justify-content: center;
 
@@ -11,9 +10,9 @@
       flex: 1 1 300px;
       .tabby-payment-section__header {
         .tabby-payment-section__description {
-          max-width: var(--max-p-ch-md);
+          max-width: $max-p-ch-md;
         }
-        padding-bottom: var(--space-lg);
+        padding-bottom: $space-x2l;
       }
       .tabby-payment-section__benefits {
         p {
@@ -23,9 +22,9 @@
     }
 
     .tabby-payment-section__tabby-img {
-      padding: var(--space-xxl) var(--space-md) 0 var(--space-md);
+      padding: $space-x2l $space-md 0 $space-md;
       position: relative;
-      background-color: var(--bg-color-3);
+      background-color: $bg-color-3;
       flex: 1 1 300px;
       border-radius: 15px;
       display: flex;

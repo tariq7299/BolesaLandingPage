@@ -4,14 +4,14 @@
   border-radius: 18px;
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
   width: max-content;
-  gap: var(--space-md);
-  padding: var(--space-xxs);
+  gap: $space-md;
+  padding: $space-x2s;
 
   .subscription-plan__header {
     display: flex;
     flex-flow: column nowrap;
     border-radius: 18px;
-    padding: var(--space-md);
+    padding: $space-md;
 
     .subscription-plan__title {
       font: var(--big-bold-font);
@@ -21,16 +21,16 @@
     }
   }
   .subscription-plan-card__description {
-    padding: var(--space-md);
+    padding: $space-md;
     display: flex;
     flex-flow: column nowrap;
-    gap: var(--space-sm);
+    gap: $space-sm;
 
     .subscription-plan-card__price {
       display: flex;
       flex-flow: row nowrap;
       align-items: center;
-      gap: var(--space-xs);
+      gap: $space-xs;
 
       .subscription-plan-card__amount {
         font: var(--hero-font);
@@ -49,12 +49,12 @@
     .subscription-plan-card__button {
       button {
         font: var(--small-font);
-        padding: var(--space-xxs) var(--space-md);
+        padding: $space-x2s $space-md;
         &:hover {
-          border: 1px solid var(--primary-color);
+          border: 1px solid $primary-color;
           border-radius: 10px;
-          background-color: var(--secondary-color-1);
-          color: var(--primary-color);
+          background-color: $secondary-color-1;
+          color: $primary-color;
         }
       }
     }
@@ -71,30 +71,26 @@
 
 .subscription-plan-card--white-color {
   .subscription-plan__header {
-    background: linear-gradient(
-      to bottom,
-      var(--bg-color-2),
-      var(--bg-color-4)
-    );
+    background: linear-gradient(to bottom, $bg-color-2, $bg-color-4);
 
     .subscription-plan__title {
-      color: var(--secondary-color-1);
+      color: $secondary-color-1;
     }
     .subscription-plan__sub-title {
-      color: var(--secondary-color-3);
+      color: $secondary-color-3;
     }
   }
   .subscription-plan-card__description {
     .subscription-plan-card__price {
       .subscription-plan-card__amount {
-        color: var(--secondary-color-1);
+        color: $secondary-color-1;
       }
       .subscription-plan-card__amount-details {
         .subscription-plan-card__period {
-          color: var(--secondary-color-3);
+          color: $secondary-color-3;
         }
         .subscription-plan-card__currency {
-          color: var(--secondary-color-1);
+          color: $secondary-color-1;
         }
       }
     }
@@ -102,16 +98,16 @@
       button {
         width: 100%;
         background-color: transparent;
-        color: var(--secondary-color-1);
-        border: 2px solid var(--secondary-color-1);
+        color: $secondary-color-1;
+        border: 2px solid $secondary-color-1;
         border-radius: 6px;
       }
     }
     .subscription-plan-card__benefits {
       .subscription-plan-card__benefit {
-        color: var(--secondary-color-1);
+        color: $secondary-color-1;
         span {
-          color: var(--primary-color);
+          color: $primary-color;
         }
       }
     }
@@ -119,49 +115,49 @@
 }
 
 .subscription-plan-card--secondary-color-3 {
-  background: var(--secondary-color-1);
+  background: $secondary-color-1;
   .subscription-plan__header {
     background: linear-gradient(
       to bottom,
-      var(--secondary-color-3),
-      var(--secondary-color-1)
+      $secondary-color-3,
+      $secondary-color-1
     );
 
     .subscription-plan__title {
-      color: var(--white-color);
+      color: $white-color;
     }
     .subscription-plan__sub-title {
-      color: var(--white-color);
+      color: $white-color;
     }
   }
   .subscription-plan-card__description {
     .subscription-plan-card__price {
       .subscription-plan-card__amount {
-        color: var(--white-color);
+        color: $white-color;
       }
       .subscription-plan-card__amount-details {
         .subscription-plan-card__period {
-          color: var(--secondary-color-3);
+          color: $secondary-color-3;
         }
         .subscription-plan-card__currency {
-          color: var(--white-color);
+          color: $white-color;
         }
       }
     }
     .subscription-plan-card__button {
       button {
         width: 100%;
-        background-color: var(--secondary-color-3);
-        color: var(--white-color);
+        background-color: $secondary-color-3;
+        color: $white-color;
         border: none;
         border-radius: 6px;
       }
     }
     .subscription-plan-card__benefits {
       .subscription-plan-card__benefit {
-        color: var(--white-color);
+        color: $white-color;
         span {
-          color: var(--secondary-color-3);
+          color: $secondary-color-3;
         }
       }
     }

@@ -11,7 +11,7 @@
       flex-flow: row nowrap;
       justify-content: space-between;
       align-items: center;
-      gap: var(--space-sm);
+      gap: $space-sm;
 
       &::after {
         display: none;
@@ -37,11 +37,11 @@
   .accordion-item {
     .accordion-header {
       button {
-        color: var(--secondary-color-1);
+        color: $secondary-color-1;
       }
     }
     .accordion-body {
-      color: var(--secondary-color-3);
+      color: $secondary-color-3;
     }
   }
 }

@@ -1,19 +1,21 @@
 .stats-card {
-  padding: var(--space-xs) var(--space-lg) var(--space-xs) var(--space-md);
+  padding: clamp($space-md, 8vw, $space-lg)
+    clamp($space-xl, 8vw, $space-xl * 1.2) clamp($space-xs, 8vw, $space-sm)
+    clamp($space-md, 8vw, $space-lg);
   display: flex;
   flex-flow: row nowrap;
   border: none;
   border-radius: 15px;
-  background-color: var(--white-color);
-  gap: var(--space-md);
+  background-color: $white-color;
+  gap: $space-md;
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
   justify-content: start;
   align-items: center;
-  min-height: 130px;
+  // min-height: clamp($space-x3l, 8vw, $space-x4l);
 
   .stats-card__description {
     font: var(--main-font);
-    max-width: var(--max-p-ch-sm);
+    max-width: $max-p-ch-sm;
     flex-grow: 1;
   }
   .stats-card__value {
@@ -31,19 +33,19 @@
 
 .stats-card--white {
   .stats-card__description {
-    color: var(--secondary-color-1);
+    color: $secondary-color-1;
   }
   .stats-card__value {
-    color: var(--secondary-color-1);
+    color: $secondary-color-1;
   }
 }
 
 .stats-card--secondary-color-1 {
-  background-color: var(--secondary-color-1);
+  background-color: $secondary-color-1;
   .stats-card__description {
-    color: var(--white-color);
+    color: $white-color;
   }
   .stats-card__value {
-    color: var(--secondary-color-2);
+    color: $secondary-color-2;
   }
 }
