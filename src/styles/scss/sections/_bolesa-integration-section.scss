@@ -55,10 +55,13 @@
   .bolesa-integration-section {
     .bolesa-integration-section__container {
       .bolesa-integration-section__text {
-        padding: $space-md;
+        padding: $space-xl $space-md;
       }
       flex-wrap: nowrap;
       gap: var(--space-md);
+    }
+    .bolesa-integration-section__integration-phone-img {
+      align-self: center;
     }
   }
 }
@@ -69,6 +72,9 @@
     .bolesa-integration-section__container {
       flex-wrap: wrap;
       gap: 0;
+      .bolesa-integration-section__integration-phone-img {
+        align-self: end;
+      }
     }
   }
 }

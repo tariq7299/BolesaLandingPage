@@ -14373,7 +14373,10 @@ main .hero-section .hero-section__container .hero-section__illustration-img .her
     gap: var(--space-md);
   }
   .bolesa-integration-section .bolesa-integration-section__container .bolesa-integration-section__text {
-    padding: 2rem;
+    padding: 6rem 2rem;
+  }
+  .bolesa-integration-section .bolesa-integration-section__integration-phone-img {
+    align-self: center;
   }
 }
 /* For screens 992px and larger (desktops) */
@@ -14381,6 +14384,9 @@ main .hero-section .hero-section__container .hero-section__illustration-img .her
   .bolesa-integration-section .bolesa-integration-section__container {
     flex-wrap: wrap;
     gap: 0;
+  }
+  .bolesa-integration-section .bolesa-integration-section__container .bolesa-integration-section__integration-phone-img {
+    align-self: end;
   }
 }
 .tabby-payment-section {
