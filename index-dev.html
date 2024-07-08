@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- This my JS of bootstrap that is necessary for bootstrap to work -->
+    <script src="./js/bootstrap.js"></script>
+    <!-- Iam not the bootstrap/js/... using the file in node_modules folder because in production env you don't want to use any files or code inside you node_modules so instead i have copied the file into my own JS folder-->
+    <!-- <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script> -->
+
+    <!-- This my own compiled sass code also bootstrap compiled sass code as i have @imported bootstrap sass files into main.scss then copiled it to main.css -->
+    <!-- I am not linking bootstrap copmpiled sass files from bootstrap/dist/css/node_modules and instead I have @imported the sass files into main.scss (then compiled them to main.css) so i can customize bootstrap default values first  -->
+    <link rel="stylesheet" href="./styles/scss/main.css" />
+    <!-- This my own JS -->
+    <script src="./js/main.js"></script>
+
+    <title>Bolesa</title>
+  </head>
+  <body>
+    <main>
+      <section class="carriers-section">
+        <div class="container carriers-section__container">
+          <div class="carriers-section__header">
+            <h2 class="section-title--font text-center">
+              أسطول شحن متكامل في خدمة منتجاتك
+            </h2>
+            <p
+              class="section-description section-description text-center text--medium-lenght-lines"
+            >
+              خيارات شحن متنوعة تربط متجرك بالعالم
+            </p>
+          </div>
+          <div
+            class="carriers-section__carriers-brands container container--card"
+          >
+            <div><img src="./assets/carriers-brands/aramex.png" alt="" /></div>
+            <div><img src="./assets/carriers-brands/smsa.png" alt="" /></div>
+            <div>
+              <img src="./assets/carriers-brands/jt-Express.png" alt="" />
+            </div>
+            <div>
+              <img src="./assets/carriers-brands/adwar-cold.png" alt="" />
+            </div>
+            <div><img src="./assets/carriers-brands/adwar.png" alt="" /></div>
+            <div><img src="./assets/carriers-brands/tabex.png" alt="" /></div>
+            <div>
+              <img src="./assets/carriers-brands/kwickbox.png" alt="" />
+            </div>
+            <div>
+              <img src="./assets/carriers-brands/third-mile.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
