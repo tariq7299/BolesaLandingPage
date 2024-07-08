@@ -74,7 +74,6 @@
 - Active stat is the secondary color 2 slide
 - Make the smallest font bigger
 - Change the font icon in tabby setcion
-- Fix the slider in demos
 - Nav bar in home in intersicting with boxes in hero section
 - Logo in offcanvase is so big
 - Make the offcanvase 100dvh and also remove some white spaces
