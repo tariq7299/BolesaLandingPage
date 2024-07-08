@@ -9,8 +9,6 @@ $bg-color-2: #f9f9f9;
 $bg-color-3: #edf5f0;
 $bg-color-4: #fcfcfc;
 
-$font-family-base: "Vazirmatn", sans-serif;
-
 // Custom theme colors
 $custom-theme-colors: (
   "primary-color": $primary-color,
@@ -24,20 +22,35 @@ $custom-theme-colors: (
   "bg-color-4": $bg-color-4,
 );
 
-// Font Variables
+// Font Family
 $font-family-base: "Vazirmatn", sans-serif;
 
-$x-small-light-font: normal 200 10px $font-family-base;
-$small-bold-font: normal bold 12px $font-family-base;
-$small-light-font: normal 200 12px $font-family-base;
-$small-font: normal normal 12px $font-family-base;
-$main-font: normal normal 16px $font-family-base;
-$bold-font: normal bold 16px $font-family-base;
-$big-font: normal normal 19px $font-family-base;
-$big-bold-font: normal bold 19px $font-family-base;
-$big-bold-font-x2: normal bold 24px $font-family-base;
-$section-title-font: normal bold 32px $font-family-base;
-$hero-font: normal bold 50px $font-family-base;
+// Font Weights
+$font-weight-light: 200;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+$font-size-base: 1.6rem;
+
+$font-size-xs: $font-size-base * 0.625; // 10px
+$font-size-sm: $font-size-base * 0.75; // 12px
+$font-size-lg: $font-size-base * 1.21875; // 19px
+$font-size-xl: $font-size-base * 1.5; // 24px
+$font-size-2xl: $font-size-base * 2; // 32px
+$font-size-3xl: $font-size-base * 3.125; // 50px
+
+// SCSS Font Variables
+$x-small-light-font: normal $font-weight-light $font-size-xs $font-family-base;
+$small-bold-font: normal $font-weight-bold $font-size-sm $font-family-base;
+$small-light-font: normal $font-weight-light $font-size-sm $font-family-base;
+$small-font: normal $font-weight-normal $font-size-sm $font-family-base;
+$main-font: normal $font-weight-normal $font-size-base $font-family-base;
+$bold-font: normal $font-weight-bold $font-size-base $font-family-base;
+$big-font: normal $font-weight-normal $font-size-lg $font-family-base;
+$big-bold-font: normal $font-weight-bold $font-size-lg $font-family-base;
+$big-bold-font-x2: normal $font-weight-bold $font-size-xl $font-family-base;
+$section-title-font: normal $font-weight-bold $font-size-2xl $font-family-base;
+$hero-font: normal $font-weight-bold $font-size-3xl $font-family-base;
 
 $space-unit: 2rem;
 $spacer: $space-unit;
@@ -108,20 +121,31 @@ $max-p-ch-xl: 52ch;
   --bg-color-3: #{$bg-color-3};
   --bg-color-4: #{$bg-color-4};
 
-  // Font Variables
   --font-family-base: #{$font-family-base};
 
-  --x-small-light-font: normal 200 10px var(--font-family-base);
-  --small-bold-font: normal bold 12px var(--font-family-base);
-  --small-light-font: normal 200 12px var(--font-family-base);
-  --small-font: normal normal 12px var(--font-family-base);
-  --main-font: normal normal 16px var(--font-family-base);
-  --bold-font: normal bold 16px var(--font-family-base);
-  --big-font: normal normal 19px var(--font-family-base);
-  --big-bold-font: normal bold 19px var(--font-family-base);
-  --big-bold-font-x2: normal bold 24px var(--font-family-base);
-  --section-title-font: normal bold 32px var(--font-family-base);
-  --hero-font: normal bold 50px var(--font-family-base);
+  --font-weight-light: #{$font-weight-light};
+  --font-weight-normal: #{$font-weight-normal};
+  --font-weight-bold: #{$font-weight-bold};
+
+  --font-size-xs: #{$font-size-xs};
+  --font-size-sm: #{$font-size-sm};
+  --font-size-base: #{$font-size-base};
+  --font-size-lg: #{$font-size-lg};
+  --font-size-xl: #{$font-size-xl};
+  --font-size-2xl: #{$font-size-2xl};
+  --font-size-3xl: #{$font-size-3xl};
+
+  --x-small-light-font: #{$x-small-light-font};
+  --small-bold-font: #{$small-bold-font};
+  --small-light-font: #{$small-light-font};
+  --small-font: #{$small-font};
+  --main-font: #{$main-font};
+  --bold-font: #{$bold-font};
+  --big-font: #{$big-font};
+  --big-bold-font: #{$big-bold-font};
+  --big-bold-font-x2: #{$big-bold-font-x2};
+  --section-title-font: #{$section-title-font};
+  --hero-font: #{$hero-font};
 
   --spacer: #{$spacer};
 
