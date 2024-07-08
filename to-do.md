@@ -71,8 +71,6 @@
 - Create the right border of the logout button
 - Create the gray circles and there dotted lines in integration section benefit cards
 
-- Logo in offcanvase is so big
-- Make the offcanvase 100dvh and also remove some white spaces
 - Make the exit nav bar button in offcanvase
 - Make bootstrap scroll spy
 - Make the nav pills at the middle and a little bit smaller

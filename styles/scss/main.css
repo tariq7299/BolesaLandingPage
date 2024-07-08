@@ -4442,7 +4442,7 @@ textarea.form-control-lg {
   --bs-navbar-brand-font-size: 1.25rem;
   --bs-navbar-brand-color: rgba(var(--bs-emphasis-color-rgb), 1);
   --bs-navbar-brand-hover-color: rgba(var(--bs-emphasis-color-rgb), 1);
-  --bs-navbar-nav-link-padding-x: 0.5rem;
+  --bs-navbar-nav-link-padding-x: 3.6rem;
   --bs-navbar-toggler-padding-y: 0.25rem;
   --bs-navbar-toggler-padding-x: 0.75rem;
   --bs-navbar-toggler-font-size: 1.25rem;
@@ -14556,7 +14556,9 @@ textarea.form-control-lg {
 }
 .navbar .navbar-nav {
   display: flex;
-  gap: 5rem;
+}
+.navbar .offcanvas {
+  height: 100dvh;
 }
 .navbar .offcanvas-header {
   display: flex;
@@ -14565,6 +14567,7 @@ textarea.form-control-lg {
 }
 .navbar .offcanvas-header .btn-close {
   margin: 0;
+  font-size: 1.6rem;
 }
 .navbar .offcanvas-header .offcanvas-title img {
   width: 65px;
@@ -14574,7 +14577,7 @@ textarea.form-control-lg {
 /* For screens smaller than 768px (mobile devices) */
 @media (max-width: 992px) {
   .nav-tab {
-    font: var(--big-font);
+    font: var(--main-font);
   }
 }
 /* For screens 992px and larger (desktops) */
