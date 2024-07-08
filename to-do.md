@@ -4,8 +4,6 @@
 
 ## GLOBAL
 
-- Add variable font sizes and give them to `font:` variables
-- Use clamp() to control the dynamic font size
 - Name your media qyeuries to make your code more readable and scalalbe
 - Create more spacing variables
 - Create mixing for hover button effects/some grid boiler plate
@@ -17,6 +15,8 @@
 - Use only scss variables and only use css variabels when necessary
 - Increase the padding of stat card escpicially when in desktop screens
 - increase the padding of buttons
+- Invreace the nav logo sizz using clamp
+-
 
 - **NOT so importatnt**
 
@@ -84,8 +84,7 @@
 
 # Benefit card component
 
-- Create dynamic font sizes using clamp()
 - Remove css variables and only use scss
-  - Change every font size
 - Replace grid gap and flex gap
 - remove max-section-width variabels
+- Continue with to dossss

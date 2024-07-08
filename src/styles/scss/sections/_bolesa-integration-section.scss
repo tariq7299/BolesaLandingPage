@@ -55,7 +55,7 @@
   .bolesa-integration-section {
     .bolesa-integration-section__container {
       .bolesa-integration-section__text {
-        padding: var(--container-y-padding) var(--container-x-padding);
+        padding: $space-md;
       }
       flex-wrap: nowrap;
       gap: var(--space-md);

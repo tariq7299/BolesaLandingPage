@@ -1,10 +1,5 @@
 @charset "UTF-8";
 :root {
-  --primary-color: #d89255;
-  --secondary-color-1: #3d2f21;
-  --secondary-color-2: #df8b42;
-  --secondary-color-3: #6c6660;
-  --white-color: white;
   --bg-color-1: #ebdfcc;
   --bg-color-2: #f9f9f9;
   --bg-color-3: #edf5f0;
@@ -14148,6 +14143,7 @@ textarea.form-control-lg {
   padding: 1rem;
   z-index: 9999;
   transition: top 0.3s ease-in-out;
+  white-space: nowrap;
 }
 .navbar.scrolled {
   background: white !important;
@@ -14377,7 +14373,7 @@ main .hero-section .hero-section__container .hero-section__illustration-img .her
     gap: var(--space-md);
   }
   .bolesa-integration-section .bolesa-integration-section__container .bolesa-integration-section__text {
-    padding: var(--container-y-padding) var(--container-x-padding);
+    padding: 2rem;
   }
 }
 /* For screens 992px and larger (desktops) */
