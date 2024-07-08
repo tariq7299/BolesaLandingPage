@@ -2,9 +2,10 @@
   white-space: nowrap;
   position: relative;
   border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+  .tag__text {
+    margin: auto;
+  }
 
   .tag__dot {
     height: 8px;
@@ -49,9 +50,8 @@
 }
 
 .tag--medium {
-  min-height: 50px;
-  width: clamp(150px, 60%, 180px);
-  padding: $space-xs;
+  min-height: clamp($space-x2s, 8vw, $space-xs) !important;
+  padding: clamp($space-x2s, 8vw, $space-xs) clamp($space-md, 4vw, $space-xl);
 }
 
 .tag--small {

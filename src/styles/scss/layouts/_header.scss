@@ -13,8 +13,8 @@
   }
 
   .navbar-brand img {
-    width: 63px;
-    height: 63px;
+    width: clamp(65px, 8vw, 90px);
+    height: clamp(65px, 8vw, 90px);
   }
 
   .navbar-nav {

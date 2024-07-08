@@ -1,5 +1,7 @@
 .stats-card {
-  padding: $space-xs $space-x2l $space-xs $space-md;
+  padding: clamp($space-md, 8vw, $space-lg)
+    clamp($space-xl, 8vw, $space-xl * 1.2) clamp($space-xs, 8vw, $space-sm)
+    clamp($space-md, 8vw, $space-lg);
   display: flex;
   flex-flow: row nowrap;
   border: none;
@@ -9,7 +11,7 @@
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
   justify-content: start;
   align-items: center;
-  min-height: 130px;
+  // min-height: clamp($space-x3l, 8vw, $space-x4l);
 
   .stats-card__description {
     font: var(--main-font);

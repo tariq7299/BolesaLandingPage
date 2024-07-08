@@ -14182,7 +14182,7 @@ textarea.form-control-lg {
 }
 
 .stats-card {
-  padding: 1rem 6rem 1rem 2rem;
+  padding: clamp(2rem, 8vw, 3rem) clamp(4rem, 8vw, 4.8rem) clamp(1rem, 8vw, 1.5rem) clamp(2rem, 8vw, 3rem);
   display: flex;
   flex-flow: row nowrap;
   border: none;
@@ -14192,7 +14192,6 @@ textarea.form-control-lg {
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
   justify-content: start;
   align-items: center;
-  min-height: 130px;
 }
 .stats-card .stats-card__description {
   font: var(--main-font);
@@ -14232,9 +14231,9 @@ textarea.form-control-lg {
   white-space: nowrap;
   position: relative;
   border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+.tag .tag__text {
+  margin: auto;
 }
 .tag .tag__dot {
   height: 8px;
@@ -14278,9 +14277,8 @@ textarea.form-control-lg {
 }
 
 .tag--medium {
-  min-height: 50px;
-  width: clamp(150px, 60%, 180px);
-  padding: 1rem;
+  min-height: clamp(0.5rem, 8vw, 1rem) !important;
+  padding: clamp(0.5rem, 8vw, 1rem) clamp(2rem, 4vw, 4rem);
 }
 
 .tag--small {
@@ -14537,8 +14535,8 @@ textarea.form-control-lg {
   background: white !important;
 }
 .navbar .navbar-brand img {
-  width: 63px;
-  height: 63px;
+  width: clamp(65px, 8vw, 90px);
+  height: clamp(65px, 8vw, 90px);
 }
 .navbar .navbar-nav {
   display: flex;
@@ -14696,7 +14694,7 @@ main .hero-section .hero-section__container .hero-section__illustration-img .her
   scrollbar-width: none; /* Firefox */
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: 330px;
+  grid-auto-columns: minmax(360px, 380px);
   overflow-x: scroll;
   gap: 1rem;
 }
@@ -14706,7 +14704,7 @@ main .hero-section .hero-section__container .hero-section__illustration-img .her
 
 @media (min-width: 660px) {
   .stats-section .stats-section__cards {
-    grid-auto-columns: minmax(390px, 410px);
+    grid-auto-columns: minmax(425px, 450px);
   }
 }
 .bolesa-integration-section .bolesa-integration-section__container {
@@ -14920,7 +14918,7 @@ main .hero-section .hero-section__container .hero-section__illustration-img .her
   justify-items: center;
   align-items: baseline;
   align-content: baseline;
-  padding: 6rem;
+  padding: 4rem;
 }
 .carriers-section .carriers-section__carriers-brands img {
   max-width: 75px;

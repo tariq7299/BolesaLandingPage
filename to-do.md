@@ -5,12 +5,9 @@
 ## GLOBAL
 
 - Name your media qyeuries to make your code more readable and scalalbe
-- Create more spacing variables
 - Create mixing for hover button effects/some grid boiler plate
 - Use Articles and sections and header adn main and footer and nav to apply to correct things
-- Chnage the spacing unit
 - Create files for every kind of variables to just be more organized
-- Replace section spacing with p-3...etc
 - Create a file for each bootstrap UI compoenent overriding it
 - Use only scss variables and only use css variabels when necessary
 - Increase the padding of stat card escpicially when in desktop screens
@@ -21,13 +18,9 @@
 
 - **NOT so importatnt**
 
-- Make the font size of clamp to make it dynamic depeing on the screen size
 - use typography to set font of the section title and paragraph using h1, h2, h3, p, etc
 - CHnage the location of the copmiled sass to css folder
   and link it to html page
-- Change the gap: 1rem; to $space-xs remove **--grid-gap and flex-gap completley**
-- Change every spacing and px to a spacing variable
-- What to do with two images ?? like in every image there are two versions ?
 
 ## NAV BAR
 
@@ -35,10 +28,7 @@
 
 **NOt importnant**
 
-- Add hover effect to nav links
-- MAke the action butotn on the nav bar in mobil devices be in the middle in the (offcanvase/collabesded nav bar)
 - Create the right border of the logout tab found in the nav bar
--
 
 ## Hero section
 
@@ -48,16 +38,11 @@
 
 ## Benefits section
 
-- Crea
-
 ## Stats section
 
 **NOt so important**
 
 - Refactor the Percentage symbol and its position jusing flex instead of absolute/relative
-- Set a max ch the section description to md
-- Make the text inside tag button to be in the middle excactly
--
 
 ## Integration section
 
@@ -65,26 +50,23 @@
 
 - Make the grey dots in every befit-card
 - Also make the illustration line
--
 
 ## Demos slider section
 
 **Not so importaton**
 
-- Add a hover effect on actio button
-
 ## Subscription plans section
-
-- Create a utiltiy class for section-sub-title
-- Crate and hover and animation for this section
 
 # Dynamic-todo
 
-- Change primary color and othe secondary-colro and add all of them to them color
--
-
 # Benefit card component
 
-- Add padding ot buttons or make them bigger on dektop
-- Make word inside tag to be in meddile
-- Add some padding to stats or make it bigger on desktop
+- Create hover effects using mixin
+- Use artikle in the right places in html
+- Create file for each UI compoennt form bootstrap overriding vairalbes
+- Change the location of compiled scss ! (use watch again)
+- Fix the loading iamges problem (Add the correct stuff)
+- Fix the wird button loading in landign page
+- Ask about typography
+- Create the right border of the logout button
+- Create the gray circles and there dotted lines in integration section benefit cards
