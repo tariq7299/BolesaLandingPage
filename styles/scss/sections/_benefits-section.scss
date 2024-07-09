@@ -14,6 +14,7 @@ main .benefits-section {
       justify-content: center;
       justify-items: center;
       grid-auto-rows: minmax(120px, max-content);
+      grid-auto-flow: dense;
     }
   }
 }

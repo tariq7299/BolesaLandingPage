@@ -8,12 +8,19 @@
     flex-flow: column nowrap;
     justify-content: space-between;
     .demos-slider-seciton__swiper-container {
-      width: clamp(60%, 75vw, 700px);
+      width: clamp(65%, 75vw, min(86%, 700px));
       margin-inline: auto;
       display: inline-flex;
       justify-content: center;
       align-items: end;
       flex-flow: row;
+      .demos__swiper-slide {
+        border-radius: 18px;
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+      }
     }
 
     .demos-slider-section__text {

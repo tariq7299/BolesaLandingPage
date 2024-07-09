@@ -61,11 +61,17 @@
 
 # Benefit card component
 
-- Use artikle in the right places in html
-- Create file for each UI compoennt form bootstrap overriding vairalbes
-- Change the location of compiled scss ! (use watch again)
-- Fix the loading iamges problem (Add the correct stuff)
-- Fix the wird button loading in landign page
-- Ask about typography
-- Create the right border of the logout button
-- Create the gray circles and there dotted lines in integration section benefit cards
+- Add nav buttons
+- Make text on the right/start horizontoally
+- mAke less y padidng/height
+- Preview three on desktps and one at mobile (max-660px)
+  - Read the api of swiper and collect some usefull props
+    - Auto height
+    -
+  - Start to play with each one
+  - Target specifc ones to achive desired effect on mobile
+  - Target specif ones to chive on desktop
+- Choose the middle one as the active slide
+- Fix the wird effect on moble
+- Make the swiper styling on specific to demos slider
+-
