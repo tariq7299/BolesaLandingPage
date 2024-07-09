@@ -27,7 +27,6 @@
 @media (min-width: 992px) {
   .subscription-plans-section {
     .subscription-plans-card__plan-cards-container {
-      // grid-auto-flow: column;
       grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
       gap: $space-sm;
     }

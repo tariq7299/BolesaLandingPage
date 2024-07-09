@@ -14803,7 +14803,7 @@ main .hero-section .hero-section__container .hero-section__illustration-img .her
   justify-content: center;
 }
 .tabby-payment-section .tabby-payment-section__section-container .tabby-payment-section__text {
-  flex: 1 1 300px;
+  flex: 1 1 250px;
 }
 .tabby-payment-section .tabby-payment-section__section-container .tabby-payment-section__text .tabby-payment-section__header {
   padding-bottom: 6rem;
@@ -14817,7 +14817,7 @@ main .hero-section .hero-section__container .hero-section__illustration-img .her
   align-items: center;
 }
 .tabby-payment-section .tabby-payment-section__section-container .tabby-payment-section__tabby-img {
-  padding: 6rem 2rem 0 2rem;
+  padding: 10rem 3rem 0 3rem;
   position: relative;
   background-color: #edf5f0;
   flex: 1 1 300px;
@@ -14857,7 +14857,7 @@ main .hero-section .hero-section__container .hero-section__illustration-img .her
   flex-flow: row;
 }
 .demos-slider-section .demos-slider-section__container .demos-slider-section__text {
-  padding: 6rem;
+  padding-bottom: 6rem;
 }
 .demos-slider-section .demos-slider-section__container .demos-slider-section__swiper {
   z-index: 9998;
