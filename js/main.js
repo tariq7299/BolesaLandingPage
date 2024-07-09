@@ -66,5 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // This will initlizing an instance form the AOS JS library
-  AOS.init();
+  AOS.init({
+    once: true,
+  });
 });

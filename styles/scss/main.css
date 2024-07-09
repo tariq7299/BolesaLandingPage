@@ -47,6 +47,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 /*!
@@ -14358,7 +14359,7 @@ textarea.form-control-lg {
 }
 .subscription-plan-card .subscription-plan-card__description .subscription-plan-card__button button {
   font: var(--small-font);
-  padding: 0.5rem 2rem;
+  padding: 1rem 3rem;
 }
 .subscription-plan-card .subscription-plan-card__description .subscription-plan-card__button button:hover {
   border: 2px solid #d89255;
@@ -14372,6 +14373,7 @@ textarea.form-control-lg {
 }
 .subscription-plan-card .subscription-plan-card__description .subscription-plan-card__benefits {
   font: var(--small-light-font);
+  padding: 1.5rem 0;
   display: flex;
   flex-flow: column nowrap;
   align-items: start;
@@ -14498,7 +14500,7 @@ textarea.form-control-lg {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   gap: 1.5rem;
 }
 .accordion .accordion-header .accordion-button::after {
