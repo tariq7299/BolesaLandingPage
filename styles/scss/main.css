@@ -14467,7 +14467,9 @@ textarea.form-control-lg {
 }
 
 .subscription-plan-card--tall {
-  height: clamp(530px, 75vh, 560px);
+  min-height: 570px;
+  max-height: 590px;
+  height: auto;
 }
 
 .nav-pills {
@@ -14709,7 +14711,6 @@ main .hero-section .hero-section__container .hero-section__illustration-img .her
 .stats-section .stats-section__section-container .stats-section__header {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: start;
   align-items: end;
   gap: 1rem;
   padding: 2rem 0;
@@ -14802,7 +14803,7 @@ main .hero-section .hero-section__container .hero-section__illustration-img .her
   justify-content: center;
 }
 .tabby-payment-section .tabby-payment-section__section-container .tabby-payment-section__text {
-  flex: 1 1 300px;
+  flex: 1 1 250px;
 }
 .tabby-payment-section .tabby-payment-section__section-container .tabby-payment-section__text .tabby-payment-section__header {
   padding-bottom: 6rem;
@@ -14816,7 +14817,7 @@ main .hero-section .hero-section__container .hero-section__illustration-img .her
   align-items: center;
 }
 .tabby-payment-section .tabby-payment-section__section-container .tabby-payment-section__tabby-img {
-  padding: 6rem 2rem 0 2rem;
+  padding: 10rem 3rem 0 3rem;
   position: relative;
   background-color: #edf5f0;
   flex: 1 1 300px;
@@ -14856,7 +14857,7 @@ main .hero-section .hero-section__container .hero-section__illustration-img .her
   flex-flow: row;
 }
 .demos-slider-section .demos-slider-section__container .demos-slider-section__text {
-  padding: 6rem;
+  padding-bottom: 6rem;
 }
 .demos-slider-section .demos-slider-section__container .demos-slider-section__swiper {
   z-index: 9998;
@@ -14907,8 +14908,7 @@ main .hero-section .hero-section__container .hero-section__illustration-img .her
 
 @media (min-width: 992px) {
   .subscription-plans-section .subscription-plans-card__plan-cards-container {
-    grid-auto-flow: column;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
     gap: 1.5rem;
   }
 }

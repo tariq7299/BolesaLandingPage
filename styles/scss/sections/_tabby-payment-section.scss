@@ -7,7 +7,7 @@
     justify-content: center;
 
     .tabby-payment-section__text {
-      flex: 1 1 300px;
+      flex: 1 1 250px;
       .tabby-payment-section__header {
         .tabby-payment-section__description {
           max-width: $max-p-ch-md;
@@ -24,7 +24,7 @@
     }
 
     .tabby-payment-section__tabby-img {
-      padding: $space-x2l $space-md 0 $space-md;
+      padding: $space-x3l $space-lg 0 $space-lg;
       position: relative;
       background-color: $bg-color-3;
       flex: 1 1 300px;
