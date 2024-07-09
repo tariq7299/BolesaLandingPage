@@ -1,11 +1,36 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Inintilizing Swiper found in "demos-slider-section"
-  const swiper = new Swiper(".swiper", {
+  const demosSwiper = new Swiper(".demos-slider-section__swiper", {
     effect: "cards",
     grabCursor: true,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
+    },
+  });
+
+  const StatsSwiper = new Swiper(".stats__swiper-js", {
+    slidesPerView: 1,
+    spaceBetween: 15,
+    centeredSlides: true,
+    centeredSlidesBounds: true,
+    height: 400,
+    // cssMode: true,
+    // Responsive breakpoints
+    breakpoints: {
+      // when window width is >= 660px
+      660: {
+        slidesPerView: 2,
+        spaceBetween: 15,
+      },
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 15,
+      },
+      1900: {
+        slidesPerView: 4,
+        spaceBetween: 15,
+      },
     },
   });
 
@@ -40,13 +65,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Scroll to a paricullar stat card in the stats row
-  const activeStatCard = document.getElementById("active-stat-card");
-  if (activeStatCard) {
-    // Scroll to the target card
-    activeStatCard.scrollIntoView({ behavior: "smooth" });
-  }
-
   // This will initlizing an instance form the AOS JS library
-  AOS.init();
+  AOS.init({
+    once: true,
+  });
 });

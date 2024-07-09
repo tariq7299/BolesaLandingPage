@@ -47,22 +47,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-}
-
-h1, .h1,
-h2,
-.h2,
-h3,
-.h3,
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6,
-p {
-  margin: 0;
-  padding: 0;
+  overflow-x: hidden;
 }
 
 /*!
@@ -14211,7 +14196,6 @@ textarea.form-control-lg {
 }
 .stats-card .stats-card__description {
   font: var(--main-font);
-  max-width: 26ch;
   flex-grow: 1;
 }
 .stats-card .stats-card__value {
@@ -14305,17 +14289,6 @@ textarea.form-control-lg {
   width: 100%;
   margin: 0;
 }
-.swiper .swiper-wrapper .swiper-slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 18px;
-}
-.swiper .swiper-wrapper .swiper-slide img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
 
 .swiper-slide--nice-shadow {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -14386,7 +14359,7 @@ textarea.form-control-lg {
 }
 .subscription-plan-card .subscription-plan-card__description .subscription-plan-card__button button {
   font: var(--small-font);
-  padding: 0.5rem 2rem;
+  padding: 1rem 3rem;
 }
 .subscription-plan-card .subscription-plan-card__description .subscription-plan-card__button button:hover {
   border: 2px solid #d89255;
@@ -14400,6 +14373,7 @@ textarea.form-control-lg {
 }
 .subscription-plan-card .subscription-plan-card__description .subscription-plan-card__benefits {
   font: var(--small-light-font);
+  padding: 1.5rem 0;
   display: flex;
   flex-flow: column nowrap;
   align-items: start;
@@ -14526,7 +14500,7 @@ textarea.form-control-lg {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   gap: 1.5rem;
 }
 .accordion .accordion-header .accordion-button::after {
@@ -14624,6 +14598,9 @@ textarea.form-control-lg {
   color: #3d2f21;
 }
 
+main .benefits-section {
+  background-color: transparent;
+}
 main .benefits-section .benefits-section__container .benefits-section__header {
   display: flex;
   flex-flow: column nowrap;
@@ -14637,16 +14614,16 @@ main .benefits-section .benefits-section__container .benefits-section__cards {
   justify-content: center;
   justify-items: center;
   grid-auto-rows: minmax(120px, max-content);
+  grid-auto-flow: dense;
 }
 
-/* For screens 992px and larger (desktops) */
 @media (min-width: 660px) {
   main .benefits-section .benefits-section__container .benefits-section__cards {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   }
 }
 main .hero-section {
-  background: radial-gradient(circle, #ebdfcc 30%, #ffffff 70%);
+  background: radial-gradient(circle, #ebdfcc 30%, white 53%);
   overflow: hidden;
 }
 main .hero-section .hero-section__container {
@@ -14660,25 +14637,24 @@ main .hero-section .hero-section__container .floating-box {
   position: absolute;
 }
 main .hero-section .hero-section__container .hero-section--floating-box-1 {
-  top: -80px;
-  left: 40px;
-  width: 120px;
+  top: -40px;
+  left: 100px;
+  width: clamp(60px, 10vw, 120px);
   z-index: 9990;
 }
 main .hero-section .hero-section__container .hero-section--floating-box-2 {
-  top: -65px;
-  left: -550px;
-  width: 120px;
+  top: -45px;
+  left: -160px;
+  width: clamp(60px, 10vw, 120px);
   z-index: 9990;
 }
 main .hero-section .hero-section__container .hero-section--floating-box-3 {
   top: -10px;
-  right: -110px;
-  width: 250px;
+  right: -50px;
+  width: clamp(100px, 20vw, 250px);
   z-index: 1;
 }
 main .hero-section .hero-section__container .hero-section__text {
-  margin-top: 14rem;
   background-image: url(../../assets/hero-bg-pattern-x2.png);
   background-size: 100%;
   background-position: center center;
@@ -14722,6 +14698,24 @@ main .hero-section .hero-section__container .hero-section__illustration-img .her
      object-fit: cover;
 }
 
+@media (min-width: 660px) {
+  .hero-section__text {
+    margin-top: 14rem;
+  }
+  main .hero-section .hero-section__container .hero-section--floating-box-1 {
+    top: -80px;
+  }
+  main .hero-section .hero-section__container .hero-section--floating-box-2 {
+    top: -65px;
+    left: -550px;
+    width: clamp(95px, 8vw, 120px);
+    z-index: 9990;
+  }
+  main .hero-section .hero-section__container .hero-section--floating-box-3 {
+    top: -30px;
+    right: -100px;
+  }
+}
 .stats-section .stats-section__section-container {
   padding: 6rem 0;
 }
@@ -14734,26 +14728,21 @@ main .hero-section .hero-section__container .hero-section__illustration-img .her
 }
 .stats-section .stats-section__cards {
   padding: 2rem;
-  -ms-overflow-style: none; /* Internet Explorer 10+ */
-  scrollbar-width: none; /* Firefox */
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: minmax(360px, 380px);
-  overflow-x: scroll;
-  gap: 1rem;
-}
-.stats-section .stats-section__cards ::-webkit-scrollbar {
-  display: none; /* Safari and Chrome */
 }
 
-@media (min-width: 660px) {
-  .stats-section__header {
-    align-items: baseline;
-  }
-  .stats-section .stats-section__cards {
-    grid-auto-columns: minmax(425px, 450px);
-  }
+.stats-card {
+  min-height: 170px;
 }
+.stats-card.swiper-slide-active {
+  background-color: #3d2f21;
+}
+.stats-card.swiper-slide-active .stats-card__description {
+  color: white;
+}
+.stats-card.swiper-slide-active .stats-card__value {
+  color: #df8b42;
+}
+
 .bolesa-integration-section .bolesa-integration-section__container {
   display: flex;
   flex-flow: row wrap;
@@ -14868,12 +14857,20 @@ main .hero-section .hero-section__container .hero-section__illustration-img .her
   justify-content: space-between;
 }
 .demos-slider-section .demos-slider-section__container .demos-slider-seciton__swiper-container {
-  width: clamp(60%, 75vw, 700px);
+  width: clamp(65%, 75vw, min(86%, 700px));
   margin-inline: auto;
   display: inline-flex;
   justify-content: center;
   align-items: end;
   flex-flow: row;
+}
+.demos-slider-section .demos-slider-section__container .demos-slider-seciton__swiper-container .demos__swiper-slide {
+  border-radius: 18px;
+}
+.demos-slider-section .demos-slider-section__container .demos-slider-seciton__swiper-container .demos__swiper-slide img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .demos-slider-section .demos-slider-section__container .demos-slider-section__text {
   padding-bottom: 6rem;
