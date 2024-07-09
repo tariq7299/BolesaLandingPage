@@ -71,7 +71,10 @@
 - Create the right border of the logout button
 - Create the gray circles and there dotted lines in integration section benefit cards
 
-- Make the tag at the at the same line as its text in section
 - Make the buttons in subscrfiption cards just like every other buttn (font and padding)
 - Remove overflow of the subscription section by putton all of them in a padding
--
+- Fix the slider
+- add more padding between sections
+- Fix structure of subscription card and remove 75vh of them
+- make tabby section better by making img take 50% of whole column
+- make carreirs betrter on ipads porttrait

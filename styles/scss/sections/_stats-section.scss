@@ -4,7 +4,6 @@
     .stats-section__header {
       display: flex;
       flex-flow: row nowrap;
-      justify-content: start;
       align-items: end;
       gap: $space-xs;
       padding: $space-md 0;
@@ -22,7 +21,6 @@
     grid-auto-columns: minmax(360px, 380px);
     overflow-x: scroll;
     gap: $space-xs;
-    // justify-content: center;
   }
 }
 

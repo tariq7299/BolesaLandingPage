@@ -14467,7 +14467,9 @@ textarea.form-control-lg {
 }
 
 .subscription-plan-card--tall {
-  height: clamp(530px, 75vh, 560px);
+  min-height: 570px;
+  max-height: 590px;
+  height: auto;
 }
 
 .nav-pills {
@@ -14709,7 +14711,6 @@ main .hero-section .hero-section__container .hero-section__illustration-img .her
 .stats-section .stats-section__section-container .stats-section__header {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: start;
   align-items: end;
   gap: 1rem;
   padding: 2rem 0;
@@ -14907,8 +14908,7 @@ main .hero-section .hero-section__container .hero-section__illustration-img .her
 
 @media (min-width: 992px) {
   .subscription-plans-section .subscription-plans-card__plan-cards-container {
-    grid-auto-flow: column;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
     gap: 1.5rem;
   }
 }
