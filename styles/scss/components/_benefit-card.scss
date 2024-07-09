@@ -6,9 +6,10 @@
   border-radius: 15px;
   gap: $space-md;
   width: 100%;
-  max-width: 500px;
+  max-width: 570px;
   justify-content: center;
   align-items: start;
+  @include box-shadow(strong);
 
   .benefit-card__text {
     display: flex;
@@ -21,7 +22,7 @@
     }
 
     p {
-      font: var(--main-font);
+      font: var(--main-light-font);
       color: $secondary-color-1;
     }
   }

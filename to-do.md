@@ -61,7 +61,6 @@
 
 # Benefit card component
 
-- Create hover effects using mixin
 - Use artikle in the right places in html
 - Create file for each UI compoennt form bootstrap overriding vairalbes
 - Change the location of compiled scss ! (use watch again)
@@ -70,11 +69,3 @@
 - Ask about typography
 - Create the right border of the logout button
 - Create the gray circles and there dotted lines in integration section benefit cards
-
-- Make the buttons in subscrfiption cards just like every other buttn (font and padding)
-- Remove overflow of the subscription section by putton all of them in a padding
-- Fix the slider
-- add more padding between sections
-- Fix structure of subscription card and remove 75vh of them
-- make tabby section better by making img take 50% of whole column
-- make carreirs betrter on ipads porttrait

@@ -53,10 +53,7 @@
         font: var(--small-font);
         padding: $space-x2s $space-md;
         &:hover {
-          border: 1px solid $primary-color;
-          border-radius: 10px;
-          background-color: $secondary-color-1;
-          color: $primary-color;
+          @include button-hover();
         }
       }
     }

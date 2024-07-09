@@ -1,0 +1,13 @@
+@mixin button-hover(
+  $border-radius: 10px,
+  $background-color: $secondary-color-1,
+  $color: $primary-color,
+  $border-width: 2px,
+  $border-style: solid,
+  $border-color: $primary-color
+) {
+  border: $border-width $border-style $border-color;
+  border-radius: $border-radius;
+  background-color: $background-color;
+  color: $color;
+}

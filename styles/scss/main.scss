@@ -9,6 +9,8 @@
 // Importing my scss maps that will be merged my bootstrap default maps
 @import "abstracts/map-amends";
 
+@import "mixins/index";
+
 @import "base/index";
 
 // Finally, import the rest of Bootstrap
