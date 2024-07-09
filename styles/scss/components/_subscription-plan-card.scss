@@ -55,6 +55,9 @@
         &:hover {
           @include button-hover();
         }
+        &:focus {
+          @include button-focus($background-color: $secondary-color-1);
+        }
       }
     }
     .subscription-plan-card__benefits {
@@ -146,7 +149,7 @@
         width: 100%;
         background-color: $secondary-color-3;
         color: $white-color;
-        border: none;
+        border: 2px $secondary-color-3 solid;
         border-radius: 6px;
       }
     }

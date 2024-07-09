@@ -49,4 +49,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // This will initlizing an instance form the AOS JS library
   AOS.init();
+
+  const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+    target: "#navbar-example",
+  });
 });

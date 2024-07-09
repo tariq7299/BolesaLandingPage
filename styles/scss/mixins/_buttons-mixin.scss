@@ -11,3 +11,8 @@
   background-color: $background-color;
   color: $color;
 }
+
+@mixin button-focus($background-color: $primary-color) {
+  background-color: darken($background-color, 5%);
+  color: #fff;
+}
