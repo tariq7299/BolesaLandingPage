@@ -75,3 +75,4 @@
 - Fix the wird effect on moble
 - Make the swiper styling on specific to demos slider
 -
+- Make third box to top right of image
