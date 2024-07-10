@@ -14732,6 +14732,7 @@ main .hero-section .hero-section__container .hero-section__illustration-img .her
 
 .stats-card {
   min-height: 170px;
+  transition: all 0.2s;
 }
 .stats-card.swiper-slide-active {
   background-color: #3d2f21;
