@@ -16,6 +16,7 @@
 
 .stats-card {
   min-height: 170px;
+  transition: all 0.2s;
   &.swiper-slide-active {
     background-color: $secondary-color-1;
     .stats-card__description {
