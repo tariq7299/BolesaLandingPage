@@ -1,16 +1,4 @@
-// Importing variables
-// @import "abstracts/variables";
-
-// Importing Bootstrap's functions, variables, and mixins (but not the whole Bootstrap)
-// @forward "../../node_modules/bootstrap/scss/functions";
-// @forward "../../node_modules/bootstrap/scss/variables";
-// @forward "../../node_modules/bootstrap/scss/mixins";
-
-// Importing my scss maps that will be merged my bootstrap default maps
-// @forward "abstracts/map-amends";
-
-// Finally, import the rest of Bootstrap
-@forward "../../node_modules/bootstrap/scss/bootstrap";
+@forward "bootstrap/index";
 
 @forward "base/index";
 
