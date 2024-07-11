@@ -1,3 +1,10 @@
+// @use "../../../node_modules/bootstrap/scss/va"
+// @forward "../../../node_modules/bootstrap/scss/bootstrap" with (
+//   $primary: red,
+//   $theme-colors: map-merge($theme-colors, $custom-theme-colors),
+
+// );
+
 // SCSS Variables
 $primary-color: #d89255;
 $secondary-color-1: #3d2f21;

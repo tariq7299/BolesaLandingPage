@@ -1,5 +1,6 @@
 @use "../mixins" as *;
 @use "../abstracts/variables" as *;
+@use "../bootstrap" as *;
 
 .button {
   text-align: center;
@@ -19,7 +20,7 @@
   }
 
   &--priamry-color-filled {
-    border: 2px $primary-color solid;
+    border: 2px $primary solid;
     border-radius: 10px;
     color: $white-color;
     background-color: $primary-color;
