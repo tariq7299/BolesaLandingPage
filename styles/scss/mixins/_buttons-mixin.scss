@@ -1,3 +1,5 @@
+@use "../abstracts/variables" as *;
+
 @mixin button-hover(
   $border-radius: 10px,
   $background-color: $secondary-color-1,

@@ -1,3 +1,5 @@
+@use "../abstracts/variables" as *;
+
 .benefit-card {
   display: flex;
   flex-flow: row nowrap;

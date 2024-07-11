@@ -1,3 +1,6 @@
+@use "../mixins" as *;
+@use "../abstracts/variables" as *;
+
 .subscription-plans-section {
   .subscription-plans-section__section-body {
     display: flex;

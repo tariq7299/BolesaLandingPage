@@ -1,3 +1,6 @@
+@use "../mixins" as *;
+@use "../abstracts/variables" as *;
+
 main .benefits-section {
   background-color: transparent;
   .benefits-section__container {

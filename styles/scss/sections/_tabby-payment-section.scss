@@ -1,3 +1,6 @@
+@use "../mixins" as *;
+@use "../abstracts/variables" as *;
+
 .tabby-payment-section {
   .tabby-payment-section__section-container {
     display: flex;

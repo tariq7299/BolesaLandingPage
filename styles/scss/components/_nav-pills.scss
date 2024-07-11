@@ -1,3 +1,5 @@
+@use "../abstracts/variables" as *;
+
 .nav-pills {
   background-color: $bg-color-2;
   // width: 100%;

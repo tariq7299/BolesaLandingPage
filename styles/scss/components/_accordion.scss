@@ -1,3 +1,5 @@
+@use "../abstracts/variables" as *;
+
 .accordion {
   border-radius: 10px;
   .accordion-item {

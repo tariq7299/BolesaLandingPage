@@ -1,3 +1,6 @@
+@use "../mixins" as *;
+@use "../abstracts/variables" as *;
+
 .faqs-section {
   .faqs-section__container {
     padding-bottom: $space-x2l;

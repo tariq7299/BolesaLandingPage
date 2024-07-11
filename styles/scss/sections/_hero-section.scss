@@ -1,3 +1,6 @@
+@use "../mixins" as *;
+@use "../abstracts/variables" as *;
+
 main .hero-section {
   background: radial-gradient(circle, $bg-color-1 30%, #ffff 53%);
   overflow: hidden;

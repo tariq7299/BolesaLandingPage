@@ -1,3 +1,6 @@
+@use "../mixins" as *;
+@use "../abstracts/variables" as *;
+
 .demos-slider-section {
   overflow: hidden;
 

@@ -1,3 +1,6 @@
+@use "../mixins" as *;
+@use "../abstracts/variables" as *;
+
 .stats-section {
   .stats-section__section-container {
     padding: $space-x2l 0;

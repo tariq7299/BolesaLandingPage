@@ -1,3 +1,6 @@
+@use "../mixins" as *;
+@use "../abstracts/variables" as *;
+
 .container--card {
   background-color: $bg-color-2;
   border: none;

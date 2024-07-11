@@ -1,3 +1,5 @@
+@use "../abstracts/variables" as *;
+
 .stats-card {
   padding: clamp($space-md, 8vw, $space-lg)
     clamp($space-xl, 8vw, $space-xl * 1.2) clamp($space-xs, 8vw, $space-sm)

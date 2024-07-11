@@ -1,3 +1,6 @@
+@use "../mixins" as *;
+@use "../abstracts/variables" as *;
+
 .button {
   text-align: center;
   border-radius: 10px;
