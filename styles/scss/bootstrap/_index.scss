@@ -1,15 +1,83 @@
+@forward "../abstracts/variables/variables";
+@use "../abstracts/variables/variables" as vars;
+
+$blue: #0d6efd !default;
+$gray-600: #6c757d !default;
+$green: #198754 !default;
+$cyan: #0dcaf0 !default;
+$yellow: #ffc107 !default;
+$red: #dc3545 !default;
+$gray-100: #f8f9fa !default;
+$gray-900: #212529 !default;
+
+// scss-docs-start theme-color-variables
+$primary: $blue !default;
+$secondary: $gray-600 !default;
+$success: $green !default;
+$info: $cyan !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $gray-100 !default;
+$dark: $gray-900 !default;
+
 @forward "../../../node_modules/bootstrap/scss/bootstrap" with (
-  $primary: red
+  $theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "dark": $dark,
+    "primary-color": vars.$primary-color,
+    "secondary-color-1": vars.$secondary-color-1,
+    "secondary-color-2": vars.$secondary-color-2,
+    "secondary-color-3": vars.$secondary-color-3,
+    "white-color": vars.$white-color,
+    "bg-color-1": vars.$bg-color-1,
+    "bg-color-2": vars.$bg-color-2,
+    "bg-color-3": vars.$bg-color-3,
+    "bg-color-4": vars.$bg-color-4,
+  ),
+  $spacer: vars.$my-spacer,
+  $spacers: (
+    0: 0,
+    1: vars.$space-x2s,
+    2: vars.$space-xs,
+    3: vars.$space-sm,
+    4: vars.$space-md,
+    5: vars.$space-lg,
+    6: vars.$space-xl,
+    7: vars.$space-x2l,
+    8: vars.$space-x4l,
+  ),
+  // Resetting some bootstrap Typography values
+  $headings-margin-bottom: 0,
+  // Navbar overrides
+  $navbar-light-hover-color: vars.$primary-color,
+  $navbar-nav-link-padding-x: 3.6rem,
+  $navbar-light-active-color: vars.$primary-color,
+  // Accordion overrides
+  $accordion-bg: vars.$bg-color-2,
+  $accordion-padding-y: vars.$space-md,
+  $accordion-padding-x: vars.$space-md,
+  $accordion-body-padding-y: 1rem,
+  $accordion-body-padding-x: 3rem vars.$space-xs,
+  $accordion-button-active-bg: none,
+  $accordion-button-active-color: none,
+  $accordion-button-focus-box-shadow: none,
+  $accordion-border-width: 0px,
+  $accordion-border-color: none,
+  $accordion-border-radius: 10px,
+  $accordion-button-icon: none,
+  $accordion-button-active-icon: none,
+  // Nav pills overrides
+  $nav-pills-link-active-color: vars.$secondary-color-1,
+  $nav-pills-link-active-bg: vars.$white-color,
+  $nav-link-color: vars.$secondary-color-1,
+  $nav-pills-border-radius: 6px,
+  $nav-link-hover-color: vars.$primary-color,
+  $nav-link-padding-y: 1rem,
+  $nav-link-padding-x: 3rem
 );
-
-// @import "../abstracts/variables";
-// // Importing Bootstrap's functions, variables, and mixins (but not the whole Bootstrap)
-// @import "../../../node_modules/bootstrap/scss/functions";
-// @import "../../../node_modules/bootstrap/scss/variables";
-// @import "../../../node_modules/bootstrap/scss/mixins";
-
-// // Importing my scss maps that will be merged my bootstrap default maps
-// @import "../abstracts/map-amends";
-
-// // Finally, import the rest of Bootstrap
-// @import "../../../node_modules/bootstrap/scss/bootstrap";
